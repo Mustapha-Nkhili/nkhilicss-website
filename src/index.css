@@ -1,0 +1,10 @@
+body {
+    background-color: #0E0C15;
+}
+
+.header {
+    background-color: #0e0c15e6;
+    border-bottom: 1px solid #252134;
+    backdrop-filter: blur(4px);
+    color: #87868A;
+}
