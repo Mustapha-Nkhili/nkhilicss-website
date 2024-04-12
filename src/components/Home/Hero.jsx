@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen flex justify-center items-center overflow-hidden">
+    <section className="hero relative flex justify-center items-center h-screen overflow-hidden">
       <div className="relative container z-40 mt-18 text-white text-center">
         <h1 className="text-4xl sm-text-5xl lg-text-6xl">
           Explore Endless Design Possibilities with{" "}
@@ -23,7 +23,7 @@ const Hero = () => {
         </p>
         <Link
           to="docs/instalation"
-          className="get-started-btn flex justify-center items-center w-fit m-auto h-12 capitalize bg-red rounded-2 text-sm font-semibold pl-6 pr-6 mt-7"
+          className="get-started-btn flex justify-center items-center w-fit m-auto h-12 capitalize bg-red rounded-2 text-sm font-semibold pl-6 pr-6 mt-10"
         >
           get started
         </Link>

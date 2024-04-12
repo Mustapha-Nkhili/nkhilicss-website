@@ -9,6 +9,10 @@ body {
     color: #87868A;
 }
 
+.hero {
+    border-bottom: 1px solid #252134;
+}
+
 .hero-text {
     color: #cac6dd;
 
@@ -24,20 +28,43 @@ body {
     filter: blur(24px);
     opacity: 0.3;
 }
+
 .blurry-bg-1 {
     background-image: radial-gradient(closest-side, #581A56, #252134);
     opacity: 0.3;
     left: 35%;
 }
+
 .blurry-bg-2 {
     background-image: radial-gradient(closest-side, #AC6AFF, #000);
 }
+
 .background-circle-1 {
     background-image: linear-gradient(to left, #B9AEDF, #1A1A32);
 }
+
 .background-circle-2 {
     background-image: linear-gradient(to left, #B9AEDF, #1A1A32);
 }
+
 .background-circle-3 {
     background-image: linear-gradient(to left, #DD734F, #1A1A32);
+}
+
+.features {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.feature {
+    background-color: #0E0C15;
+    border: 1px solid #252134;
+}
+
+.feature p {
+    color: #cac6dd;
+}
+
+.feature .icon {
+    background-color: #AC6AFF;
+    color: #cac6dd
 }
