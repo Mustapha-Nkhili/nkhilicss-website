@@ -8,3 +8,36 @@ body {
     backdrop-filter: blur(4px);
     color: #87868A;
 }
+
+.hero-text {
+    color: #cac6dd;
+
+}
+
+.get-started-btn {
+    background-color: #AC6AFF
+}
+
+.blurry-bg {
+    width: 700px;
+    mix-blend-mode: multiply;
+    filter: blur(24px);
+    opacity: 0.3;
+}
+.blurry-bg-1 {
+    background-image: radial-gradient(closest-side, #581A56, #252134);
+    opacity: 0.3;
+    left: 35%;
+}
+.blurry-bg-2 {
+    background-image: radial-gradient(closest-side, #AC6AFF, #000);
+}
+.background-circle-1 {
+    background-image: linear-gradient(to left, #B9AEDF, #1A1A32);
+}
+.background-circle-2 {
+    background-image: linear-gradient(to left, #B9AEDF, #1A1A32);
+}
+.background-circle-3 {
+    background-image: linear-gradient(to left, #DD734F, #1A1A32);
+}
