@@ -1,5 +1,5 @@
 import Ring from "./Ring";
-import curveImg from "../assets/curve.png";
+import curveImg from "../../assets/curve.png";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
