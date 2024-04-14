@@ -68,3 +68,12 @@ body {
     background-color: #AC6AFF;
     color: #cac6dd
 }
+
+.home-footer {
+    border-top: 1px solid #252134;
+    color: #cac6dd;
+}
+
+.home-footer .me {
+    color: #AC6AFF;
+}
