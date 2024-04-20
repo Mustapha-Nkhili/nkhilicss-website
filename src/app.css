@@ -1,0 +1,71 @@
+.header,
+.docs-nav-header {
+    border-bottom: 1px solid #252134;
+    backdrop-filter: blur(4px);
+}
+
+.hero {
+    border-bottom: 1px solid #252134;
+}
+
+.blurry-bg {
+    width: 700px;
+    mix-blend-mode: multiply;
+    filter: blur(24px);
+    opacity: 0.3;
+}
+
+.blurry-bg-1 {
+    background-image: radial-gradient(closest-side, #581a56, #252134);
+    opacity: 0.3;
+    left: 35%;
+}
+
+.blurry-bg-2 {
+    background-image: radial-gradient(closest-side, #ac6aff, #000);
+}
+
+.background-circle-1 {
+    background-image: linear-gradient(to left, #b9aedf, #1a1a32);
+}
+
+.background-circle-2 {
+    background-image: linear-gradient(to left, #b9aedf, #1a1a32);
+}
+
+.background-circle-3 {
+    background-image: linear-gradient(to left, #dd734f, #1a1a32);
+}
+
+.features {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.feature {
+    background-color: #0e0c15;
+    border: 1px solid #252134;
+}
+
+.home-footer {
+    border-top: 1px solid #252134;
+}
+
+.docs-container {
+    margin-top: 72px;
+}
+
+.docs-nav {
+    width: 17rem;
+}
+
+.docs-nav>div {
+    top: 72px;
+}
+
+.docs-nav li {
+    cursor: pointer;
+}
+
+.docs-aside {
+    top: 72px
+}

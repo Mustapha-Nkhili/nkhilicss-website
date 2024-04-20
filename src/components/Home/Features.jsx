@@ -48,13 +48,13 @@ const Features = () => {
       <div className="features grid text-white gap-7 mt-10 mb-10">
         {features.map((feature, index) => (
           <div className="feature p-5 rounded-2" key={feature + index}>
-            <div className="icon flex justify-center items-center rounded mb-5 w-10 aspect-square">
+            <div className="flex justify-center items-center rounded mb-5 w-10 aspect-square text-light-periwinkle bg-primary">
               <FontAwesomeIcon icon={feature.icon} />
             </div>
             <h3 className="text-base font-semibold capitalize">
               {feature.title}
             </h3>
-            <p className="text-sm text-medium mt-4">{feature.text}</p>
+            <p className="text-sm text-medium text-light-periwinkle mt-4">{feature.text}</p>
           </div>
         ))}
       </div>

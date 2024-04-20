@@ -17,13 +17,13 @@ const Hero = () => {
             />
           </span>
         </h1>
-        <p className="hero-text mt-6 text-lg text-center">
+        <p className="mt-6 text-lg text-center text-light-periwinkle">
           Sleek, intuitive, and powerful front-end framework for faster and
           easier web development.
         </p>
         <Link
           to="docs/instalation"
-          className="get-started-btn flex justify-center items-center w-fit m-auto h-12 capitalize bg-red rounded-2 text-sm font-semibold pl-6 pr-6 mt-10"
+          className="flex justify-center items-center bg-primary w-fit m-auto h-12 capitalize rounded-2 text-sm font-semibold pl-6 pr-6 mt-10"
         >
           get started
         </Link>

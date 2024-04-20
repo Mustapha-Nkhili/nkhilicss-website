@@ -1,0 +1,264 @@
+@use "sass:map";
+
+$primary: #ac6aff;
+
+// variables & functions
+@import "../node_modules/nkhilicss/sass/partials/variables";
+@import "../node_modules/nkhilicss/sass/partials/functions";
+
+@import "../node_modules/nkhilicss/sass/partials/base";
+
+$custom-colors: (
+  "light-periwinkle": #cac6dd,
+  "body": #0e0c15,
+  "main-header": #0e0c15e6,
+  "border-clr": #252134,
+  "light-gray": #87868a,
+);
+
+$colors: map.merge($colors, $custom-colors);
+
+@import "../node_modules/nkhilicss/sass/partials/breakpoints";
+
+@import "../node_modules/nkhilicss/sass/partials/mixins";
+
+// utilities
+@import "../node_modules/nkhilicss/sass/partials/utilities";
+@import "../node_modules/nkhilicss/sass/partials/grid";
+
+$custom-utilities: (
+  "border-width": (
+    prefix: border,
+    values: (
+      none: 0,
+      default: 1px,
+      2: 2px,
+      3: 3px,
+      4: 4px,
+      5: 5px,
+      6: 6px,
+      7: 7px,
+      8: 8px,
+      9: 9px,
+      10: 10px,
+      11: 11px,
+      12: 12px,
+      13: 13px,
+      14: 14px,
+      15: 15px,
+      16: 16px,
+      17: 17px,
+      18: 18px,
+      19: 19px,
+      20: 20px,
+    ),
+  ),
+  "border-color": (
+    prefix: border,
+    values: $colors,
+  ),
+  "border-style": (
+    prefix: border,
+    values: (
+      solid: solid,
+      dashed: dashed,
+      dotted: dotted,
+      double: double,
+      hidden: hidden,
+      none: none,
+    ),
+  ),
+  "border-left-width": (
+    prefix: border-l,
+    values: (
+      none: 0,
+      default: 1px,
+      2: 2px,
+      3: 3px,
+      4: 4px,
+      5: 5px,
+      6: 6px,
+      7: 7px,
+      8: 8px,
+      9: 9px,
+      10: 10px,
+      11: 11px,
+      12: 12px,
+      13: 13px,
+      14: 14px,
+      15: 15px,
+      16: 16px,
+      17: 17px,
+      18: 18px,
+      19: 19px,
+      20: 20px,
+    ),
+  ),
+  "border-left-color": (
+    prefix: border-l,
+    values: $colors,
+  ),
+  "border-left-style": (
+    prefix: border-l,
+    values: (
+      solid: solid,
+      dashed: dashed,
+      dotted: dotted,
+      double: double,
+      hidden: hidden,
+      none: none,
+    ),
+  ),
+  "border-right-width": (
+    prefix: border-r,
+    values: (
+      none: 0,
+      default: 1px,
+      2: 2px,
+      3: 3px,
+      4: 4px,
+      5: 5px,
+      6: 6px,
+      7: 7px,
+      8: 8px,
+      9: 9px,
+      10: 10px,
+      11: 11px,
+      12: 12px,
+      13: 13px,
+      14: 14px,
+      15: 15px,
+      16: 16px,
+      17: 17px,
+      18: 18px,
+      19: 19px,
+      20: 20px,
+    ),
+  ),
+  "border-right-color": (
+    prefix: border-r,
+    values: $colors,
+  ),
+  "border-right-style": (
+    prefix: border-r,
+    values: (
+      solid: solid,
+      dashed: dashed,
+      dotted: dotted,
+      double: double,
+      hidden: hidden,
+      none: none,
+    ),
+  ),
+  "border-top-width": (
+    prefix: border-t,
+    values: (
+      none: 0,
+      default: 1px,
+      2: 2px,
+      3: 3px,
+      4: 4px,
+      5: 5px,
+      6: 6px,
+      7: 7px,
+      8: 8px,
+      9: 9px,
+      10: 10px,
+      11: 11px,
+      12: 12px,
+      13: 13px,
+      14: 14px,
+      15: 15px,
+      16: 16px,
+      17: 17px,
+      18: 18px,
+      19: 19px,
+      20: 20px,
+    ),
+  ),
+  "border-top-color": (
+    prefix: border-t,
+    values: $colors,
+  ),
+  "border-top-style": (
+    prefix: border-t,
+    values: (
+      solid: solid,
+      dashed: dashed,
+      dotted: dotted,
+      double: double,
+      hidden: hidden,
+      none: none,
+    ),
+  ),
+  "border-bottom-width": (
+    prefix: border-b,
+    values: (
+      none: 0,
+      default: 1px,
+      2: 2px,
+      3: 3px,
+      4: 4px,
+      5: 5px,
+      6: 6px,
+      7: 7px,
+      8: 8px,
+      9: 9px,
+      10: 10px,
+      11: 11px,
+      12: 12px,
+      13: 13px,
+      14: 14px,
+      15: 15px,
+      16: 16px,
+      17: 17px,
+      18: 18px,
+      19: 19px,
+      20: 20px,
+    ),
+  ),
+  "border-bottom-color": (
+    prefix: border-b,
+    values: $colors,
+  ),
+  "border-bottom-style": (
+    prefix: border-b,
+    values: (
+      solid: solid,
+      dashed: dashed,
+      dotted: dotted,
+      double: double,
+      hidden: hidden,
+      none: none,
+    ),
+  ),
+  "cursor": (
+    prefix: cursor,
+    values: (
+      auto: auto,
+      default: default,
+      pointer: pointer,
+      wait: wait,
+      text: text,
+      move: move,
+      not-allowed: not-allowed,
+      none: none,
+      context-menu: context-menu,
+      progress: progress,
+      cell: cell,
+      crosshair: crosshair,
+      vertical-text: vertical-text,
+      alias: alias,
+      copy: copy,
+      no-drop: no-drop,
+      grab: grab,
+      grabbing: grabbing,
+      all-scroll: all-scroll,
+    )
+  )
+);
+
+$utilities: map-merge($utilities, $custom-utilities);
+
+// generate utilities
+@import "../node_modules/nkhilicss/sass/partials/generate-utilities";
