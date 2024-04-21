@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { useRef } from "react";
-import DocsHeader from "../../components/docs/DocsHeader";
-import Code from "../../components/docs/Code";
-import OnThisPage from "../../components/docs/OnThisPage";
-import Footer from "../../components/docs/Footer";
-import SectionHeader from "../../components/docs/SectionHeader";
+import DocsHeader from "../../../components/docs/DocsHeader";
+import Code from "../../../components/docs/Code";
+import OnThisPage from "../../../components/docs/OnThisPage";
+import Footer from "../../../components/docs/Footer";
+import SectionHeader from "../../../components/docs/SectionHeader";
 
 const Installation = () => {
   const packageManagers = useRef(null);
@@ -104,7 +104,7 @@ const Installation = () => {
             language="css"
           />
         </section>
-        <Footer prevPage={"introduction"} nextPage={"aspect ratio"}/>
+        <Footer prevPage={"introduction"} nextPage={"aspect ratio"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>

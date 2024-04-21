@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import Code from "../../components/docs/Code";
+import Code from "../../../components/docs/Code";
 import { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import Footer from "../../components/docs/Footer";
-import OnThisPage from "../../components/docs/OnThisPage";
-import DocsHeader from "../../components/docs/DocsHeader";
-import SectionHeader from "../../components/docs/SectionHeader";
+import Footer from "../../../components/docs/Footer";
+import OnThisPage from "../../../components/docs/OnThisPage";
+import DocsHeader from "../../../components/docs/DocsHeader";
+import SectionHeader from "../../../components/docs/SectionHeader";
 
 const Introduction = () => {
   const quickStartRef = useRef(null);
