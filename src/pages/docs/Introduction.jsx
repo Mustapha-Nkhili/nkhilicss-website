@@ -112,7 +112,7 @@ const Introduction = () => {
             language="html"
           />
         </section>
-        <Footer />
+        <Footer nextPage={"installation"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>

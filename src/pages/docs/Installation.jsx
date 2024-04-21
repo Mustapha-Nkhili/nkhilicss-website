@@ -104,7 +104,7 @@ const Installation = () => {
             language="css"
           />
         </section>
-        <Footer />
+        <Footer prevPage={"introduction"} nextPage={"aspect ratio"}/>
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>
