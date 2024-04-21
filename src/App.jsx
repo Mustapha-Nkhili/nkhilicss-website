@@ -4,7 +4,8 @@ import Home from "./pages/Home";
 import DocsLayout from "./layouts/DocsLayout";
 import Introduction from "./pages/docs/Introduction";
 
-import "./app.css"
+import "./app.css";
+import Installation from "./pages/docs/Installation";
 
 function App() {
   const router = createBrowserRouter([
@@ -23,6 +24,10 @@ function App() {
             {
               path: "introduction",
               element: <Introduction />,
+            },
+            {
+              path: "installation",
+              element: <Installation />,
             },
           ],
         },

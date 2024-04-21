@@ -12,6 +12,10 @@ const DocsLayout = () => {
           label: "introduction",
           slug: "introduction",
         },
+        {
+          label: "installation",
+          slug: "installation",
+        },
       ],
     },
   ];

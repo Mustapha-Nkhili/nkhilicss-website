@@ -20,7 +20,7 @@ const Header = () => {
 
           <li>
             <NavLink
-              to="/docs/introduction"
+              to="/docs"
               style={({ isActive }) => (isActive ? { color: "white" } : null)}
               className="hover-text-white"
             >
