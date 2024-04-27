@@ -26,7 +26,7 @@ const Footer = ({ prevPage, nextPage }) => {
   return (
     <footer className="text-sm text-light-periwinkle  mt-20">
       <div
-        className={`${prevPage ? "flex justify-between items-center" : "grid"}`}
+        className={`${prevPage ? "flex justify-between items-center" : "grid"} mb-10`}
       >
         {prevPage && (
           <Link
@@ -48,7 +48,7 @@ const Footer = ({ prevPage, nextPage }) => {
           </Link>
         )}
       </div>
-      <div className="border-t border-t-border-clr border-t-solid pt-5 text-center">
+      <div className="border-t border-t-border-clr border-t-solid pt-8 text-center">
         Made with <FontAwesomeIcon icon={faHeart} /> by{" "}
         <Link
           to="https://mustapha-nkhili.web.app"
