@@ -10,6 +10,7 @@ import Display from "./pages/docs/layout/Display";
 import Float from "./pages/docs/layout/Float";
 import ObjectFit from "./pages/docs/layout/ObjectFit";
 import Overflow from "./pages/docs/layout/Overflow";
+import Position from "./pages/docs/layout/Position";
 
 import "./app.css";
 
@@ -58,6 +59,10 @@ function App() {
             {
               path: "overflow",
               element: <Overflow />,
+            },
+            {
+              path: "position",
+              element: <Position />,
             },
           ],
         },
