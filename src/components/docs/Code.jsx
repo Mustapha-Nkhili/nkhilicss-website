@@ -15,13 +15,13 @@ const Code = ({ code, language }) => {
     setIsTextCopied(true);
     setTimeout(() => {
       setIsTextCopied(false);
-    }, 5000);
+    }, 2000);
   };
 
   return (
     <div className="Code mt-5 mb-5 max-w-full relative">
       <div
-        className="flex justify-center items-center absolute top-2 right-2 rounded cursor-pointer text-white w-7 aspect-square text-sm bg-primary"
+        className="flex justify-center items-center absolute top-2 right-2 rounded cursor-pointer text-white w-7 aspect-square text-sm bg-primary z-40"
         onClick={copyToClipboard}
       >
         <FontAwesomeIcon icon={isTextCopied ? faCheck : faCopy} />

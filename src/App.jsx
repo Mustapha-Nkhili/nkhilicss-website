@@ -6,6 +6,7 @@ import Introduction from "./pages/docs/getting-started/Introduction";
 import Installation from "./pages/docs/getting-started/Installation";
 
 import "./app.css";
+import AspectRatio from "./pages/docs/layout/AspectRatio";
 
 function App() {
   const router = createBrowserRouter([
@@ -28,6 +29,10 @@ function App() {
             {
               path: "installation",
               element: <Installation />,
+            },
+            {
+              path: "aspect-ratio",
+              element: <AspectRatio />,
             },
           ],
         },

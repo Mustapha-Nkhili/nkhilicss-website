@@ -18,6 +18,15 @@ const DocsLayout = () => {
         },
       ],
     },
+    {
+      docLabel: "layout",
+      navList: [
+        {
+          label: "aspect ratio",
+          slug: "aspect-ratio",
+        },
+      ],
+    },
   ];
 
   const docsNavRef = useRef(null);
@@ -49,7 +58,7 @@ const DocsLayout = () => {
       </div>
       <nav className="docs-nav">
         <div
-          className="overflow-y-auto fixed h-full w-full lg-w-68 p-5 border-r-none lg-border-r lg-border-r-border-clr lg-border-r-solid border-t border-t-border-clr border-t-solid bg-body z-50"
+          className="overflow-y-auto fixed lg-left-0 h-full w-full lg-w-68 p-5 border-r-none lg-border-r lg-border-r-border-clr lg-border-r-solid border-t border-t-border-clr border-t-solid bg-body z-50"
           ref={docsNavRef}
         >
           <div

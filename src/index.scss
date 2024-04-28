@@ -232,6 +232,13 @@ $custom-utilities: (
       none: none,
     ),
   ),
+  "border-collapse": (
+    prefix: border,
+    values: (
+      collapse: collapse,
+      separate: separate,
+    ),
+  ),
   "cursor": (
     prefix: cursor,
     values: (
@@ -254,9 +261,10 @@ $custom-utilities: (
       grab: grab,
       grabbing: grabbing,
       all-scroll: all-scroll,
-    )
-  )
+    ),
+  ),
 );
+
 
 $utilities: map-merge($utilities, $custom-utilities);
 
