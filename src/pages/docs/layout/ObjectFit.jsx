@@ -111,7 +111,7 @@ const ObjectFit = () => {
           breakpointsCode={breakpointsCode}
           utility={"object-cover"}
         />
-        <Footer prevPage={"float"} />
+        <Footer prevPage={"float"} nextPage={"overflow"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>
