@@ -81,8 +81,8 @@ const BoxSizing = () => {
       <div className="doc-content p-5 mb-10">
         <DocsHeader
           title="layout"
-          pageTitle="aspect ratio"
-          pageDesc="Pre-built CSS classes for managing how the browser determines the overall dimensions of an element."
+          pageTitle="box sizing"
+          pageDesc="Pre-built classes offer control over the calculation of an element's total size within the browser."
         />
         <section id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />

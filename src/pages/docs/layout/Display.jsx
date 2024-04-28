@@ -146,8 +146,8 @@ const Display = () => {
       <div className="doc-content p-5 mb-10">
         <DocsHeader
           title="layout"
-          pageTitle="aspect ratio"
-          pageDesc="Pre-built CSS classes for controlling the dimensions of an element"
+          pageTitle="display"
+          pageDesc="Pre-built classes determine how an element appears in the browser by controlling its display box type."
         />
         <section id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />
@@ -218,7 +218,7 @@ const Display = () => {
           breakpointsCode={breakpointsCode}
           utility={"flex"}
         />
-        <Footer prevPage={"aspect ratio"} />
+        <Footer prevPage={"box sizing"} nextPage={"float"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>
