@@ -15,7 +15,7 @@ const Float = () => {
   const breakpointsRef = useRef(null);
 
   const cssClassesReference = {
-    className: "box-sizing",
+    className: "float",
     tableRows: [
       {
         cssClass: "float-start",
@@ -111,7 +111,7 @@ const Float = () => {
           breakpointsCode={breakpointsCode}
           utility={"float-left"}
         />
-        <Footer prevPage={"display"} />
+        <Footer prevPage={"display"} nextPage={"object fit"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>
