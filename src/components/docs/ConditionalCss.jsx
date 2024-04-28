@@ -5,12 +5,10 @@ const ConditionalCss = ({
   headerRef,
   subTitle1Ref,
   subTitle2Ref,
-  hoverVideoCode,
+  hoverCode,
   breakpointsCode,
   utility,
 }) => {
-
-  
   return (
     <section id="executing-under-certain-conditions" ref={headerRef}>
       <SectionHeader title="Executing under certain conditions" />
@@ -25,9 +23,11 @@ const ConditionalCss = ({
         nkhilicss offers the ability to conditionally employ utility classes by
         leveraging variant modifiers for different states. For instance, with{" "}
         <span className="text-primary">&quot;hover-{utility}&quot;</span> , you
-        can apply the {utility} utility exclusively during hover events.
+        can apply the{" "}
+        <span className="text-primary">&quot;{utility}&quot;</span> utility
+        exclusively during hover events.
       </p>
-      <Code code={hoverVideoCode} language="html" />
+      <Code code={hoverCode} language="html" />
 
       <h4
         className="font-medium mt-10"
@@ -38,9 +38,11 @@ const ConditionalCss = ({
       </h4>
       <p className="text-sm text-light-periwinkle mt-2">
         To target responsive breakpoints precisely, use variant modifiers like
-        lg-{utility} to implement the {utility} utility exclusively on
-        large-sized screens and above. This ensures your design adapts
-        seamlessly across different device sizes.
+        <span className="text-primary">&quot;lg-{utility}&quot;</span> to
+        implement the{" "}
+        <span className="text-primary">&quot;{utility}&quot;</span> utility
+        exclusively on large-sized screens and above. This ensures your design
+        adapts seamlessly across different device sizes.
       </p>
       <Code code={breakpointsCode} language="html" />
     </section>

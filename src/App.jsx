@@ -4,9 +4,10 @@ import Home from "./pages/Home";
 import DocsLayout from "./layouts/DocsLayout";
 import Introduction from "./pages/docs/getting-started/Introduction";
 import Installation from "./pages/docs/getting-started/Installation";
+import AspectRatio from "./pages/docs/layout/AspectRatio";
+import BoxSizing from "./pages/docs/layout/BoxSizing";
 
 import "./app.css";
-import AspectRatio from "./pages/docs/layout/AspectRatio";
 
 function App() {
   const router = createBrowserRouter([
@@ -33,6 +34,10 @@ function App() {
             {
               path: "aspect-ratio",
               element: <AspectRatio />,
+            },
+            {
+              path: "box-sizing",
+              element: <BoxSizing />,
             },
           ],
         },

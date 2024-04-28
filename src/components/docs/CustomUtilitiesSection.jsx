@@ -9,20 +9,22 @@ const CustomUtilitiesSection = ({
   addUtilityCode,
   changeUtilityValueRef,
   changeUtilityValueCode,
+  utility,
 }) => {
   return (
-    <section id="custom-ratios" ref={customUtilityRef}>
-      <SectionHeader
-        title="Custom ratios"
-        description="Within your custom.scss file, you'll import nkhilicss's source Sass files. You have two options: either include all of nkhilicss, or selectively pick the parts you need. We recommend the latter approach."
-      />
+    <section id={`custom-${utility}`} ref={customUtilityRef}>
+      <SectionHeader title={`Custom ${utility}`} />
       <h4
-        className="font-medium mt-10"
+        className="font-medium mt-5"
         id="utility-sass-map"
         ref={utilitySassMap}
       >
         Utility Sass Map
       </h4>
+      <p className="text-sm text-light-periwinkle mt-2">
+        This is the {utility} map, where we define the values for {utility}{" "}
+        utilities in sass/_maps.scss.
+      </p>
       <Code code={utilityMap} language="javascript" />
 
       <h4
@@ -33,8 +35,8 @@ const CustomUtilitiesSection = ({
         Add Utility to Sass Map
       </h4>
       <p className="text-sm text-light-periwinkle mt-2">
-        Adding a new utility to the aspect ratio collection? Just set it into
-        the existing map!
+        Adding a new utility to the {utility} collection? Just set it into the
+        existing map!
       </p>
       <Code code={addUtilityCode} language="javascript" />
 
@@ -43,7 +45,7 @@ const CustomUtilitiesSection = ({
         id="change-utility-value"
         ref={changeUtilityValueRef}
       >
-        Change utility value
+        Change a utility value
       </h4>
       <p className="text-sm text-light-periwinkle mt-2">
         Modifying a utility value? just a quick update to the property within

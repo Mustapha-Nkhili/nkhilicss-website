@@ -25,6 +25,7 @@ const DocsLayout = () => {
           label: "aspect ratio",
           slug: "aspect-ratio",
         },
+        { label: "box sizing", slug: "box-sizing" },
       ],
     },
   ];

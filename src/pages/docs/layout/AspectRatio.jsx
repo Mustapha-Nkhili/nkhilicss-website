@@ -71,23 +71,23 @@ const AspectRatio = () => {
 
   const videoCode = `
   <iframe
-    className="aspect-video w-full border-none rounded-2"
+    class="aspect-video w-full border-none rounded-2"
     src="https://www.youtube.com/embed/Nnre-vnHyp0"
     title="سورة الرحمن (كاملة) | القارئ اسلام صبحي"
     allowfullscreen
   ></iframe>
 `;
 
-  const hoverVideoCode = `
+  const hoverCode = `
 <iframe
-  className="hover-aspect-video ..."
+  class="aspect-square hover-aspect-video ..."
  ...
 ></iframe>
 `;
 
   const breakpointsCode = `
 <iframe
-  className="lg-aspect-square ..."
+  class="aspect-square lg-aspect-video ..."
  ...
 ></iframe>
 `;
@@ -147,9 +147,9 @@ $aspect-ratio-map: map.set($aspect-ratio-map, square, yourCustomValue)
           headerRef={executingUnderCertainConditionsRef}
           subTitle1Ref={stateRef}
           subTitle2Ref={breakpointsRef}
-          hoverVideoCode={hoverVideoCode}
+          hoverCode={hoverCode}
           breakpointsCode={breakpointsCode}
-          utility={"aspect-square"}
+          utility={"aspect-video"}
         />
         <CustomUtilitiesSection
           customUtilityRef={customRatiosRef}
@@ -159,8 +159,9 @@ $aspect-ratio-map: map.set($aspect-ratio-map, square, yourCustomValue)
           addUtilityCode={addUtilityCode}
           changeUtilityValueRef={changeUtilityValueRef}
           changeUtilityValueCode={changeUtilityValueCode}
+          utility={"aspect-ratio"}
         />
-        <Footer prevPage={"installation"} />
+        <Footer prevPage={"installation"} nextPage={"display"}/>
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>
