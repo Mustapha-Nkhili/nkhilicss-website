@@ -9,6 +9,7 @@ import BoxSizing from "./pages/docs/layout/BoxSizing";
 import Display from "./pages/docs/layout/Display";
 import Float from "./pages/docs/layout/Float";
 import ObjectFit from "./pages/docs/layout/ObjectFit";
+import Overflow from "./pages/docs/layout/Overflow";
 
 import "./app.css";
 
@@ -53,6 +54,10 @@ function App() {
             {
               path: "object-fit",
               element: <ObjectFit />,
+            },
+            {
+              path: "overflow",
+              element: <Overflow />,
             },
           ],
         },
