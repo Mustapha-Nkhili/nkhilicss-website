@@ -28,6 +28,7 @@ const DocsLayout = () => {
         { label: "box sizing", slug: "box-sizing" },
         { label: "display", slug: "display" },
         { label: "float", slug: "float" },
+        { label: "object fit", slug: "object-fit" },
       ],
     },
   ];

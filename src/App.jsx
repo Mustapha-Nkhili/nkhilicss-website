@@ -8,6 +8,7 @@ import AspectRatio from "./pages/docs/layout/AspectRatio";
 import BoxSizing from "./pages/docs/layout/BoxSizing";
 import Display from "./pages/docs/layout/Display";
 import Float from "./pages/docs/layout/Float";
+import ObjectFit from "./pages/docs/layout/ObjectFit";
 
 import "./app.css";
 
@@ -48,6 +49,10 @@ function App() {
             {
               path: "float",
               element: <Float />,
+            },
+            {
+              path: "object-fit",
+              element: <ObjectFit />,
             },
           ],
         },
