@@ -59,7 +59,7 @@ const Position = () => {
     },
   ];
 
-  const objectFitCode = `
+  const positionRelativeCode = `
 <div class="relative...">
     Content here with relative positioning.
 </div>
@@ -101,7 +101,7 @@ const Position = () => {
               </>
             }
           />
-          <Code code={objectFitCode} language="html" />
+          <Code code={positionRelativeCode} language="html" />
         </section>
         <ConditionalCss
           headerRef={executingUnderCertainConditionsRef}
@@ -111,7 +111,7 @@ const Position = () => {
           breakpointsCode={breakpointsCode}
           utility={"absolute"}
         />
-        <Footer prevPage={"float"} />
+        <Footer prevPage={"float"} nextPage={"top bottom left right"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>
