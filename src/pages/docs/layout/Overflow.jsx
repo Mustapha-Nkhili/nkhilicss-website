@@ -152,7 +152,7 @@ const Overflow = () => {
           <SectionHeader title="Quick reference" />
           <h3
             className="font-medium mt-5 text-light-periwinkle"
-            id="overflow-y-reference"
+            id="overflow-reference"
             ref={overflowReferenceRef}
           >
             Overflow Reference
