@@ -13,6 +13,7 @@ import Overflow from "./pages/docs/layout/Overflow";
 import Position from "./pages/docs/layout/Position";
 import TopBottomLeftRight from "./pages/docs/layout/TopBottomLeftRight";
 import Visibility from "./pages/docs/layout/Visibility";
+import Zindex from "./pages/docs/layout/Zindex";
 
 import "./app.css";
 
@@ -73,6 +74,10 @@ function App() {
             {
               path: "visibility",
               element: <Visibility />,
+            },
+            {
+              path: "z-index",
+              element: <Zindex />,
             },
           ],
         },

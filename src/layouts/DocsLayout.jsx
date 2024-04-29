@@ -33,6 +33,7 @@ const DocsLayout = () => {
         { label: "position", slug: "position" },
         { label: "top / bottom / left / right", slug: "top-bottom-left-right" },
         { label: "visibility", slug: "visibility" },
+        { label: "z index", slug: "z-index" },
       ],
     },
   ];
