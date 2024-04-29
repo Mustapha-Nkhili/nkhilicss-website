@@ -19,7 +19,7 @@ const TopBottomLeftRight = () => {
   const executingUnderCertainConditionsRef = useRef(null);
   const stateRef = useRef(null);
   const breakpointsRef = useRef(null);
-  const customRatiosRef = useRef(null);
+  const customeSpacingRef = useRef(null);
   const utilitySassMap = useRef(null);
   const addUtilityToSassMapRef = useRef(null);
   const changeUtilityValueRef = useRef(null);
@@ -48,8 +48,8 @@ const TopBottomLeftRight = () => {
       ],
     },
     {
-      label: "Custom ratios",
-      ref: customRatiosRef,
+      label: "Custom spacing",
+      ref: customeSpacingRef,
       subLabels: [
         { ref: utilitySassMap, label: "Utility Sass Map" },
         { ref: addUtilityToSassMapRef, label: "Add utility to Sass Map" },
@@ -139,8 +139,8 @@ const TopBottomLeftRight = () => {
 ></div>
 `;
 
-  const spacingValuesMap = `
-    $spacing-values: (
+  const spacingMap = `
+    $spacing-map: (
       0: 0,
       px: 1px,
       1: $base-spacing,
@@ -186,14 +186,14 @@ const TopBottomLeftRight = () => {
 @use "sass:map";
 
 @import "../node_modules/nkhilicss/sass/partials/maps";
-$spacing-values: map.set($spacing-values, yourCustomUtility, itsValue))
+$spacing-map: map.set($spacing-map, yourCustomUtility, itsValue))
 `;
 
   const changeUtilityValueCode = `
 @use "sass:map";
 
 @import "../node_modules/nkhilicss/sass/partials/maps";
-$spacing-values: map.set($spacing-values, 100, yourCustomValue)
+$spacing-map: map.set($spacing-map, 100, yourCustomValue)
 `;
 
   return (
@@ -269,14 +269,14 @@ $spacing-values: map.set($spacing-values, 100, yourCustomValue)
           utility={"top-4"}
         />
         <CustomUtilitiesSection
-          customUtilityRef={customRatiosRef}
+          customUtilityRef={customeSpacingRef}
           utilitySassMap={utilitySassMap}
-          utilityMap={spacingValuesMap}
+          utilityMap={spacingMap}
           addUtilityToSassMapRef={addUtilityToSassMapRef}
           addUtilityCode={addUtilityCode}
           changeUtilityValueRef={changeUtilityValueRef}
           changeUtilityValueCode={changeUtilityValueCode}
-          utility={"bottom"}
+          utility={"spacing"}
         />
         <Footer prevPage={"position"} nextPage={"visibility"} />
       </div>
