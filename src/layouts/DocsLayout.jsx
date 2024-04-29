@@ -31,6 +31,7 @@ const DocsLayout = () => {
         { label: "object fit", slug: "object-fit" },
         { label: "overflow", slug: "overflow" },
         { label: "position", slug: "position" },
+        { label: "top / bottom / left / right", slug: "top-bottom-left-right" },
       ],
     },
   ];

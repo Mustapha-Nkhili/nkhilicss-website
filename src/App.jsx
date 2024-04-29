@@ -11,6 +11,7 @@ import Float from "./pages/docs/layout/Float";
 import ObjectFit from "./pages/docs/layout/ObjectFit";
 import Overflow from "./pages/docs/layout/Overflow";
 import Position from "./pages/docs/layout/Position";
+import TopBottomLeftRight from "./pages/docs/layout/TopBottomLeftRight";
 
 import "./app.css";
 
@@ -63,6 +64,10 @@ function App() {
             {
               path: "position",
               element: <Position />,
+            },
+            {
+              path: "top-bottom-left-right",
+              element: <TopBottomLeftRight />,
             },
           ],
         },

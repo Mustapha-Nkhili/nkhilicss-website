@@ -1,4 +1,4 @@
-const CssClassesReferenceTable = ({cssClassesReference}) => {
+const CssClassesReferenceTable = ({ cssClassesReference }) => {
   return (
     <table className="w-full border-collapse mt-7">
       <thead className="text-left bg-primary">
@@ -13,7 +13,7 @@ const CssClassesReferenceTable = ({cssClassesReference}) => {
             <td className="p-3 text-sm border-b border-b-border-clr border-b-solid">
               {cssClass}
             </td>
-            <td className="p-3 text-xs border-b border-b-border-clr border-b-solid ">
+            <td className="p-3 text-xs border-b border-b-border-clr border-b-solid text-gray">
               {data}
             </td>
           </tr>
