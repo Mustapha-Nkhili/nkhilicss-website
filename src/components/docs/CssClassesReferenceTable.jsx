@@ -13,7 +13,7 @@ const CssClassesReferenceTable = ({ cssClassesReference }) => {
             <td className="p-3 text-sm border-b border-b-border-clr border-b-solid">
               {cssClass}
             </td>
-            <td className="p-3 text-xs border-b border-b-border-clr border-b-solid text-gray">
+            <td className="p-3 text-sm border-b border-b-border-clr border-b-solid text-gray">
               {data}
             </td>
           </tr>

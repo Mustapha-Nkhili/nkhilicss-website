@@ -12,6 +12,7 @@ import ObjectFit from "./pages/docs/layout/ObjectFit";
 import Overflow from "./pages/docs/layout/Overflow";
 import Position from "./pages/docs/layout/Position";
 import TopBottomLeftRight from "./pages/docs/layout/TopBottomLeftRight";
+import Visibility from "./pages/docs/layout/Visibility";
 
 import "./app.css";
 
@@ -68,6 +69,10 @@ function App() {
             {
               path: "top-bottom-left-right",
               element: <TopBottomLeftRight />,
+            },
+            {
+              path: "visibility",
+              element: <Visibility />,
             },
           ],
         },
