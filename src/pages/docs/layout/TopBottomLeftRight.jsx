@@ -179,6 +179,8 @@ const TopBottomLeftRight = () => {
       92: $base-spacing * 92,
       96: $base-spacing * 96,
       100: $base-spacing * 100,
+      auto: auto,
+      full: 100%,
     ) !default;
 `;
 
