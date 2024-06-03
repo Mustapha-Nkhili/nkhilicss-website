@@ -93,7 +93,7 @@ const DocsLayout = () => {
                     <NavLink
                       to={navItem.slug}
                       style={({ isActive }) =>
-                        isActive ? { color: "white" } : null
+                        isActive ? { color: "#ac6aff" } : null
                       }
                     >
                       {navItem.label}
