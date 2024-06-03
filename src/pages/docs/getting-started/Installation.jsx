@@ -89,7 +89,7 @@ const Installation = () => {
             HTML <code className="ml-2 text-primary">{`<link />`}</code>
           </h4>
           <Code
-            code={`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nkhilicss@1.2.1/dist/css/nkhilicss.min.css" />`}
+            code={`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nkhilicss@2.0.0/dist/css/nkhilicss.min.css" />`}
             language="html"
           />
           <h4
@@ -100,7 +100,7 @@ const Installation = () => {
             CSS <code className="ml-2 text-primary">{`@import`}</code>
           </h4>
           <Code
-            code={`@import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";`}
+            code={`@import "https://cdn.jsdelivr.net/npm/nkhilicss@2.0.0/dist/css/nkhilicss.min.css";`}
             language="css"
           />
         </section>
