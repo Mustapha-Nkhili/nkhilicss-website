@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import Code from "../../../components/docs/Code";
 import { useRef, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../../../components/docs/Footer";
 import OnThisPage from "../../../components/docs/OnThisPage";
 import DocsHeader from "../../../components/docs/DocsHeader";
@@ -30,7 +28,7 @@ const Introduction = () => {
       <!-- Include Nkhili's CSS via CDN -->
       <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/nkhilicss@1.2.1/dist/css/nkhilicss.min.css"
+      href="https://cdn.jsdelivr.net/npm/nkhilicss@2.0.0/dist/css/nkhilicss.min.css"
       />
   </head>
   <body>
