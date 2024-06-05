@@ -23,6 +23,7 @@ import FlexShrink from "./pages/docs/Flexbox & Grid/FlexShrink";
 import Order from "./pages/docs/Flexbox & Grid/Order";
 import Gap from "./pages/docs/Flexbox & Grid/Gap";
 import JustifyContent from "./pages/docs/Flexbox & Grid/JustifyContent";
+import JustifyItems from "./pages/docs/Flexbox & Grid/JustifyItems";
 
 import "./app.css";
 
@@ -123,6 +124,10 @@ function App() {
             {
               path: "justify-content",
               element: <JustifyContent />,
+            },
+            {
+              path: "justify-items",
+              element: <JustifyItems />,
             },
           ],
         },

@@ -75,6 +75,10 @@ const DocsLayout = () => {
           label: "justify content",
           slug: "justify-content",
         },
+        {
+          label: "justify items",
+          slug: "justify-items",
+        },
       ],
     },
   ];
