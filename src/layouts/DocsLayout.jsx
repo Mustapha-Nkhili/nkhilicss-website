@@ -59,6 +59,10 @@ const DocsLayout = () => {
           label: "flex grow",
           slug: "flex-grow",
         },
+        {
+          label: "flex shrink",
+          slug: "flex-shrink",
+        },
       ],
     },
   ];

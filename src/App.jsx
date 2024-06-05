@@ -19,6 +19,7 @@ import FlexDirection from "./pages/docs/Flexbox & Grid/FlexDirection";
 import FlexWrap from "./pages/docs/Flexbox & Grid/FlexWrap";
 import Flex from "./pages/docs/Flexbox & Grid/Flex";
 import FlexGrow from "./pages/docs/Flexbox & Grid/FlexGrow";
+import FlexShrink from "./pages/docs/Flexbox & Grid/FlexShrink";
 
 import "./app.css";
 
@@ -103,6 +104,10 @@ function App() {
             {
               path: "flex-grow",
               element: <FlexGrow />,
+            },
+            {
+              path: "flex-shrink",
+              element: <FlexShrink />,
             },
           ],
         },
