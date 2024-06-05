@@ -20,6 +20,7 @@ import FlexWrap from "./pages/docs/Flexbox & Grid/FlexWrap";
 import Flex from "./pages/docs/Flexbox & Grid/Flex";
 import FlexGrow from "./pages/docs/Flexbox & Grid/FlexGrow";
 import FlexShrink from "./pages/docs/Flexbox & Grid/FlexShrink";
+import Order from "./pages/docs/Flexbox & Grid/Order";
 
 import "./app.css";
 
@@ -108,6 +109,10 @@ function App() {
             {
               path: "flex-shrink",
               element: <FlexShrink />,
+            },
+            {
+              path: "order",
+              element: <Order />,
             },
           ],
         },
