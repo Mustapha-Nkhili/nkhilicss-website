@@ -21,6 +21,7 @@ import Flex from "./pages/docs/Flexbox & Grid/Flex";
 import FlexGrow from "./pages/docs/Flexbox & Grid/FlexGrow";
 import FlexShrink from "./pages/docs/Flexbox & Grid/FlexShrink";
 import Order from "./pages/docs/Flexbox & Grid/Order";
+import Gap from "./pages/docs/Flexbox & Grid/Gap";
 
 import "./app.css";
 
@@ -113,6 +114,10 @@ function App() {
             {
               path: "order",
               element: <Order />,
+            },
+            {
+              path: "gap",
+              element: <Gap />,
             },
           ],
         },

@@ -67,6 +67,10 @@ const DocsLayout = () => {
           label: "order",
           slug: "order",
         },
+        {
+          label: "gap",
+          slug: "gap",
+        },
       ],
     },
   ];
