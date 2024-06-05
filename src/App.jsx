@@ -16,6 +16,7 @@ import Visibility from "./pages/docs/layout/Visibility";
 import Zindex from "./pages/docs/layout/Zindex";
 import FlexBasis from "./pages/docs/Flexbox & Grid/FlexBasis";
 import FlexDirection from "./pages/docs/Flexbox & Grid/FlexDirection";
+import FlexWrap from "./pages/docs/Flexbox & Grid/FlexWrap";
 
 import "./app.css";
 
@@ -88,6 +89,10 @@ function App() {
             {
               path: "flex-direction",
               element: <FlexDirection />,
+            },
+            {
+              path: "flex-wrap",
+              element: <FlexWrap />,
             },
           ],
         },
