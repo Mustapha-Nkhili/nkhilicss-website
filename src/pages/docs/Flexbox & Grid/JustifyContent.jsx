@@ -15,7 +15,7 @@ const JustifyContent = () => {
   const breakpointsRef = useRef(null);
 
   const cssClassesReference = {
-    className: "flex-direction",
+    className: "justify-content",
     tableRows: [
       {
         cssClass: "justify-flex-start",
