@@ -14,6 +14,7 @@ import Position from "./pages/docs/layout/Position";
 import TopBottomLeftRight from "./pages/docs/layout/TopBottomLeftRight";
 import Visibility from "./pages/docs/layout/Visibility";
 import Zindex from "./pages/docs/layout/Zindex";
+import FlexBasis from "./pages/docs/Flexbox & Grid/FlexBasis";
 
 import "./app.css";
 
@@ -78,6 +79,10 @@ function App() {
             {
               path: "z-index",
               element: <Zindex />,
+            },
+            {
+              path: "flex-basis",
+              element: <FlexBasis />,
             },
           ],
         },

@@ -36,6 +36,15 @@ const DocsLayout = () => {
         { label: "z index", slug: "z-index" },
       ],
     },
+    {
+      docLabel: "Flexbox & Grid",
+      navList: [
+        {
+          label: "flex basis",
+          slug: "flex-basis",
+        },
+      ],
+    },
   ];
 
   const docsNavRef = useRef(null);
@@ -68,7 +77,7 @@ const DocsLayout = () => {
       <nav className="docs-nav">
         <div
           className="overflow-y-auto fixed lg-left-0 h-full w-full lg-w-68 p-5 border-r-none lg-border-r lg-border-r-border-clr lg-border-r-solid border-t border-t-border-clr border-t-solid bg-body z-50"
-          style={{left: "-100%"}}
+          style={{ left: "-100%" }}
           ref={docsNavRef}
         >
           <div
