@@ -1,6 +1,6 @@
 @use "sass:map";
 
-@use "../node_modules/nkhilicss/sass/index.scss" with (
+@use "../node_modules/nkhilicss/sass/nkhilicss" with (
   $primary: #ac6aff,
   $custom-colors: (
     "light-periwinkle": #cac6dd,
