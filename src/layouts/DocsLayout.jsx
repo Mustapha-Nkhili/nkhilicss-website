@@ -71,6 +71,10 @@ const DocsLayout = () => {
           label: "gap",
           slug: "gap",
         },
+        {
+          label: "justify content",
+          slug: "justify-content",
+        },
       ],
     },
   ];
