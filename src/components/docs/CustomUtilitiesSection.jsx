@@ -23,7 +23,7 @@ const CustomUtilitiesSection = ({
       </h4>
       <p className="text-sm text-light-periwinkle mt-2">
         This is the {utility} map, where we define the values for {utility}{" "}
-        utilities in sass/_maps.scss.
+        utilities in sass/partials/_utilities-maps.scss.
       </p>
       <Code code={utilityMap} language="javascript" />
 
