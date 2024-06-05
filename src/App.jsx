@@ -17,6 +17,7 @@ import Zindex from "./pages/docs/layout/Zindex";
 import FlexBasis from "./pages/docs/Flexbox & Grid/FlexBasis";
 import FlexDirection from "./pages/docs/Flexbox & Grid/FlexDirection";
 import FlexWrap from "./pages/docs/Flexbox & Grid/FlexWrap";
+import Flex from "./pages/docs/Flexbox & Grid/Flex";
 
 import "./app.css";
 
@@ -93,6 +94,10 @@ function App() {
             {
               path: "flex-wrap",
               element: <FlexWrap />,
+            },
+            {
+              path: "flex",
+              element: <Flex />,
             },
           ],
         },

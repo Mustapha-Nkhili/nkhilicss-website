@@ -51,6 +51,10 @@ const DocsLayout = () => {
           label: "flex wrap",
           slug: "flex-wrap",
         },
+        {
+          label: "flex",
+          slug: "flex",
+        },
       ],
     },
   ];
