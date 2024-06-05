@@ -43,6 +43,10 @@ const DocsLayout = () => {
           label: "flex basis",
           slug: "flex-basis",
         },
+        {
+          label: "flex direction",
+          slug: "flex-direction",
+        },
       ],
     },
   ];

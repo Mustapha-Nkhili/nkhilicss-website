@@ -15,6 +15,7 @@ import TopBottomLeftRight from "./pages/docs/layout/TopBottomLeftRight";
 import Visibility from "./pages/docs/layout/Visibility";
 import Zindex from "./pages/docs/layout/Zindex";
 import FlexBasis from "./pages/docs/Flexbox & Grid/FlexBasis";
+import FlexDirection from "./pages/docs/Flexbox & Grid/FlexDirection";
 
 import "./app.css";
 
@@ -83,6 +84,10 @@ function App() {
             {
               path: "flex-basis",
               element: <FlexBasis />,
+            },
+            {
+              path: "flex-direction",
+              element: <FlexDirection />,
             },
           ],
         },
