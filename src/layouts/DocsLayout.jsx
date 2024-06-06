@@ -87,6 +87,10 @@ const DocsLayout = () => {
           label: "align content",
           slug: "align-content",
         },
+        {
+          label: "align items",
+          slug: "align-items",
+        },
       ],
     },
   ];
