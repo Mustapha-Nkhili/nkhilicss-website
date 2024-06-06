@@ -95,6 +95,10 @@ const DocsLayout = () => {
           label: "align self",
           slug: "align-self",
         },
+        {
+          label: "place content",
+          slug: "place-content",
+        },
       ],
     },
   ];
