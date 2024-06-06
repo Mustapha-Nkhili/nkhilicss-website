@@ -138,7 +138,7 @@ const AlignContent = () => {
           breakpointsCode={breakpointsCode}
           utility={"content-center"}
         />
-        <Footer prevPage={"gap"} nextPage={"justify items"} />
+        <Footer prevPage={"justify self"} nextPage={"align items"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>
