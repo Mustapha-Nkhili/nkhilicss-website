@@ -71,7 +71,7 @@ const PlaceContent = () => {
     },
   ];
 
-  const justifyContentCode = `
+  const placeContentCode = `
 <div class="grid place-content-end">
   <!-- Grid container with items aligned to the end -->
 </div>
@@ -115,7 +115,7 @@ const PlaceContent = () => {
               </>
             }
           />
-          <Code code={justifyContentCode} language="html" />
+          <Code code={placeContentCode} language="html" />
         </section>
         <ConditionalCss
           headerRef={executingUnderCertainConditionsRef}
