@@ -27,6 +27,7 @@ import JustifyItems from "./pages/docs/Flexbox & Grid/JustifyItems";
 import JustifySelf from "./pages/docs/Flexbox & Grid/JustifySelf";
 import AlignContent from "./pages/docs/Flexbox & Grid/AlignContent";
 import AlignItems from "./pages/docs/Flexbox & Grid/AlignItems";
+import AlignSelf from "./pages/docs/Flexbox & Grid/AlignSelf";
 
 import "./app.css";
 
@@ -143,6 +144,10 @@ function App() {
             {
               path: "align-items",
               element: <AlignItems />,
+            },
+            {
+              path: "align-self",
+              element: <AlignSelf />,
             },
           ],
         },

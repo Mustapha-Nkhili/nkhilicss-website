@@ -91,6 +91,10 @@ const DocsLayout = () => {
           label: "align items",
           slug: "align-items",
         },
+        {
+          label: "align self",
+          slug: "align-self",
+        },
       ],
     },
   ];
