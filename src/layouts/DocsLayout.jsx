@@ -99,6 +99,10 @@ const DocsLayout = () => {
           label: "place content",
           slug: "place-content",
         },
+        {
+          label: "place items",
+          slug: "place-items",
+        },
       ],
     },
   ];

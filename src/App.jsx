@@ -29,6 +29,7 @@ import AlignContent from "./pages/docs/Flexbox & Grid/AlignContent";
 import AlignItems from "./pages/docs/Flexbox & Grid/AlignItems";
 import AlignSelf from "./pages/docs/Flexbox & Grid/AlignSelf";
 import PlaceContent from "./pages/docs/Flexbox & Grid/PlaceContent";
+import PlaceItems from "./pages/docs/Flexbox & Grid/PlaceItems";
 
 import "./app.css";
 
@@ -153,6 +154,10 @@ function App() {
             {
               path: "place-content",
               element: <PlaceContent />,
+            },
+            {
+              path: "place-items",
+              element: <PlaceItems />,
             },
           ],
         },
