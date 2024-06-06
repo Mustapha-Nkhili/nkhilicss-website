@@ -83,6 +83,10 @@ const DocsLayout = () => {
           label: "justify self",
           slug: "justify-self",
         },
+        {
+          label: "align content",
+          slug: "align-content",
+        },
       ],
     },
   ];
