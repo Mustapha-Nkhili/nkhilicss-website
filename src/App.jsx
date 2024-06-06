@@ -30,6 +30,7 @@ import AlignItems from "./pages/docs/Flexbox & Grid/AlignItems";
 import AlignSelf from "./pages/docs/Flexbox & Grid/AlignSelf";
 import PlaceContent from "./pages/docs/Flexbox & Grid/PlaceContent";
 import PlaceItems from "./pages/docs/Flexbox & Grid/PlaceItems";
+import PlaceSelf from "./pages/docs/Flexbox & Grid/PlaceSelf";
 
 import "./app.css";
 
@@ -158,6 +159,10 @@ function App() {
             {
               path: "place-items",
               element: <PlaceItems />,
+            },
+            {
+              path: "place-self",
+              element: <PlaceSelf />,
             },
           ],
         },

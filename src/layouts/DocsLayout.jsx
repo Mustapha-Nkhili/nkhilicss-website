@@ -103,6 +103,10 @@ const DocsLayout = () => {
           label: "place items",
           slug: "place-items",
         },
+        {
+          label: "place self",
+          slug: "place-self",
+        },
       ],
     },
   ];
