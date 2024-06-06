@@ -24,6 +24,7 @@ import Order from "./pages/docs/Flexbox & Grid/Order";
 import Gap from "./pages/docs/Flexbox & Grid/Gap";
 import JustifyContent from "./pages/docs/Flexbox & Grid/JustifyContent";
 import JustifyItems from "./pages/docs/Flexbox & Grid/JustifyItems";
+import JustifySelf from "./pages/docs/Flexbox & Grid/JustifySelf";
 
 import "./app.css";
 
@@ -128,6 +129,10 @@ function App() {
             {
               path: "justify-items",
               element: <JustifyItems />,
+            },
+            {
+              path: "justify-self",
+              element: <JustifySelf />,
             },
           ],
         },
