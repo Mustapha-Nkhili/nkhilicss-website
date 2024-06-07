@@ -21,7 +21,7 @@ const MinWidth = () => {
   const changeUtilityValueRef = useRef(null);
 
   const cssClassesReference = {
-    className: "min-wdith",
+    className: "min-width",
     tableRows: [
       { cssClass: `min-w-full`, data: "100%" },
       { cssClass: `min-w-min`, data: "min-content" },
@@ -79,7 +79,7 @@ const MinWidth = () => {
 ></div>
 `;
 
-  const WidthMap = `
+  const minWidthMap = `
 $min-width-map:( 
 full: 100%,
 min: min-content,
@@ -181,14 +181,14 @@ $min-width-map: map.set($min-width-map, 100, itsValue);
         <CustomUtilitiesSection
           customUtilityRef={minWidthRef}
           utilitySassMap={utilitySassMap}
-          utilityMap={WidthMap}
+          utilityMap={minWidthMap}
           addUtilityToSassMapRef={addUtilityToSassMapRef}
           addUtilityCode={addUtilityCode}
           changeUtilityValueRef={changeUtilityValueRef}
           changeUtilityValueCode={changeUtilityValueCode}
           utility={"min-width"}
         />
-        <Footer prevPage={"width"} nextPage={"max-width"} />
+        <Footer prevPage={"width"} nextPage={"max width"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>
