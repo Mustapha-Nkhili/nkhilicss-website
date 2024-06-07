@@ -137,6 +137,10 @@ const DocsLayout = () => {
           label: "max width",
           slug: "max-width",
         },
+        {
+          label: "height",
+          slug: "height",
+        },
       ],
     },
   ];

@@ -36,6 +36,7 @@ import Margin from "./pages/docs/spacing/Margin";
 import Width from "./pages/docs/sizing/Width";
 import MinWidth from "./pages/docs/sizing/MinWidth";
 import MaxWidth from "./pages/docs/sizing/MaxWidth";
+import Height from "./pages/docs/sizing/Height";
 
 import "./app.css";
 
@@ -188,6 +189,10 @@ function App() {
             {
               path: "max-width",
               element: <MaxWidth />,
+            },
+            {
+              path: "height",
+              element: <Height />,
             },
           ],
         },
