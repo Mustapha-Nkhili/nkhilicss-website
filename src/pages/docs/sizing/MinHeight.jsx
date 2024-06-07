@@ -196,7 +196,7 @@ $min-height-map: map.set($min-height-map, 100, itsValue);
           changeUtilityValueCode={changeUtilityValueCode}
           utility={"min-height"}
         />
-        <Footer prevPage={"height"} nextPage={"max-height"} />
+        <Footer prevPage={"height"} nextPage={"max height"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>

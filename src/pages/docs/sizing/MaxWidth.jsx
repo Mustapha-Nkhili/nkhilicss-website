@@ -200,7 +200,7 @@ $max-width-map: map.set($max-width-map, 100, itsValue);
           changeUtilityValueCode={changeUtilityValueCode}
           utility={"max-width"}
         />
-        <Footer prevPage={"min-width"} nextPage={"height"} />
+        <Footer prevPage={"min width"} nextPage={"height"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>
