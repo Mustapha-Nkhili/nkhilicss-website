@@ -21,7 +21,7 @@ const Width = () => {
   const changeUtilityValueRef = useRef(null);
 
   const cssClassesReference = {
-    className: "wdith",
+    className: "width",
     tableRows: [
       { cssClass: `w-auto`, data: "auto" },
       { cssClass: `w-full`, data: "100%" },
@@ -29,9 +29,9 @@ const Width = () => {
         cssClass: "w-screen",
         data: (
           <>
-            100vh
+            100vw
             <span className="ml-5 text-primary text-xs">
-              {`// 100vw for width & 100vh for height`}
+              {`// 100% of the viewport width`}
             </span>
           </>
         ),
@@ -247,7 +247,7 @@ $width-map: map.set($width-map, 100, itsValue);
           changeUtilityValueCode={changeUtilityValueCode}
           utility={"width"}
         />
-        <Footer prevPage={"margin"} nextPage={"min-width"} />
+        <Footer prevPage={"margin"} nextPage={"min width"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>
