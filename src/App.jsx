@@ -34,6 +34,7 @@ import PlaceSelf from "./pages/docs/Flexbox & Grid/PlaceSelf";
 import Padding from "./pages/docs/spacing/Padding";
 import Margin from "./pages/docs/spacing/Margin";
 import Width from "./pages/docs/sizing/Width";
+import MinWidth from "./pages/docs/sizing/MinWidth";
 
 import "./app.css";
 
@@ -178,6 +179,10 @@ function App() {
             {
               path: "width",
               element: <Width />,
+            },
+            {
+              path: "min-width",
+              element: <MinWidth />,
             },
           ],
         },

@@ -129,6 +129,10 @@ const DocsLayout = () => {
           label: "width",
           slug: "width",
         },
+        {
+          label: "min width",
+          slug: "min-width",
+        },
       ],
     },
   ];
