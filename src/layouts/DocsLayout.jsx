@@ -151,6 +151,15 @@ const DocsLayout = () => {
         },
       ],
     },
+    {
+      docLabel: "typography",
+      navList: [
+        {
+          label: "font family",
+          slug: "font-family",
+        },
+      ],
+    },
   ];
 
   const docsNavRef = useRef(null);

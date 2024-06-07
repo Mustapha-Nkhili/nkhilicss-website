@@ -39,6 +39,7 @@ import MaxWidth from "./pages/docs/sizing/MaxWidth";
 import Height from "./pages/docs/sizing/Height";
 import MinHeight from "./pages/docs/sizing/MinHeight";
 import MaxHeight from "./pages/docs/sizing/MaxHeight";
+import FontFamily from "./pages/docs/typography/FontFamily";
 
 import "./app.css";
 
@@ -203,6 +204,10 @@ function App() {
             {
               path: "max-height",
               element: <MaxHeight />,
+            },
+            {
+              path: "font-family",
+              element: <FontFamily />,
             },
           ],
         },
