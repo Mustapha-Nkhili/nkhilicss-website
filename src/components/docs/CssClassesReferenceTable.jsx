@@ -9,11 +9,11 @@ const CssClassesReferenceTable = ({ cssClassesReference }) => {
       </thead>
       <tbody>
         {cssClassesReference.tableRows.map(({ cssClass, data }, index) => (
-          <tr key={index + cssClass} className="text-light-periwinkle">
-            <td className="p-3 text-sm border-b border-b-border-clr border-b-solid">
+          <tr key={index + cssClass} className="text-light-periwinkle w-full">
+            <td className="p-3 text-sm border-b border-b-border-clr border-b-solid lg-min-w-52">
               {cssClass}
             </td>
-            <td className="p-3 text-sm border-b border-b-border-clr border-b-solid text-gray">
+            <td className="p-3 text-sm border-b border-b-border-clr border-b-solid text-gray lg-min-w-80">
               {data}
             </td>
           </tr>
