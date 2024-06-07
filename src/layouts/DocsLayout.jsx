@@ -141,6 +141,10 @@ const DocsLayout = () => {
           label: "height",
           slug: "height",
         },
+        {
+          label: "min height",
+          slug: "min-height",
+        },
       ],
     },
   ];

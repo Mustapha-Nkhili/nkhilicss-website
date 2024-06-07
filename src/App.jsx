@@ -37,6 +37,7 @@ import Width from "./pages/docs/sizing/Width";
 import MinWidth from "./pages/docs/sizing/MinWidth";
 import MaxWidth from "./pages/docs/sizing/MaxWidth";
 import Height from "./pages/docs/sizing/Height";
+import MinHeight from "./pages/docs/sizing/MinHeight";
 
 import "./app.css";
 
@@ -193,6 +194,10 @@ function App() {
             {
               path: "height",
               element: <Height />,
+            },
+            {
+              path: "min-height",
+              element: <MinHeight />,
             },
           ],
         },
