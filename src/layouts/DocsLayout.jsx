@@ -158,6 +158,10 @@ const DocsLayout = () => {
           label: "font family",
           slug: "font-family",
         },
+        {
+          label: "font size",
+          slug: "font-size",
+        },
       ],
     },
   ];
