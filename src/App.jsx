@@ -33,6 +33,7 @@ import PlaceItems from "./pages/docs/Flexbox & Grid/PlaceItems";
 import PlaceSelf from "./pages/docs/Flexbox & Grid/PlaceSelf";
 import Padding from "./pages/docs/spacing/Padding";
 import Margin from "./pages/docs/spacing/Margin";
+import Width from "./pages/docs/sizing/Width";
 
 import "./app.css";
 
@@ -173,6 +174,10 @@ function App() {
             {
               path: "margin",
               element: <Margin />,
+            },
+            {
+              path: "width",
+              element: <Width />,
             },
           ],
         },

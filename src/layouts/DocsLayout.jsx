@@ -122,6 +122,15 @@ const DocsLayout = () => {
         },
       ],
     },
+    {
+      docLabel: "sizing",
+      navList: [
+        {
+          label: "width",
+          slug: "width",
+        },
+      ],
+    },
   ];
 
   const docsNavRef = useRef(null);
