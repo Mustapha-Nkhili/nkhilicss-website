@@ -109,6 +109,15 @@ const DocsLayout = () => {
         },
       ],
     },
+    {
+      docLabel: "spacing",
+      navList: [
+        {
+          label: "padding",
+          slug: "padding",
+        },
+      ],
+    },
   ];
 
   const docsNavRef = useRef(null);
