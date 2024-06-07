@@ -35,6 +35,7 @@ import Padding from "./pages/docs/spacing/Padding";
 import Margin from "./pages/docs/spacing/Margin";
 import Width from "./pages/docs/sizing/Width";
 import MinWidth from "./pages/docs/sizing/MinWidth";
+import MaxWidth from "./pages/docs/sizing/MaxWidth";
 
 import "./app.css";
 
@@ -183,6 +184,10 @@ function App() {
             {
               path: "min-width",
               element: <MinWidth />,
+            },
+            {
+              path: "max-width",
+              element: <MaxWidth />,
             },
           ],
         },
