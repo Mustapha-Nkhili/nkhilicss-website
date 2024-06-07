@@ -145,6 +145,10 @@ const DocsLayout = () => {
           label: "min height",
           slug: "min-height",
         },
+        {
+          label: "max height",
+          slug: "max-height",
+        },
       ],
     },
   ];
