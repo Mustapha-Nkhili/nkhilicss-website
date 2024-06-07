@@ -169,7 +169,7 @@ $font-family-map: map.set($font-family-map, sans-serif, itsValue);
           changeUtilityValueCode={changeUtilityValueCode}
           utility={"font family"}
         />
-        <Footer prevPage={"flex wrap"} nextPage={"flex grow"} />
+        <Footer prevPage={"max height"} nextPage={"font size"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>
