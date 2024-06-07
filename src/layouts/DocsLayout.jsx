@@ -116,6 +116,10 @@ const DocsLayout = () => {
           label: "padding",
           slug: "padding",
         },
+        {
+          label: "margin",
+          slug: "margin",
+        },
       ],
     },
   ];
