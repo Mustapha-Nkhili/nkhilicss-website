@@ -42,6 +42,7 @@ import MaxHeight from "./pages/docs/sizing/MaxHeight";
 import FontFamily from "./pages/docs/typography/FontFamily";
 import FontSize from "./pages/docs/typography/FontSize";
 import FontStyle from "./pages/docs/typography/FontStyle";
+import FontWeight from "./pages/docs/typography/FontWeight";
 
 import "./app.css";
 
@@ -218,6 +219,10 @@ function App() {
             {
               path: "font-style",
               element: <FontStyle />,
+            },
+            {
+              path: "font-weight",
+              element: <FontWeight />,
             },
           ],
         },

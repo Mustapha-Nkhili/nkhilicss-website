@@ -166,6 +166,10 @@ const DocsLayout = () => {
           label: "font style",
           slug: "font-style",
         },
+        {
+          label: "font weight",
+          slug: "font-weight",
+        },
       ],
     },
   ];
