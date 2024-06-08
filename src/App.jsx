@@ -41,6 +41,7 @@ import MinHeight from "./pages/docs/sizing/MinHeight";
 import MaxHeight from "./pages/docs/sizing/MaxHeight";
 import FontFamily from "./pages/docs/typography/FontFamily";
 import FontSize from "./pages/docs/typography/FontSize";
+import FontStyle from "./pages/docs/typography/FontStyle";
 
 import "./app.css";
 
@@ -213,6 +214,10 @@ function App() {
             {
               path: "font-size",
               element: <FontSize />,
+            },
+            {
+              path: "font-style",
+              element: <FontStyle />,
             },
           ],
         },

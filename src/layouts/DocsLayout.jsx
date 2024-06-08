@@ -162,6 +162,10 @@ const DocsLayout = () => {
           label: "font size",
           slug: "font-size",
         },
+        {
+          label: "font style",
+          slug: "font-style",
+        },
       ],
     },
   ];
