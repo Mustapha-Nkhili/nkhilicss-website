@@ -178,6 +178,10 @@ const DocsLayout = () => {
           label: "line height",
           slug: "line-height",
         },
+        {
+          label: "list style position",
+          slug: "list-style-position",
+        },
       ],
     },
   ];
