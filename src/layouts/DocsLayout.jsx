@@ -194,6 +194,10 @@ const DocsLayout = () => {
           label: "text color",
           slug: "text-color",
         },
+        {
+          label: "text decoration line",
+          slug: "text-decoration-line",
+        },
       ],
     },
   ];

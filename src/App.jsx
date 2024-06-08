@@ -49,6 +49,7 @@ import ListStylePosition from "./pages/docs/typography/ListStylePosition";
 import ListStyleType from "./pages/docs/typography/ListStyleType";
 import TextAlign from "./pages/docs/typography/TextAlign";
 import TextColor from "./pages/docs/typography/TextColor";
+import TextDecorationLine from "./pages/docs/typography/TextDecorationLine";
 
 import "./app.css";
 
@@ -253,6 +254,10 @@ function App() {
             {
               path: "text-color",
               element: <TextColor />,
+            },
+            {
+              path: "text-decoration-line",
+              element: <TextDecorationLine />,
             },
           ],
         },
