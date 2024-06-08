@@ -137,7 +137,7 @@ const LetterSpacing = () => {
 ></p>
 `;
 
-  const fontSizeMap = `
+  const letterSpacingMap = `
 // letter spacing variables
 $letter-spacing-tighter: -0.05em !default;
 $letter-spacing-tight: -0.025em !default;
@@ -216,7 +216,7 @@ $letter-spacing-map: map.set($letter-spacing-map, tight, itsValue);
         <CustomUtilitiesSection
           customUtilityRef={letterSpacingRef}
           utilitySassMap={utilitySassMap}
-          utilityMap={fontSizeMap}
+          utilityMap={letterSpacingMap}
           addUtilityToSassMapRef={addUtilityToSassMapRef}
           addUtilityCode={addUtilityCode}
           changeUtilityValueRef={changeUtilityValueRef}
