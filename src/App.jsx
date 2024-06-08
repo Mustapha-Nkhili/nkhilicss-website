@@ -43,6 +43,7 @@ import FontFamily from "./pages/docs/typography/FontFamily";
 import FontSize from "./pages/docs/typography/FontSize";
 import FontStyle from "./pages/docs/typography/FontStyle";
 import FontWeight from "./pages/docs/typography/FontWeight";
+import LetterSpacing from "./pages/docs/typography/LetterSpacing";
 
 import "./app.css";
 
@@ -223,6 +224,10 @@ function App() {
             {
               path: "font-weight",
               element: <FontWeight />,
+            },
+            {
+              path: "letter-spacing",
+              element: <LetterSpacing />,
             },
           ],
         },

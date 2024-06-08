@@ -170,6 +170,10 @@ const DocsLayout = () => {
           label: "font weight",
           slug: "font-weight",
         },
+        {
+          label: "letter spacing",
+          slug: "letter-spacing",
+        },
       ],
     },
   ];
