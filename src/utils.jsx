@@ -42,3 +42,42 @@ export const generateSpacingValues = (spacing) => {
 
   return generatedSpacingValues;
 };
+
+export const generateColorValues = (prefix) => {
+  const generatedColorValues = [];
+
+  const colors = {
+    primary: "#326dee",
+    secondary: "#1ac886",
+    error: "#d32752",
+    info: "#f6c31c",
+    transparent: "transparent",
+    inherit: "inherit",
+    blue: "#1919e6",
+    red: "#e61919",
+    yellow: "#e6e619",
+    green: "#19e635",
+    orange: "#ffa600",
+    purple: "#9900ff",
+    gray: "#808080",
+    black: "black",
+    white: "white",
+  };
+
+  for (const key of Object.keys(colors)) {
+    generatedColorValues.push({
+      cssClass: `${prefix}-${key}`,
+      data: (
+        <div className="flex justify-between align-center">
+          {colors[key]}
+          <span
+            className={`block w-10 aspect-square ml-20 rounded border border-border-clr border-solid`}
+            style={{ backgroundColor: colors[key] }}
+          ></span>
+        </div>
+      ),
+    });
+  }
+
+  return generatedColorValues;
+};
