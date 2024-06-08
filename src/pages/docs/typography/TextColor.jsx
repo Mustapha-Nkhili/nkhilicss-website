@@ -164,9 +164,10 @@ $colors: (
           addUtilityCode={addUtilityCode}
           changeUtilityValueRef={changeUtilityValueRef}
           changeUtilityValueCode={changeUtilityValueCode}
+          isMapColor={true}
           utility={"color"}
         />
-        <Footer prevPage={"text align"} nextPage={"text decoration"} />
+        <Footer prevPage={"text align"} nextPage={"text decoration line"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>
