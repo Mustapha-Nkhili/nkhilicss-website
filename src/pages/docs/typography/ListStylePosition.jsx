@@ -15,7 +15,7 @@ const ListStylePosition = () => {
   const breakpointsRef = useRef(null);
 
   const cssClassesReference = {
-    className: "list style position",
+    className: "list-style-position",
     tableRows: [
       {
         cssClass: "list-style-inside",
@@ -78,7 +78,7 @@ const ListStylePosition = () => {
       <div className="doc-content p-5 mb-10">
         <DocsHeader
           title="typography"
-          pageTitle="list-style-position"
+          pageTitle="list style position"
           pageDesc="Pre-built CSS classes for positioning bullets and numbers in lists."
         />
         <section id="quick-reference" ref={quickReferenceRef}>
