@@ -70,7 +70,7 @@ const FontStyle = () => {
       <div className="doc-content p-5 mb-10">
         <DocsHeader
           title="typography"
-          pageTitle="font-style"
+          pageTitle="font style"
           pageDesc="Pre-built CSS classes for managing font style."
         />
         <section id="quick-reference" ref={quickReferenceRef}>
