@@ -186,6 +186,10 @@ const DocsLayout = () => {
           label: "list style type",
           slug: "list-style-type",
         },
+        {
+          label: "text align",
+          slug: "text-align",
+        },
       ],
     },
   ];
