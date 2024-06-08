@@ -22,7 +22,7 @@ const Hero = () => {
           easier web development.
         </p>
         <Link
-          to="docs/instalation"
+          to="docs/introduction"
           className="flex justify-center items-center bg-primary w-fit m-auto h-12 capitalize rounded-2 text-sm font-semibold pl-6 pr-6 mt-10"
         >
           get started
