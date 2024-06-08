@@ -46,6 +46,7 @@ import FontWeight from "./pages/docs/typography/FontWeight";
 import LetterSpacing from "./pages/docs/typography/LetterSpacing";
 import LineHeight from "./pages/docs/typography/LineHeight";
 import ListStylePosition from "./pages/docs/typography/ListStylePosition";
+import ListStyleType from "./pages/docs/typography/ListStyleType";
 
 import "./app.css";
 
@@ -238,6 +239,10 @@ function App() {
             {
               path: "list-style-position",
               element: <ListStylePosition />,
+            },
+            {
+              path: "list-style-type",
+              element: <ListStyleType />,
             },
           ],
         },
