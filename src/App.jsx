@@ -48,6 +48,7 @@ import LineHeight from "./pages/docs/typography/LineHeight";
 import ListStylePosition from "./pages/docs/typography/ListStylePosition";
 import ListStyleType from "./pages/docs/typography/ListStyleType";
 import TextAlign from "./pages/docs/typography/TextAlign";
+import TextColor from "./pages/docs/typography/TextColor";
 
 import "./app.css";
 
@@ -248,6 +249,10 @@ function App() {
             {
               path: "text-align",
               element: <TextAlign />,
+            },
+            {
+              path: "text-color",
+              element: <TextColor />,
             },
           ],
         },

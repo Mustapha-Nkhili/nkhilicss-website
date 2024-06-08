@@ -190,6 +190,10 @@ const DocsLayout = () => {
           label: "text align",
           slug: "text-align",
         },
+        {
+          label: "text color",
+          slug: "text-color",
+        },
       ],
     },
   ];
