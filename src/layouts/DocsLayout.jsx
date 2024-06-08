@@ -174,6 +174,10 @@ const DocsLayout = () => {
           label: "letter spacing",
           slug: "letter-spacing",
         },
+        {
+          label: "line height",
+          slug: "line-height",
+        },
       ],
     },
   ];
