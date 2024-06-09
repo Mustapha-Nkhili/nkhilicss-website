@@ -53,6 +53,7 @@ import TextDecorationLine from "./pages/docs/typography/TextDecorationLine";
 import TextDecorationColor from "./pages/docs/typography/TextDecorationColor";
 import TextDecorationStyle from "./pages/docs/typography/TextDecorationStyle";
 import TextDecorationThickness from "./pages/docs/typography/TextDecorationThickness";
+import TextUnderlineOffset from "./pages/docs/typography/TextUnderlineOffset";
 
 import "./app.css";
 
@@ -273,6 +274,10 @@ function App() {
             {
               path: "text-decoration-thickness",
               element: <TextDecorationThickness />,
+            },
+            {
+              path: "text-underline-offset",
+              element: <TextUnderlineOffset />,
             },
           ],
         },

@@ -210,6 +210,10 @@ const DocsLayout = () => {
           label: "text decoration thickness",
           slug: "text-decoration-thickness",
         },
+        {
+          label: "text underline offset",
+          slug: "text-underline-offset",
+        },
       ],
     },
   ];
