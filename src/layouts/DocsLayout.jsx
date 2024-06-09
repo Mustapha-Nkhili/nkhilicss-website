@@ -206,6 +206,10 @@ const DocsLayout = () => {
           label: "text decoration style",
           slug: "text-decoration-style",
         },
+        {
+          label: "text decoration thickness",
+          slug: "text-decoration-thickness",
+        },
       ],
     },
   ];

@@ -52,6 +52,7 @@ import TextColor from "./pages/docs/typography/TextColor";
 import TextDecorationLine from "./pages/docs/typography/TextDecorationLine";
 import TextDecorationColor from "./pages/docs/typography/TextDecorationColor";
 import TextDecorationStyle from "./pages/docs/typography/TextDecorationStyle";
+import TextDecorationThickness from "./pages/docs/typography/TextDecorationThickness";
 
 import "./app.css";
 
@@ -268,6 +269,10 @@ function App() {
             {
               path: "text-decoration-style",
               element: <TextDecorationStyle />,
+            },
+            {
+              path: "text-decoration-thickness",
+              element: <TextDecorationThickness />,
             },
           ],
         },
