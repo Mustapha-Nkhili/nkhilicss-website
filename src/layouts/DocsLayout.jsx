@@ -214,6 +214,14 @@ const DocsLayout = () => {
           label: "text underline offset",
           slug: "text-underline-offset",
         },
+        {
+          label: "text transform",
+          slug: "text-transform",
+        },
+        {
+          label: "text overflow",
+          slug: "text-overflow",
+        },
       ],
     },
   ];
