@@ -240,6 +240,15 @@ const DocsLayout = () => {
         },
       ],
     },
+    {
+      docLabel: "backgrounds",
+      navList: [
+        {
+          label: "background attachment",
+          slug: "background-attachment",
+        },
+      ],
+    },
   ];
 
   const docsNavRef = useRef(null);
