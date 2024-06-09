@@ -109,7 +109,7 @@ const Hyphens = () => {
           breakpointsCode={breakpointsCode}
           utility={"hyphens-manual"}
         />
-        <Footer prevPage={"text transform"} nextPage={"text wrap"} />
+        <Footer prevPage={"white space"} nextPage={"background attachment"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>
