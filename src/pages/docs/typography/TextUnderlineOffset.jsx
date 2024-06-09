@@ -20,7 +20,7 @@ const TextUnderlineOffset = () => {
   const changeUtilityValueRef = useRef(null);
 
   const cssClassesReference = {
-    className: "text-decoration-thickness",
+    className: "text-underline-offset",
     tableRows: [
       {
         cssClass: "underline-offset-auto",
