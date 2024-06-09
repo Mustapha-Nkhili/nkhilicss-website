@@ -56,6 +56,7 @@ import TextDecorationThickness from "./pages/docs/typography/TextDecorationThick
 import TextUnderlineOffset from "./pages/docs/typography/TextUnderlineOffset";
 import TextTransform from "./pages/docs/typography/TextTransform";
 import TextOverflow from "./pages/docs/typography/TextOverflow";
+import TextWrap from "./pages/docs/typography/TextWrap";
 
 import "./app.css";
 
@@ -288,6 +289,10 @@ function App() {
             {
               path: "text-overflow",
               element: <TextOverflow />,
+            },
+            {
+              path: "text-wrap",
+              element: <TextWrap />,
             },
           ],
         },

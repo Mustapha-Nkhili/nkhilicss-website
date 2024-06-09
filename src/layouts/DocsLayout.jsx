@@ -222,6 +222,10 @@ const DocsLayout = () => {
           label: "text overflow",
           slug: "text-overflow",
         },
+        {
+          label: "text wrap",
+          slug: "text-wrap",
+        },
       ],
     },
   ];
