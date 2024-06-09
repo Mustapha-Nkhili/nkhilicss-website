@@ -82,7 +82,7 @@ const BackgroundAttachment = () => {
     <>
       <div className="doc-content p-5 mb-10">
         <DocsHeader
-          title="typography"
+          title="backgrounds"
           pageTitle="background attachment"
           pageDesc="Pre-built CSS classes to control the background attachment of an element."
         />
