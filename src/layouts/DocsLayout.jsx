@@ -230,6 +230,10 @@ const DocsLayout = () => {
           label: "text indent",
           slug: "text-indent",
         },
+        {
+          label: "white space",
+          slug: "white-space",
+        },
       ],
     },
   ];

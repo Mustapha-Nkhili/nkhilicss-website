@@ -58,6 +58,7 @@ import TextTransform from "./pages/docs/typography/TextTransform";
 import TextOverflow from "./pages/docs/typography/TextOverflow";
 import TextWrap from "./pages/docs/typography/TextWrap";
 import TextIndent from "./pages/docs/typography/TextIndent";
+import WhiteSpace from "./pages/docs/typography/WhiteSpace";
 
 import "./app.css";
 
@@ -298,6 +299,10 @@ function App() {
             {
               path: "text-indent",
               element: <TextIndent />,
+            },
+            {
+              path: "white-space",
+              element: <WhiteSpace />,
             },
           ],
         },
