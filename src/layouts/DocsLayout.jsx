@@ -234,6 +234,10 @@ const DocsLayout = () => {
           label: "white space",
           slug: "white-space",
         },
+        {
+          label: "hyphens",
+          slug: "hyphens",
+        },
       ],
     },
   ];

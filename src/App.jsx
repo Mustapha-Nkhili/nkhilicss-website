@@ -59,6 +59,7 @@ import TextOverflow from "./pages/docs/typography/TextOverflow";
 import TextWrap from "./pages/docs/typography/TextWrap";
 import TextIndent from "./pages/docs/typography/TextIndent";
 import WhiteSpace from "./pages/docs/typography/WhiteSpace";
+import Hyphens from "./pages/docs/typography/Hyphens";
 
 import "./app.css";
 
@@ -303,6 +304,10 @@ function App() {
             {
               path: "white-space",
               element: <WhiteSpace />,
+            },
+            {
+              path: "hyphens",
+              element: <Hyphens />,
             },
           ],
         },
