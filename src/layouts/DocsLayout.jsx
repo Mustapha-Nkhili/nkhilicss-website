@@ -202,6 +202,10 @@ const DocsLayout = () => {
           label: "text decoration color",
           slug: "text-decoration-color",
         },
+        {
+          label: "text decoration style",
+          slug: "text-decoration-style",
+        },
       ],
     },
   ];
