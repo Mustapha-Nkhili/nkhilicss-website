@@ -57,6 +57,7 @@ import TextUnderlineOffset from "./pages/docs/typography/TextUnderlineOffset";
 import TextTransform from "./pages/docs/typography/TextTransform";
 import TextOverflow from "./pages/docs/typography/TextOverflow";
 import TextWrap from "./pages/docs/typography/TextWrap";
+import TextIndent from "./pages/docs/typography/TextIndent";
 
 import "./app.css";
 
@@ -293,6 +294,10 @@ function App() {
             {
               path: "text-wrap",
               element: <TextWrap />,
+            },
+            {
+              path: "text-indent",
+              element: <TextIndent />,
             },
           ],
         },

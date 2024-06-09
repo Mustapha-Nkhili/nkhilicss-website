@@ -226,6 +226,10 @@ const DocsLayout = () => {
           label: "text wrap",
           slug: "text-wrap",
         },
+        {
+          label: "text indent",
+          slug: "text-indent",
+        },
       ],
     },
   ];
