@@ -247,6 +247,10 @@ const DocsLayout = () => {
           label: "background attachment",
           slug: "background-attachment",
         },
+        {
+          label: "background clip",
+          slug: "background-clip",
+        },
       ],
     },
   ];

@@ -61,6 +61,7 @@ import TextIndent from "./pages/docs/typography/TextIndent";
 import WhiteSpace from "./pages/docs/typography/WhiteSpace";
 import Hyphens from "./pages/docs/typography/Hyphens";
 import BackgroundAttachment from "./pages/docs/backgrounds/BackgroundAttachment";
+import BackgroundClip from "./pages/docs/backgrounds/BackgroundClip";
 
 import "./app.css";
 
@@ -313,6 +314,10 @@ function App() {
             {
               path: "background-attachment",
               element: <BackgroundAttachment />,
+            },
+            {
+              path: "background-clip",
+              element: <BackgroundClip />,
             },
           ],
         },
