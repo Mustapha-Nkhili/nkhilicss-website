@@ -263,6 +263,10 @@ const DocsLayout = () => {
           label: "background position",
           slug: "background-position",
         },
+        {
+          label: "background repeat",
+          slug: "background-repeat",
+        },
       ],
     },
   ];
