@@ -62,6 +62,7 @@ import WhiteSpace from "./pages/docs/typography/WhiteSpace";
 import Hyphens from "./pages/docs/typography/Hyphens";
 import BackgroundAttachment from "./pages/docs/backgrounds/BackgroundAttachment";
 import BackgroundClip from "./pages/docs/backgrounds/BackgroundClip";
+import BackgroundColor from "./pages/docs/backgrounds/BackgroundColor";
 
 import "./app.css";
 
@@ -318,6 +319,10 @@ function App() {
             {
               path: "background-clip",
               element: <BackgroundClip />,
+            },
+            {
+              path: "background-color",
+              element: <BackgroundColor />,
             },
           ],
         },

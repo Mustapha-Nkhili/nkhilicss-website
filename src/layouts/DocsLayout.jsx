@@ -251,6 +251,10 @@ const DocsLayout = () => {
           label: "background clip",
           slug: "background-clip",
         },
+        {
+          label: "background color",
+          slug: "background-color",
+        },
       ],
     },
   ];
