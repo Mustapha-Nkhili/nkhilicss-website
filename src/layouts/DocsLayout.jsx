@@ -259,6 +259,10 @@ const DocsLayout = () => {
           label: "background origin",
           slug: "background-origin",
         },
+        {
+          label: "background position",
+          slug: "background-position",
+        },
       ],
     },
   ];

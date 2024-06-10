@@ -64,6 +64,7 @@ import BackgroundAttachment from "./pages/docs/backgrounds/BackgroundAttachment"
 import BackgroundClip from "./pages/docs/backgrounds/BackgroundClip";
 import BackgroundColor from "./pages/docs/backgrounds/BackgroundColor";
 import BackgroundOrigin from "./pages/docs/backgrounds/BackgroundOrigin";
+import BackgroundPosition from "./pages/docs/backgrounds/BackgroundPosition";
 
 import "./app.css";
 
@@ -328,6 +329,10 @@ function App() {
             {
               path: "background-origin",
               element: <BackgroundOrigin />,
+            },
+            {
+              path: "background-position",
+              element: <BackgroundPosition />,
             },
           ],
         },
