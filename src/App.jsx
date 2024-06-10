@@ -66,6 +66,7 @@ import BackgroundColor from "./pages/docs/backgrounds/BackgroundColor";
 import BackgroundOrigin from "./pages/docs/backgrounds/BackgroundOrigin";
 import BackgroundPosition from "./pages/docs/backgrounds/BackgroundPosition";
 import BackgroundRepeat from "./pages/docs/backgrounds/BackgroundRepeat";
+import BackgroundSize from "./pages/docs/backgrounds/BackgroundSize";
 
 import "./app.css";
 
@@ -338,6 +339,10 @@ function App() {
             {
               path: "background-repeat",
               element: <BackgroundRepeat />,
+            },
+            {
+              path: "background-size",
+              element: <BackgroundSize />,
             },
           ],
         },

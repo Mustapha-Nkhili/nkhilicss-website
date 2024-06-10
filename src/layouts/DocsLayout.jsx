@@ -267,6 +267,10 @@ const DocsLayout = () => {
           label: "background repeat",
           slug: "background-repeat",
         },
+        {
+          label: "background size",
+          slug: "background-size",
+        },
       ],
     },
   ];
