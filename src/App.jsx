@@ -63,6 +63,7 @@ import Hyphens from "./pages/docs/typography/Hyphens";
 import BackgroundAttachment from "./pages/docs/backgrounds/BackgroundAttachment";
 import BackgroundClip from "./pages/docs/backgrounds/BackgroundClip";
 import BackgroundColor from "./pages/docs/backgrounds/BackgroundColor";
+import BackgroundOrigin from "./pages/docs/backgrounds/BackgroundOrigin";
 
 import "./app.css";
 
@@ -323,6 +324,10 @@ function App() {
             {
               path: "background-color",
               element: <BackgroundColor />,
+            },
+            {
+              path: "background-origin",
+              element: <BackgroundOrigin />,
             },
           ],
         },

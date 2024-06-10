@@ -255,6 +255,10 @@ const DocsLayout = () => {
           label: "background color",
           slug: "background-color",
         },
+        {
+          label: "background origin",
+          slug: "background-origin",
+        },
       ],
     },
   ];
