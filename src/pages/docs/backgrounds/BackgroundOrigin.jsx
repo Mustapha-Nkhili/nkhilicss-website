@@ -101,7 +101,7 @@ const BackgroundOrigin = () => {
           breakpointsCode={breakpointsCode}
           utility={"bg-origin-border"}
         />
-        <Footer prevPage={"background attachment"} nextPage={"background color"} />
+        <Footer prevPage={"background color"} nextPage={"background position"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>
