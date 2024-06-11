@@ -183,7 +183,7 @@ $background-position-map: map.set($background-position-map, bottom, itsValue);
           changeUtilityValueCode={changeUtilityValueCode}
           utility={"background position"}
         />
-        <Footer prevPage={"flex wrap"} nextPage={"flex grow"} />
+        <Footer prevPage={"background origin"} nextPage={"background repeat"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>
