@@ -273,6 +273,15 @@ const DocsLayout = () => {
         },
       ],
     },
+    {
+      docLabel: "borders",
+      navList: [
+        {
+          label: "border radius",
+          slug: "border-radius",
+        },
+      ],
+    },
   ];
 
   const docsNavRef = useRef(null);

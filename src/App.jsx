@@ -67,6 +67,7 @@ import BackgroundOrigin from "./pages/docs/backgrounds/BackgroundOrigin";
 import BackgroundPosition from "./pages/docs/backgrounds/BackgroundPosition";
 import BackgroundRepeat from "./pages/docs/backgrounds/BackgroundRepeat";
 import BackgroundSize from "./pages/docs/backgrounds/BackgroundSize";
+import BorderRadius from "./pages/docs/borders/BorderRadius";
 
 import "./app.css";
 
@@ -343,6 +344,10 @@ function App() {
             {
               path: "background-size",
               element: <BackgroundSize />,
+            },
+            {
+              path: "border-radius",
+              element: <BorderRadius />,
             },
           ],
         },
