@@ -288,6 +288,10 @@ const DocsLayout = () => {
           label: "border color",
           slug: "border-color",
         },
+        {
+          label: "border style",
+          slug: "border-style",
+        },
       ],
     },
   ];
