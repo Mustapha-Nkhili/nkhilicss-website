@@ -292,6 +292,10 @@ const DocsLayout = () => {
           label: "border style",
           slug: "border-style",
         },
+        {
+          label: "border collapse",
+          slug: "border-collapse",
+        },
       ],
     },
   ];

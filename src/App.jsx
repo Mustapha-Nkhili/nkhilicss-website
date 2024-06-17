@@ -71,6 +71,7 @@ import BorderRadius from "./pages/docs/borders/BorderRadius";
 import BorderWidth from "./pages/docs/borders/BorderWidth";
 import BorderColor from "./pages/docs/borders/BorderColor";
 import BorderStyle from "./pages/docs/borders/BorderStyle";
+import BorderCollapse from "./pages/docs/borders/BorderCollapse";
 
 import "./app.css";
 
@@ -363,6 +364,10 @@ function App() {
             {
               path: "border-style",
               element: <BorderStyle />,
+            },
+            {
+              path: "border-collapse",
+              element: <BorderCollapse />,
             },
           ],
         },
