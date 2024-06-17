@@ -280,6 +280,10 @@ const DocsLayout = () => {
           label: "border radius",
           slug: "border-radius",
         },
+        {
+          label: "border width",
+          slug: "border-width",
+        },
       ],
     },
   ];
