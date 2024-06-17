@@ -284,6 +284,10 @@ const DocsLayout = () => {
           label: "border width",
           slug: "border-width",
         },
+        {
+          label: "border color",
+          slug: "border-color",
+        },
       ],
     },
   ];

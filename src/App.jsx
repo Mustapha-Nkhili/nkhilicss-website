@@ -69,6 +69,7 @@ import BackgroundRepeat from "./pages/docs/backgrounds/BackgroundRepeat";
 import BackgroundSize from "./pages/docs/backgrounds/BackgroundSize";
 import BorderRadius from "./pages/docs/borders/BorderRadius";
 import BorderWidth from "./pages/docs/borders/BorderWidth";
+import BorderColor from "./pages/docs/borders/BorderColor";
 
 import "./app.css";
 
@@ -353,6 +354,10 @@ function App() {
             {
               path: "border-width",
               element: <BorderWidth />,
+            },
+            {
+              path: "border-color",
+              element: <BorderColor />,
             },
           ],
         },
