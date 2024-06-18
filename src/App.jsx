@@ -72,6 +72,7 @@ import BorderWidth from "./pages/docs/borders/BorderWidth";
 import BorderColor from "./pages/docs/borders/BorderColor";
 import BorderStyle from "./pages/docs/borders/BorderStyle";
 import BorderCollapse from "./pages/docs/borders/BorderCollapse";
+import OutlineWidth from "./pages/docs/borders/OutlineWidth";
 
 import "./app.css";
 
@@ -368,6 +369,10 @@ function App() {
             {
               path: "border-collapse",
               element: <BorderCollapse />,
+            },
+            {
+              path: "outline-width",
+              element: <OutlineWidth />,
             },
           ],
         },

@@ -296,6 +296,10 @@ const DocsLayout = () => {
           label: "border collapse",
           slug: "border-collapse",
         },
+        {
+          label: "outline width",
+          slug: "outline-width",
+        },
       ],
     },
   ];
