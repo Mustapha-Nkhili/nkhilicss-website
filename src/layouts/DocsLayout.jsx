@@ -300,6 +300,10 @@ const DocsLayout = () => {
           label: "outline width",
           slug: "outline-width",
         },
+        {
+          label: "outline color",
+          slug: "outline-color",
+        },
       ],
     },
   ];
