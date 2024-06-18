@@ -308,6 +308,10 @@ const DocsLayout = () => {
           label: "outline style",
           slug: "outline-style",
         },
+        {
+          label: "outline offset",
+          slug: "outline-offset",
+        },
       ],
     },
   ];

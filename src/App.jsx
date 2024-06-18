@@ -75,6 +75,7 @@ import BorderCollapse from "./pages/docs/borders/BorderCollapse";
 import OutlineWidth from "./pages/docs/borders/OutlineWidth";
 import OutlineColor from "./pages/docs/borders/OutlineColor";
 import OutlineStyle from "./pages/docs/borders/OutlineStyle";
+import OutlineOffset from "./pages/docs/borders/OutlineOffset";
 
 import "./app.css";
 
@@ -383,6 +384,10 @@ function App() {
             {
               path: "outline-style",
               element: <OutlineStyle />,
+            },
+            {
+              path: "outline-offset",
+              element: <OutlineOffset />,
             },
           ],
         },
