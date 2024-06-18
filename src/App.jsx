@@ -74,6 +74,7 @@ import BorderStyle from "./pages/docs/borders/BorderStyle";
 import BorderCollapse from "./pages/docs/borders/BorderCollapse";
 import OutlineWidth from "./pages/docs/borders/OutlineWidth";
 import OutlineColor from "./pages/docs/borders/OutlineColor";
+import OutlineStyle from "./pages/docs/borders/OutlineStyle";
 
 import "./app.css";
 
@@ -378,6 +379,10 @@ function App() {
             {
               path: "outline-color",
               element: <OutlineColor />,
+            },
+            {
+              path: "outline-style",
+              element: <OutlineStyle />,
             },
           ],
         },
