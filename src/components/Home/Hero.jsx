@@ -23,7 +23,7 @@ const Hero = () => {
         </p>
         <Link
           to="docs/introduction"
-          className="flex justify-center items-center bg-primary w-fit m-auto h-12 capitalize rounded-2 text-sm font-semibold pl-6 pr-6 mt-10"
+          className="flex justify-center items-center bg-primary w-fit m-auto h-12 capitalize rounded-lg text-sm font-semibold pl-6 pr-6 mt-10"
         >
           get started
         </Link>
