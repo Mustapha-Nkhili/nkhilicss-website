@@ -76,6 +76,28 @@ import OutlineWidth from "./pages/docs/borders/OutlineWidth";
 import OutlineColor from "./pages/docs/borders/OutlineColor";
 import OutlineStyle from "./pages/docs/borders/OutlineStyle";
 import OutlineOffset from "./pages/docs/borders/OutlineOffset";
+import Blur from "./pages/docs/filters/Blur";
+import Brightness from "./pages/docs/filters/Brightness";
+import Contrast from "./pages/docs/filters/Contrast";
+import Grayscale from "./pages/docs/filters/Grayscale";
+import HueRotate from "./pages/docs/filters/HueRotate";
+import Invert from "./pages/docs/filters/Invert";
+import Saturate from "./pages/docs/filters/Saturate";
+import Sepia from "./pages/docs/filters/Sepia";
+import Opacity from "./pages/docs/filters/Opacity";
+import BackdropBlur from "./pages/docs/filters/BackdropBlur";
+import BackdropBrightness from "./pages/docs/filters/BackdropBrightness";
+import BackdropContrast from "./pages/docs/filters/BackdropContrast";
+import BackdropGrayscale from "./pages/docs/filters/BackdropGrayscale";
+import BackdropHueRotate from "./pages/docs/filters/BackdropHueRotate";
+import BackdropInvert from "./pages/docs/filters/BackdropInvert";
+import BackdropOpacity from "./pages/docs/filters/BackdropOpacity";
+import BackdropSaturate from "./pages/docs/filters/BackdropSaturate";
+import BackdropSepia from "./pages/docs/filters/BackdropSepia";
+import TransitionProperty from "./pages/docs/transitions/TransitionProperty";
+import TransitionDuration from "./pages/docs/transitions/TransitionDuration";
+import TransitionTimingFunction from "./pages/docs/transitions/TransitionTimingFunction";
+import TransitionDelay from "./pages/docs/transitions/TransitionDelay";
 
 import "./app.css";
 
@@ -388,6 +410,94 @@ function App() {
             {
               path: "outline-offset",
               element: <OutlineOffset />,
+            },
+            {
+              path: "blur",
+              element: <Blur />,
+            },
+            {
+              path: "brightness",
+              element: <Brightness />,
+            },
+            {
+              path: "contrast",
+              element: <Contrast />,
+            },
+            {
+              path: "grayscale",
+              element: <Grayscale />,
+            },
+            {
+              path: "hue-rotate",
+              element: <HueRotate />,
+            },
+            {
+              path: "invert",
+              element: <Invert />,
+            },
+            {
+              path: "saturate",
+              element: <Saturate />,
+            },
+            {
+              path: "sepia",
+              element: <Sepia />,
+            },
+            {
+              path: "opacity",
+              element: <Opacity />,
+            },
+            {
+              path: "backdrop-blur",
+              element: <BackdropBlur />,
+            },
+            {
+              path: "backdrop-brightness",
+              element: <BackdropBrightness />,
+            },
+            {
+              path: "backdrop-contrast",
+              element: <BackdropContrast />,
+            },
+            {
+              path: "backdrop-grayscale",
+              element: <BackdropGrayscale />,
+            },
+            {
+              path: "backdrop-hue-rotate",
+              element: <BackdropHueRotate />,
+            },
+            {
+              path: "backdrop-invert",
+              element: <BackdropInvert />,
+            },
+            {
+              path: "backdrop-opacity",
+              element: <BackdropOpacity />,
+            },
+            {
+              path: "backdrop-saturate",
+              element: <BackdropSaturate />,
+            },
+            {
+              path: "backdrop-sepia",
+              element: <BackdropSepia />,
+            },
+            {
+              path: "transition-property",
+              element: <TransitionProperty />,
+            },
+            {
+              path: "transition-duration",
+              element: <TransitionDuration />,
+            },
+            {
+              path: "transition-timing-function",
+              element: <TransitionTimingFunction />,
+            },
+            {
+              path: "transition-delay",
+              element: <TransitionDelay />,
             },
           ],
         },

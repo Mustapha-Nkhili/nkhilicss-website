@@ -314,6 +314,104 @@ const DocsLayout = () => {
         },
       ],
     },
+    {
+      docLabel: "filters",
+      navList: [
+        {
+          label: "blur",
+          slug: "blur",
+        },
+        {
+          label: "brightness",
+          slug: "brightness",
+        },
+        {
+          label: "contrast",
+          slug: "contrast",
+        },
+        {
+          label: "grayscale",
+          slug: "grayscale",
+        },
+        {
+          label: "hue rotate",
+          slug: "hue-rotate",
+        },
+        {
+          label: "invert",
+          slug: "invert",
+        },
+        {
+          label: "saturate",
+          slug: "saturate",
+        },
+        {
+          label: "sepia",
+          slug: "sepia",
+        },
+        {
+          label: "opacity",
+          slug: "opacity",
+        },
+        {
+          label: "backdrop blur",
+          slug: "backdrop-blur",
+        },
+        {
+          label: "backdrop brightness",
+          slug: "backdrop-brightness",
+        },
+        {
+          label: "backdrop contrast",
+          slug: "backdrop-contrast",
+        },
+        {
+          label: "backdrop grayscale",
+          slug: "backdrop-grayscale",
+        },
+        {
+          label: "backdrop hue rotate",
+          slug: "backdrop-hue-rotate",
+        },
+        {
+          label: "backdrop invert",
+          slug: "backdrop-invert",
+        },
+        {
+          label: "backdrop opacity",
+          slug: "backdrop-opacity",
+        },
+        {
+          label: "backdrop saturate",
+          slug: "backdrop-saturate",
+        },
+        {
+          label: "backdrop sepia",
+          slug: "backdrop-sepia",
+        },
+      ],
+    },
+    {
+      docLabel: "transitions",
+      navList: [
+        {
+          label: "transition property",
+          slug: "transition-property",
+        },
+        {
+          label: "transition duration",
+          slug: "transition-duration",
+        },
+        {
+          label: "transition timing function",
+          slug: "transition-timing-function",
+        },
+        {
+          label: "transition delay",
+          slug: "transition-delay",
+        },
+      ],
+    },
   ];
 
   const docsNavRef = useRef(null);
