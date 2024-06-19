@@ -81,3 +81,24 @@ export const generateColorValues = (prefix) => {
 
   return generatedColorValues;
 };
+
+export const generateBorderWidthValues = (borderWidth) => {
+  const generatedBorderWidthValues = [
+    {
+      cssClass: `${borderWidth}-none`,
+      data: "0px",
+    },
+    {
+      cssClass: `${borderWidth}`,
+      data: "1px",
+    },
+  ];
+
+  for (let i = 2; i < 21; i++) {
+    generatedBorderWidthValues.push({
+      cssClass: `${borderWidth}-${i}`,
+      data: `${i}px`,
+    });
+  }
+  return generatedBorderWidthValues;
+};
