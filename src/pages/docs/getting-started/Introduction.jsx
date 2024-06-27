@@ -46,9 +46,9 @@ const Introduction = () => {
         <DocsHeader
           title="getting started"
           pageTitle="get started with Nkhili CSS"
-          pageDesc="   A lightweight CSS framework is an indispensable tool for web
+          pageDesc="A lightweight CSS framework is an indispensable tool for web
           developers seeking efficiency and speed in styling their websites.
-          These frameworks provide a structured foundation of pre-written CSS
+          This framework provide a structured foundation of pre-written CSS
           code, enabling developers to streamline the styling process and focus
           more on the functionality and user experience of their web
           applications."
