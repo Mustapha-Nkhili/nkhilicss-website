@@ -147,7 +147,7 @@ const DocsLayout = () => {
     },
     {
       docLabel: "transforms",
-      navList: ["scale"]
+      navList: ["scale", "rotate"],
     },
   ];
 

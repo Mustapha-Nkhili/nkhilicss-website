@@ -99,6 +99,7 @@ import TransitionDuration from "./pages/docs/transitions/TransitionDuration";
 import TransitionTimingFunction from "./pages/docs/transitions/TransitionTimingFunction";
 import TransitionDelay from "./pages/docs/transitions/TransitionDelay";
 import Scale from "./pages/docs/transforms/Scale";
+import Rotate from "./pages/docs/transforms/Rotate";
 
 import "./app.css";
 
@@ -503,6 +504,10 @@ function App() {
             {
               path: "scale",
               element: <Scale />,
+            },
+            {
+              path: "rotate",
+              element: <Rotate />,
             },
           ],
         },
