@@ -7,410 +7,147 @@ const DocsLayout = () => {
   const docsNav = [
     {
       docLabel: "getting started",
-      navList: [
-        {
-          label: "introduction",
-          slug: "introduction",
-        },
-        {
-          label: "installation",
-          slug: "installation",
-        },
-      ],
+      navList: ["introduction", "installation"],
     },
     {
       docLabel: "layout",
       navList: [
-        {
-          label: "aspect ratio",
-          slug: "aspect-ratio",
-        },
-        { label: "box sizing", slug: "box-sizing" },
-        { label: "display", slug: "display" },
-        { label: "float", slug: "float" },
-        { label: "object fit", slug: "object-fit" },
-        { label: "overflow", slug: "overflow" },
-        { label: "position", slug: "position" },
-        { label: "top / bottom / left / right", slug: "top-bottom-left-right" },
-        { label: "visibility", slug: "visibility" },
-        { label: "z index", slug: "z-index" },
+        "aspect ratio",
+        "box sizing",
+        "display",
+        "float",
+        "object fit",
+        "overflow",
+        "position",
+        "top bottom left right",
+        "visibility",
+        "z index",
       ],
     },
     {
       docLabel: "Flexbox & Grid",
       navList: [
-        {
-          label: "flex basis",
-          slug: "flex-basis",
-        },
-        {
-          label: "flex direction",
-          slug: "flex-direction",
-        },
-        {
-          label: "flex wrap",
-          slug: "flex-wrap",
-        },
-        {
-          label: "flex",
-          slug: "flex",
-        },
-        {
-          label: "flex grow",
-          slug: "flex-grow",
-        },
-        {
-          label: "flex shrink",
-          slug: "flex-shrink",
-        },
-        {
-          label: "order",
-          slug: "order",
-        },
-        {
-          label: "gap",
-          slug: "gap",
-        },
-        {
-          label: "justify content",
-          slug: "justify-content",
-        },
-        {
-          label: "justify items",
-          slug: "justify-items",
-        },
-        {
-          label: "justify self",
-          slug: "justify-self",
-        },
-        {
-          label: "align content",
-          slug: "align-content",
-        },
-        {
-          label: "align items",
-          slug: "align-items",
-        },
-        {
-          label: "align self",
-          slug: "align-self",
-        },
-        {
-          label: "place content",
-          slug: "place-content",
-        },
-        {
-          label: "place items",
-          slug: "place-items",
-        },
-        {
-          label: "place self",
-          slug: "place-self",
-        },
+        "flex basis",
+        "flex direction",
+        "flex wrap",
+        "flex",
+        "flex grow",
+        "flex shrink",
+        "order",
+        "gap",
+        "justify content",
+        "justify items",
+        "justify self",
+        "align content",
+        "align items",
+        "align self",
+        "place content",
+        "place items",
+        "place self",
       ],
     },
     {
       docLabel: "spacing",
-      navList: [
-        {
-          label: "padding",
-          slug: "padding",
-        },
-        {
-          label: "margin",
-          slug: "margin",
-        },
-      ],
+      navList: ["padding", "margin"],
     },
     {
       docLabel: "sizing",
       navList: [
-        {
-          label: "width",
-          slug: "width",
-        },
-        {
-          label: "min width",
-          slug: "min-width",
-        },
-        {
-          label: "max width",
-          slug: "max-width",
-        },
-        {
-          label: "height",
-          slug: "height",
-        },
-        {
-          label: "min height",
-          slug: "min-height",
-        },
-        {
-          label: "max height",
-          slug: "max-height",
-        },
+        "width",
+        "min width",
+        "max width",
+        "height",
+        "min height",
+        "max height",
       ],
     },
     {
       docLabel: "typography",
       navList: [
-        {
-          label: "font family",
-          slug: "font-family",
-        },
-        {
-          label: "font size",
-          slug: "font-size",
-        },
-        {
-          label: "font style",
-          slug: "font-style",
-        },
-        {
-          label: "font weight",
-          slug: "font-weight",
-        },
-        {
-          label: "letter spacing",
-          slug: "letter-spacing",
-        },
-        {
-          label: "line height",
-          slug: "line-height",
-        },
-        {
-          label: "list style position",
-          slug: "list-style-position",
-        },
-        {
-          label: "list style type",
-          slug: "list-style-type",
-        },
-        {
-          label: "text align",
-          slug: "text-align",
-        },
-        {
-          label: "text color",
-          slug: "text-color",
-        },
-        {
-          label: "text decoration line",
-          slug: "text-decoration-line",
-        },
-        {
-          label: "text decoration color",
-          slug: "text-decoration-color",
-        },
-        {
-          label: "text decoration style",
-          slug: "text-decoration-style",
-        },
-        {
-          label: "text decoration thickness",
-          slug: "text-decoration-thickness",
-        },
-        {
-          label: "text underline offset",
-          slug: "text-underline-offset",
-        },
-        {
-          label: "text transform",
-          slug: "text-transform",
-        },
-        {
-          label: "text overflow",
-          slug: "text-overflow",
-        },
-        {
-          label: "text wrap",
-          slug: "text-wrap",
-        },
-        {
-          label: "text indent",
-          slug: "text-indent",
-        },
-        {
-          label: "white space",
-          slug: "white-space",
-        },
-        {
-          label: "hyphens",
-          slug: "hyphens",
-        },
+        "font family",
+        "font size",
+        "font style",
+        "font weight",
+        "letter spacing",
+        "line height",
+        "list style position",
+        "list style type",
+        "text align",
+        "text color",
+        "text decoration line",
+        "text decoration color",
+        "text decoration style",
+        "text decoration thickness",
+        "text underline offset",
+        "text transform",
+        "text overflow",
+        "text wrap",
+        "text indent",
+        "white space",
+        "hyphens",
       ],
     },
     {
       docLabel: "backgrounds",
       navList: [
-        {
-          label: "background attachment",
-          slug: "background-attachment",
-        },
-        {
-          label: "background clip",
-          slug: "background-clip",
-        },
-        {
-          label: "background color",
-          slug: "background-color",
-        },
-        {
-          label: "background origin",
-          slug: "background-origin",
-        },
-        {
-          label: "background position",
-          slug: "background-position",
-        },
-        {
-          label: "background repeat",
-          slug: "background-repeat",
-        },
-        {
-          label: "background size",
-          slug: "background-size",
-        },
+        "background attachment",
+        "background clip",
+        "background color",
+        "background origin",
+        "background position",
+        "background repeat",
+        "background size",
       ],
     },
     {
       docLabel: "borders",
       navList: [
-        {
-          label: "border radius",
-          slug: "border-radius",
-        },
-        {
-          label: "border width",
-          slug: "border-width",
-        },
-        {
-          label: "border color",
-          slug: "border-color",
-        },
-        {
-          label: "border style",
-          slug: "border-style",
-        },
-        {
-          label: "border collapse",
-          slug: "border-collapse",
-        },
-        {
-          label: "outline width",
-          slug: "outline-width",
-        },
-        {
-          label: "outline color",
-          slug: "outline-color",
-        },
-        {
-          label: "outline style",
-          slug: "outline-style",
-        },
-        {
-          label: "outline offset",
-          slug: "outline-offset",
-        },
+        "border radius",
+        "border width",
+        "border color",
+        "border style",
+        "border collapse",
+        "outline width",
+        "outline color",
+        "outline style",
+        "outline offset",
       ],
     },
     {
       docLabel: "filters",
       navList: [
-        {
-          label: "blur",
-          slug: "blur",
-        },
-        {
-          label: "brightness",
-          slug: "brightness",
-        },
-        {
-          label: "contrast",
-          slug: "contrast",
-        },
-        {
-          label: "grayscale",
-          slug: "grayscale",
-        },
-        {
-          label: "hue rotate",
-          slug: "hue-rotate",
-        },
-        {
-          label: "invert",
-          slug: "invert",
-        },
-        {
-          label: "saturate",
-          slug: "saturate",
-        },
-        {
-          label: "sepia",
-          slug: "sepia",
-        },
-        {
-          label: "opacity",
-          slug: "opacity",
-        },
-        {
-          label: "backdrop blur",
-          slug: "backdrop-blur",
-        },
-        {
-          label: "backdrop brightness",
-          slug: "backdrop-brightness",
-        },
-        {
-          label: "backdrop contrast",
-          slug: "backdrop-contrast",
-        },
-        {
-          label: "backdrop grayscale",
-          slug: "backdrop-grayscale",
-        },
-        {
-          label: "backdrop hue rotate",
-          slug: "backdrop-hue-rotate",
-        },
-        {
-          label: "backdrop invert",
-          slug: "backdrop-invert",
-        },
-        {
-          label: "backdrop opacity",
-          slug: "backdrop-opacity",
-        },
-        {
-          label: "backdrop saturate",
-          slug: "backdrop-saturate",
-        },
-        {
-          label: "backdrop sepia",
-          slug: "backdrop-sepia",
-        },
+        "blur",
+        "brightness",
+        "contrast",
+        "grayscale",
+        "hue rotate",
+        "invert",
+        "saturate",
+        "sepia",
+        "opacity",
+        "backdrop blur",
+        "backdrop brightness",
+        "backdrop contrast",
+        "backdrop grayscale",
+        "backdrop hue rotate",
+        "backdrop invert",
+        "backdrop opacity",
+        "backdrop saturate",
+        "backdrop sepia",
       ],
     },
     {
       docLabel: "transitions",
       navList: [
-        {
-          label: "transition property",
-          slug: "transition-property",
-        },
-        {
-          label: "transition duration",
-          slug: "transition-duration",
-        },
-        {
-          label: "transition timing function",
-          slug: "transition-timing-function",
-        },
-        {
-          label: "transition delay",
-          slug: "transition-delay",
-        },
+        "transition property",
+        "transition duration",
+        "transition timing function",
+        "transition delay",
       ],
+    },
+    {
+      docLabel: "transforms",
+      navList: ["scale"]
     },
   ];
 
@@ -467,12 +204,18 @@ const DocsLayout = () => {
                     onClick={handleNavItemClicked}
                   >
                     <NavLink
-                      to={navItem.slug}
+                      to={
+                        navItem.includes(" ")
+                          ? navItem.split(" ").join("-")
+                          : navItem
+                      }
                       style={({ isActive }) =>
                         isActive ? { color: "#ac6aff" } : null
                       }
                     >
-                      {navItem.label}
+                      {navItem !== "top bottom left right"
+                        ? navItem
+                        : "top / bottom / left / right"}
                     </NavLink>
                   </li>
                 ))}

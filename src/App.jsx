@@ -98,6 +98,7 @@ import TransitionProperty from "./pages/docs/transitions/TransitionProperty";
 import TransitionDuration from "./pages/docs/transitions/TransitionDuration";
 import TransitionTimingFunction from "./pages/docs/transitions/TransitionTimingFunction";
 import TransitionDelay from "./pages/docs/transitions/TransitionDelay";
+import Scale from "./pages/docs/transforms/Scale";
 
 import "./app.css";
 
@@ -498,6 +499,10 @@ function App() {
             {
               path: "transition-delay",
               element: <TransitionDelay />,
+            },
+            {
+              path: "scale",
+              element: <Scale />,
             },
           ],
         },
