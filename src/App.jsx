@@ -101,6 +101,7 @@ import TransitionDelay from "./pages/docs/transitions/TransitionDelay";
 import Scale from "./pages/docs/transforms/Scale";
 import Rotate from "./pages/docs/transforms/Rotate";
 import Translate from "./pages/docs/transforms/Translate";
+import Skew from "./pages/docs/transforms/Skew";
 
 import "./app.css";
 
@@ -513,6 +514,10 @@ function App() {
             {
               path: "translate",
               element: <Translate />,
+            },
+            {
+              path: "skew",
+              element: <Skew />,
             },
           ],
         },
