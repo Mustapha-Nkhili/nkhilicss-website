@@ -109,6 +109,7 @@ import Cursor from "./pages/docs/Interactivity/Cursor";
 import CaretColor from "./pages/docs/Interactivity/CaretColor";
 import PointerEvents from "./pages/docs/Interactivity/PointerEvents";
 import Resize from "./pages/docs/Interactivity/Resize";
+import UserSelect from "./pages/docs/Interactivity/UserSelect";
 
 import "./app.css";
 
@@ -553,6 +554,10 @@ function App() {
             {
               path: "resize",
               element: <Resize />,
+            },
+            {
+              path: "user-select",
+              element: <UserSelect />,
             },
           ],
         },
