@@ -107,6 +107,7 @@ import AccentColor from "./pages/docs/Interactivity/AccentColor";
 import Appearance from "./pages/docs/Interactivity/Appearance";
 import Cursor from "./pages/docs/Interactivity/Cursor";
 import CaretColor from "./pages/docs/Interactivity/CaretColor";
+import PointerEvents from "./pages/docs/Interactivity/PointerEvents";
 
 import "./app.css";
 
@@ -543,6 +544,10 @@ function App() {
             {
               path: "caret-color",
               element: <CaretColor />,
+            },
+            {
+              path: "pointer-events",
+              element: <PointerEvents />,
             },
           ],
         },
