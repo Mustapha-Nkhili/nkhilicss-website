@@ -109,6 +109,7 @@ import Cursor from "./pages/docs/Interactivity/Cursor";
 import CaretColor from "./pages/docs/Interactivity/CaretColor";
 import PointerEvents from "./pages/docs/Interactivity/PointerEvents";
 import Resize from "./pages/docs/Interactivity/Resize";
+import ScrollBehavior from "./pages/docs/Interactivity/ScrollBehavior";
 import UserSelect from "./pages/docs/Interactivity/UserSelect";
 import WillChange from "./pages/docs/Interactivity/WillChange";
 
@@ -555,6 +556,10 @@ function App() {
             {
               path: "resize",
               element: <Resize />,
+            },
+            {
+              path: "scroll-behavior",
+              element: <ScrollBehavior />,
             },
             {
               path: "user-select",

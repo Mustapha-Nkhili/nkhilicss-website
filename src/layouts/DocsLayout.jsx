@@ -158,6 +158,7 @@ const DocsLayout = () => {
         "caret color",
         "pointer events",
         "resize",
+        "scroll behavior",
         "user select",
         "will change",
       ],
