@@ -83,7 +83,7 @@ const Installation = () => {
         <section id="get-the-nkhilicss-CSS-file" ref={getNkhiliCssRef}>
           <SectionHeader
             title="Get the nkhilicss CSS file"
-            description="Access the minified .css file containing the entire Bulma framework"
+            description="Access the minified .css file containing the entire NkhiliCSS framework"
           />
           <h4 className="font-medium mt-4" id="html-link" ref={htmlLinkRef}>
             HTML <code className="ml-2 text-primary">{`<link />`}</code>
