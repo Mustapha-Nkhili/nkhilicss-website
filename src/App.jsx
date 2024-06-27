@@ -104,6 +104,7 @@ import Translate from "./pages/docs/transforms/Translate";
 import Skew from "./pages/docs/transforms/Skew";
 import TransformOrigin from "./pages/docs/transforms/TransformOrigin";
 import AccentColor from "./pages/docs/Interactivity/AccentColor";
+import Appearance from "./pages/docs/Interactivity/Appearance";
 
 import "./app.css";
 
@@ -528,6 +529,10 @@ function App() {
             {
               path: "accent-color",
               element: <AccentColor />,
+            },
+            {
+              path: "appearance",
+              element: <Appearance />,
             },
           ],
         },
