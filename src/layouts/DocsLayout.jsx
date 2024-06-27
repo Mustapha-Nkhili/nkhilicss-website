@@ -159,6 +159,7 @@ const DocsLayout = () => {
         "pointer events",
         "resize",
         "user select",
+        "will change",
       ],
     },
   ];
