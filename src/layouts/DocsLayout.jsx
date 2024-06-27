@@ -149,6 +149,10 @@ const DocsLayout = () => {
       docLabel: "transforms",
       navList: ["scale", "rotate", "translate", "skew", "transform origin"],
     },
+    {
+      docLabel: "interactivity",
+      navList: ["accent color"],
+    },
   ];
 
   const docsNavRef = useRef(null);

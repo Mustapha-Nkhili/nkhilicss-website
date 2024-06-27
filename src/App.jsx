@@ -103,6 +103,7 @@ import Rotate from "./pages/docs/transforms/Rotate";
 import Translate from "./pages/docs/transforms/Translate";
 import Skew from "./pages/docs/transforms/Skew";
 import TransformOrigin from "./pages/docs/transforms/TransformOrigin";
+import AccentColor from "./pages/docs/Interactivity/AccentColor";
 
 import "./app.css";
 
@@ -523,6 +524,10 @@ function App() {
             {
               path: "transform-origin",
               element: <TransformOrigin />,
+            },
+            {
+              path: "accent-color",
+              element: <AccentColor />,
             },
           ],
         },
