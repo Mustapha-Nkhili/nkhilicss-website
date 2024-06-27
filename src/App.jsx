@@ -102,6 +102,7 @@ import Scale from "./pages/docs/transforms/Scale";
 import Rotate from "./pages/docs/transforms/Rotate";
 import Translate from "./pages/docs/transforms/Translate";
 import Skew from "./pages/docs/transforms/Skew";
+import TransformOrigin from "./pages/docs/transforms/TransformOrigin";
 
 import "./app.css";
 
@@ -518,6 +519,10 @@ function App() {
             {
               path: "skew",
               element: <Skew />,
+            },
+            {
+              path: "transform-origin",
+              element: <TransformOrigin />,
             },
           ],
         },
