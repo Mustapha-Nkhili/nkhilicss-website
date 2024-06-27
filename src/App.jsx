@@ -105,6 +105,7 @@ import Skew from "./pages/docs/transforms/Skew";
 import TransformOrigin from "./pages/docs/transforms/TransformOrigin";
 import AccentColor from "./pages/docs/Interactivity/AccentColor";
 import Appearance from "./pages/docs/Interactivity/Appearance";
+import Cursor from "./pages/docs/Interactivity/Cursor";
 
 import "./app.css";
 
@@ -533,6 +534,10 @@ function App() {
             {
               path: "appearance",
               element: <Appearance />,
+            },
+            {
+              path: "cursor",
+              element: <Cursor />,
             },
           ],
         },

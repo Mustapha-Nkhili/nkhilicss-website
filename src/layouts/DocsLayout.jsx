@@ -151,7 +151,7 @@ const DocsLayout = () => {
     },
     {
       docLabel: "interactivity",
-      navList: ["accent color", "appearance"],
+      navList: ["accent color", "appearance", "cursor"],
     },
   ];
 
