@@ -157,6 +157,7 @@ const DocsLayout = () => {
         "cursor",
         "caret color",
         "pointer events",
+        "resize",
       ],
     },
   ];
