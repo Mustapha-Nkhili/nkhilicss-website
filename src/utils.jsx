@@ -1,4 +1,4 @@
-export const generateSpacingValues = (spacing) => {
+export const generateSpacingValues = (spacing, propertyDataFunction) => {
   const generatedSpacingValues = [];
 
   // Loop for values less than 12 (increments of 1)
@@ -7,7 +7,7 @@ export const generateSpacingValues = (spacing) => {
       cssClass: `${spacing}-${i}`,
       data: (
         <>
-          {i * 0.25}rem{" "}
+          {propertyDataFunction ? `${propertyDataFunction}(${i * 0.25}rem)` : `${i * 0.25}rem`}
           <span className="ml-5 text-primary">{`// ${i * 0.25 * 16}px`} </span>
         </>
       ),
@@ -20,7 +20,7 @@ export const generateSpacingValues = (spacing) => {
       cssClass: `${spacing}-${i}`,
       data: (
         <>
-          {i * 0.25}rem{" "}
+          {propertyDataFunction ? `${propertyDataFunction}(${i * 0.25}rem)` : `${i * 0.25}rem`}
           <span className="ml-5 text-primary">{`// ${i * 0.25 * 16}px`} </span>
         </>
       ),
@@ -33,7 +33,7 @@ export const generateSpacingValues = (spacing) => {
       cssClass: `${spacing}-${i}`,
       data: (
         <>
-          {i * 0.25}rem{" "}
+          {propertyDataFunction ? `${propertyDataFunction}(${i * 0.25}rem)` : `${i * 0.25}rem`}
           <span className="ml-5 text-primary">{`// ${i * 0.25 * 16}px`} </span>
         </>
       ),
