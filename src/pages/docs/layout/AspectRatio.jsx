@@ -71,7 +71,7 @@ const AspectRatio = () => {
 
   const videoCode = `
   <iframe
-    class="aspect-video w-full border-none rounded-2"
+    class="aspect-video w-full border-none rounded-lg"
     src="https://www.youtube.com/embed/Nnre-vnHyp0"
     title="سورة الرحمن (كاملة) | القارئ اسلام صبحي"
     allowfullscreen
@@ -133,12 +133,12 @@ $aspect-ratio-map: map.set($aspect-ratio-map, square, yourCustomValue)
           />
           <div>
             <iframe
-              className="aspect-video w-full border-none rounded-2"
+              className="aspect-video w-full border-none rounded-lg"
               src="https://www.youtube.com/embed/Nnre-vnHyp0"
               title="سورة الرحمن (كاملة) | القارئ اسلام صبحي"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
           <Code code={videoCode} language="html" />
