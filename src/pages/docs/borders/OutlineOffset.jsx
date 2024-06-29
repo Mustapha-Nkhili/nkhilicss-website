@@ -163,7 +163,7 @@ $outline-offset-map: map.set($outline-offset-map, 10, itsValue);
           changeUtilityValueCode={changeUtilityValueCode}
           utility={"outline offset"}
         />
-        <Footer prevPage={"outline style"} nextPage={"outline color"} />
+        <Footer prevPage={"outline style"} nextPage={"blur"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>
