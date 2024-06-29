@@ -10,6 +10,10 @@ const DocsLayout = () => {
       navList: ["introduction", "installation"],
     },
     {
+      docLabel: "customization",
+      navList: ["overview"],
+    },
+    {
       docLabel: "layout",
       navList: [
         "aspect ratio",
