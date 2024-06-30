@@ -11,7 +11,7 @@ const DocsLayout = () => {
     },
     {
       docLabel: "customization",
-      navList: ["overview"],
+      navList: ["overview", "utilities configuration"],
     },
     {
       docLabel: "layout",

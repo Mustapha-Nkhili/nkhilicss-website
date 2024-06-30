@@ -5,6 +5,7 @@ import DocsLayout from "./layouts/DocsLayout";
 import Introduction from "./pages/docs/getting-started/Introduction";
 import Installation from "./pages/docs/getting-started/Installation";
 import Overview from "./pages/docs/customization/Overview";
+import UtilitiesConfiguration from "./pages/docs/customization/UtilitiesConfiguration";
 import AspectRatio from "./pages/docs/layout/AspectRatio";
 import BoxSizing from "./pages/docs/layout/BoxSizing";
 import Display from "./pages/docs/layout/Display";
@@ -141,6 +142,10 @@ function App() {
             {
               path: "overview",
               element: <Overview />,
+            },
+            {
+              path: "utilities-configuration",
+              element: <UtilitiesConfiguration />,
             },
             {
               path: "aspect-ratio",
