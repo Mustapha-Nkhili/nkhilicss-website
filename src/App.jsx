@@ -7,6 +7,7 @@ import Installation from "./pages/docs/getting-started/Installation";
 import Overview from "./pages/docs/customization/Overview";
 import UtilitiesConfiguration from "./pages/docs/customization/UtilitiesConfiguration";
 import Colors from "./pages/docs/customization/Colors";
+import Spacing from "./pages/docs/customization/Spacing";
 import AspectRatio from "./pages/docs/layout/AspectRatio";
 import BoxSizing from "./pages/docs/layout/BoxSizing";
 import Display from "./pages/docs/layout/Display";
@@ -151,6 +152,10 @@ function App() {
             {
               path: "colors",
               element: <Colors />,
+            },
+            {
+              path: "spacing",
+              element: <Spacing />,
             },
             {
               path: "aspect-ratio",
