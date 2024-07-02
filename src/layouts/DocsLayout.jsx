@@ -1,9 +1,12 @@
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useRef } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { useEffect, useRef } from "react";
+import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 
 const DocsLayout = () => {
+  const docsNavRef = useRef(null);
+  const location = useLocation();
+  const navigate = useNavigate();
   const docsNav = [
     {
       docLabel: "getting started",
@@ -11,7 +14,7 @@ const DocsLayout = () => {
     },
     {
       docLabel: "customization",
-      navList: ["overview", "utilities configuration"],
+      navList: ["overview", "utilities configuration", "colors"],
     },
     {
       docLabel: "layout",
@@ -169,7 +172,11 @@ const DocsLayout = () => {
     },
   ];
 
-  const docsNavRef = useRef(null);
+  useEffect(() => {
+    if (location.pathname == "/docs" || location.pathname == "/docs/") {
+      navigate("docs/introduction");
+    }
+  }, [location.pathname, navigate]);
 
   const handleNavItemClicked = (e) => {
     e.target.getElementsByTagName("a")[0].click();
