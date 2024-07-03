@@ -8,6 +8,7 @@ import Overview from "./pages/docs/customization/Overview";
 import UtilitiesConfiguration from "./pages/docs/customization/UtilitiesConfiguration";
 import Colors from "./pages/docs/customization/Colors";
 import Spacing from "./pages/docs/customization/Spacing";
+import Screens from "./pages/docs/customization/Screens";
 import AspectRatio from "./pages/docs/layout/AspectRatio";
 import BoxSizing from "./pages/docs/layout/BoxSizing";
 import Display from "./pages/docs/layout/Display";
@@ -157,6 +158,10 @@ function App() {
               path: "spacing",
               element: <Spacing />,
             },
+          {
+            path: "screens",
+            element: <Screens />,
+          },
             {
               path: "aspect-ratio",
               element: <AspectRatio />,
