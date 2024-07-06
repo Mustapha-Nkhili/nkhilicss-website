@@ -133,7 +133,6 @@ const Colors = () => {
                         ),
                       }}
                     >
-                      {console.log(4 - i)}
                       {100 * (i + 1)}
                     </li>
                   ))}
