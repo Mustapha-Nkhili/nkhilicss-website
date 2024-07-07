@@ -9,6 +9,7 @@ import UtilitiesConfiguration from "./pages/docs/customization/UtilitiesConfigur
 import Colors from "./pages/docs/customization/Colors";
 import Spacing from "./pages/docs/customization/Spacing";
 import Screens from "./pages/docs/customization/Screens";
+import Optimize from "./pages/docs/customization/Optimize";
 import AspectRatio from "./pages/docs/layout/AspectRatio";
 import BoxSizing from "./pages/docs/layout/BoxSizing";
 import Display from "./pages/docs/layout/Display";
@@ -158,10 +159,14 @@ function App() {
               path: "spacing",
               element: <Spacing />,
             },
-          {
-            path: "screens",
-            element: <Screens />,
-          },
+            {
+              path: "screens",
+              element: <Screens />,
+            },
+            {
+              path: "optimize",
+              element: <Optimize />,
+            },
             {
               path: "aspect-ratio",
               element: <AspectRatio />,
