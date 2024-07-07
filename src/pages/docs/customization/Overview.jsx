@@ -213,10 +213,6 @@ $blur-sm: 4px !default;
             Borders
           </h4>
           <Code code={bordersCode} language={"javascript"} />
-          <h4 className="font-medium mt-4" id="borders" ref={bordersRef}>
-            Borders
-          </h4>
-          <Code code={bordersCode} language={"javascript"} />
           <h4 className="font-medium mt-4" id="fonts" ref={fontsRef}>
             Fonts
           </h4>
@@ -242,7 +238,7 @@ $blur-sm: 4px !default;
           </h4>
           <Code code={filtersCode} language={"javascript"} />
         </section>
-        <Footer prevPage={"introduction"} nextPage={"aspect ratio"} />
+        <Footer prevPage={"installation"} nextPage={"utilities configuration"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>
