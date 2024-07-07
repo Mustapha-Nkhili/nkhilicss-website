@@ -161,7 +161,7 @@ $aspect-ratio-map: map.set($aspect-ratio-map, square, yourCustomValue)
           changeUtilityValueCode={changeUtilityValueCode}
           utility={"aspect-ratio"}
         />
-        <Footer prevPage={"installation"} nextPage={"display"}/>
+        <Footer prevPage={"optimize"} nextPage={"display"}/>
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>
