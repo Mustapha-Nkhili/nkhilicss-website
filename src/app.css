@@ -59,7 +59,7 @@
 }
 
 .docs-nav>div {
-    top: 72px;
+    height: calc(100% - 72px);
 }
 
 .docs-nav li {

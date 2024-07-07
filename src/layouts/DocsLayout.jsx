@@ -195,7 +195,7 @@ const DocsLayout = () => {
   const openDocsNav = () => {
     docsNavRef.current.style.left = "0";
   };
-
+  
   return (
     <div className="docs-container text-white">
       <div
@@ -212,7 +212,7 @@ const DocsLayout = () => {
       </div>
       <nav className="docs-nav">
         <div
-          className="overflow-y-auto fixed lg-left-0 h-full w-full lg-w-68 p-5 pb-16 border-r-none lg-border-r lg-border-r-border-clr lg-border-r-solid border-t border-t-border-clr border-t-solid bg-body z-50"
+          className="overflow-y-auto fixed lg-left-0 w-full lg-w-68 px-5 pt-5 border-r-none lg-border-r lg-border-r-border-clr lg-border-r-solid border-t border-t-border-clr border-t-solid bg-body z-50"
           style={{ left: "-100%" }}
           ref={docsNavRef}
         >
