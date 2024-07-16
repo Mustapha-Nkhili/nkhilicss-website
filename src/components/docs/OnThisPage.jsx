@@ -1,4 +1,5 @@
 const OnThisPage = ({ onThisPage }) => {
+  
   const scrollTo = (elRef) => {
     elRef.current.style.scrollMarginTop = "90px";
     elRef.current.scrollIntoView({
@@ -15,13 +16,13 @@ const OnThisPage = ({ onThisPage }) => {
         <label className="block pb-4">On This Page</label>
         <ul>
           {onThisPage.map((hash, index) => (
-            <li
-              key={hash + index}
-              className="text-sm text-light-periwinkle pb-3"
-            >
+            <li key={hash + index} className="text-sm pb-3">
               <span
                 onClick={() => scrollTo(hash.ref)}
-                className="cursor-pointer"
+                className={`docs-aside__link cursor-pointer text-light-periwinkle ${hash.label
+                  .toLowerCase()
+                  .split(" ")
+                  .join("-")}`}
               >
                 {" "}
                 {hash.label}
@@ -31,7 +32,11 @@ const OnThisPage = ({ onThisPage }) => {
                   {hash.subLabels.map((subLabel, index) => (
                     <li
                       key={index + subLabel}
-                      className="cursor-pointer text-xs text-light-periwinkle list-style-disc"
+                      className={`docs-aside__link cursor-pointer text-xs text-light-periwinkle list-style-disc ${
+                        subLabel.label === "Hover, focus, and other states"
+                          ? "hover-focus-and-other-states"
+                          : subLabel.label.toLowerCase().split(" ").join("-")
+                      }`}
                       onClick={() => scrollTo(subLabel.ref)}
                     >
                       {subLabel.label}

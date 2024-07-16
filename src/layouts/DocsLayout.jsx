@@ -179,6 +179,38 @@ const DocsLayout = () => {
     },
   ];
 
+  const docsSections = document.getElementsByClassName("docs-section");
+  
+  console.log(docsSections);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      [...docsSections].forEach((section) => {
+        const targetElement = document.querySelector(`.${section.id}`);
+
+        if (
+          window.scrollY + 50 >= section.offsetTop &&
+          window.scrollY < section.offsetTop + section.offsetHeight
+        ) {
+          targetElement.classList.replace(
+            "text-light-periwinkle",
+            "text-primary"
+          );
+        } else {
+          targetElement.classList.replace(
+            "text-primary",
+            "text-light-periwinkle"
+          );
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [docsSections]);
+
   useEffect(() => {
     if (location.pathname == "/docs" || location.pathname == "/docs/") {
       navigate("docs/introduction");
@@ -195,7 +227,7 @@ const DocsLayout = () => {
   const openDocsNav = () => {
     docsNavRef.current.style.left = "0";
   };
-  
+
   return (
     <div className="docs-container text-white">
       <div
