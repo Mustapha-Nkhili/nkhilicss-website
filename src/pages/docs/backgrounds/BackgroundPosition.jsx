@@ -75,7 +75,7 @@ const BackgroundPosition = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -125,7 +125,7 @@ $background-position-map: (
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $background-position-map: map.set($background-position-map, yourCustomUtility, itsValue);
 
@@ -134,7 +134,7 @@ $background-position-map: map.set($background-position-map, yourCustomUtility, i
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $background-position-map: map.set($background-position-map, bottom, itsValue);
 
@@ -149,11 +149,11 @@ $background-position-map: map.set($background-position-map, bottom, itsValue);
           pageTitle="background position"
           pageDesc="Pre-built CSS Classes to set the background position of an element"
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section className="docs-section" id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

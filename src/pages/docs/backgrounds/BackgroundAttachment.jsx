@@ -46,7 +46,7 @@ const BackgroundAttachment = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
   ];
@@ -63,7 +63,6 @@ const BackgroundAttachment = () => {
 <div class="bg-local">
   This background scrolls with the element's content.
 </div>
-
   `;
 
   const hoverCode = `
@@ -86,11 +85,15 @@ const BackgroundAttachment = () => {
           pageTitle="background attachment"
           pageDesc="Pre-built CSS classes to control the background attachment of an element."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          id="quick-reference"
+          ref={quickReferenceRef}
+          className="docs-section"
+        >
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section id="usage" ref={usageRef} className="docs-section">
           <SectionHeader
             title="Usage"
             description={

@@ -50,7 +50,7 @@ const BackgroundClip = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
   ];
@@ -89,11 +89,11 @@ const BackgroundClip = () => {
           pageTitle="background clip"
           pageDesc="Pre-built CSS classes to control the background clipping of an element."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section id="quick-reference" ref={quickReferenceRef} className="docs-section">
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section id="usage" ref={usageRef} className="docs-section">
           <SectionHeader
             title="Usage"
             description={

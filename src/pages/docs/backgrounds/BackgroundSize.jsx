@@ -51,7 +51,7 @@ const BackgroundSize = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -103,21 +103,21 @@ $background-size-map: (
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $background-size-map: map.set($background-size-map, yourCustomUtility, itsValue);
 
 @use "../node_modules/nkhilicss/sass/index";
-`;
+ `;
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $background-size-map: map.set($background-size-map, contain, itsValue);
 
 @use "../node_modules/nkhilicss/sass/index";
-`;
+ `;
 
   return (
     <>
@@ -127,11 +127,11 @@ $background-size-map: map.set($background-size-map, contain, itsValue);
           pageTitle="background size"
           pageDesc="Pre-built CSS Classes to control the size of the background image of an element."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section id="quick-reference" ref={quickReferenceRef} className="docs-section">
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section id="usage" ref={usageRef} className="docs-section">
           <SectionHeader
             title="Usage"
             description={
