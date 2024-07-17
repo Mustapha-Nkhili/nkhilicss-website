@@ -119,11 +119,11 @@ const Opacity = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
-      label: "Custom  opacity",
+      label: "Custom opacity",
       ref: opacityRef,
       subLabels: [
         { ref: utilitySassMap, label: "Utility Sass Map" },
@@ -178,7 +178,7 @@ $opacity-map: (
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $opacity-map: map.set($opacity-map, yourCustomUtility, itsValue);
 
@@ -187,7 +187,7 @@ $opacity-map: map.set($opacity-map, yourCustomUtility, itsValue);
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $opacity-map: map.set($opacity-map, 100, itsValue);
 
@@ -202,11 +202,11 @@ $opacity-map: map.set($opacity-map, 100, itsValue);
           pageTitle=" opacity"
           pageDesc="Pre-built CSS classes for applying  opacity filters to an element."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section className="docs-section" id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

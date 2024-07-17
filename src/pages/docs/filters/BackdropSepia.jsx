@@ -51,7 +51,7 @@ const BackdropSepia = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -93,7 +93,7 @@ $backdrop-sepia-map: (
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $backdrop-sepia-map: map.set($backdrop-sepia-map, yourCustomUtility, itsValue);
 
@@ -102,7 +102,7 @@ $backdrop-sepia-map: map.set($backdrop-sepia-map, yourCustomUtility, itsValue);
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $backdrop-sepia-map: map.set($backdrop-sepia-map, 100, itsValue);
 
@@ -117,11 +117,11 @@ $backdrop-sepia-map: map.set($backdrop-sepia-map, 100, itsValue);
           pageTitle="backdrop sepia"
           pageDesc="Pre-built CSS classes for applying backdrop sepia filters to an element."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section className="docs-section" id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

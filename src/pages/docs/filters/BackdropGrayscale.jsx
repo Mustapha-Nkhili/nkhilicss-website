@@ -51,7 +51,7 @@ const BackdropGrayscale = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -95,7 +95,7 @@ $backdrop-grayscale-map: (
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $backdrop-grayscale-map: map.set($backdrop-grayscale-map, yourCustomUtility, itsValue);
 
@@ -104,7 +104,7 @@ $backdrop-grayscale-map: map.set($backdrop-grayscale-map, yourCustomUtility, its
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $backdrop-grayscale-map: map.set($backdrop-grayscale-map, 100, itsValue);
 
@@ -119,11 +119,11 @@ $backdrop-grayscale-map: map.set($backdrop-grayscale-map, 100, itsValue);
           pageTitle="backdrop grayscale"
           pageDesc="Pre-built CSS classes for applying backdrop grayscale filters to an element."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section className="docs-section" id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

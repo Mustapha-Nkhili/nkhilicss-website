@@ -115,7 +115,7 @@ const BackdropContrast = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -175,7 +175,7 @@ $backdrop-contrast-map: (
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $backdrop-contrast-map: map.set($backdrop-contrast-map, yourCustomUtility, itsValue);
 
@@ -184,7 +184,7 @@ $backdrop-contrast-map: map.set($backdrop-contrast-map, yourCustomUtility, itsVa
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $backdrop-contrast-map: map.set($backdrop-contrast-map, 100, itsValue);
 
@@ -199,11 +199,11 @@ $backdrop-contrast-map: map.set($backdrop-contrast-map, 100, itsValue);
           pageTitle="backdrop contrast"
           pageDesc="Pre-built CSS classes for applying backdrop contrast filters to an element."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section className="docs-section" id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={
