@@ -95,7 +95,7 @@ $base-spacing: 0.25rem !default; // 4px
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/_utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/_utilities-maps" as *;
 
 $desired-utility-map: map.set($desired-utility-map, yourCustomUtility, itsValue);
 
@@ -105,7 +105,7 @@ $desired-utility-map: map.set($desired-utility-map, yourCustomUtility, itsValue)
 
 // Import the required Sass modules and utility maps
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/_utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/_utilities-maps" as *;
 
 $padding-map: map.set($padding-map, 101, 27rem);
 
@@ -115,7 +115,7 @@ $padding-map: map.set($padding-map, 101, 27rem);
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/_utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/_utilities-maps" as *;
 
 $utility-to-modify-map: map.set($utility-to-modify-map, 5, itsValue);
 
@@ -124,7 +124,7 @@ $utility-to-modify-map: map.set($utility-to-modify-map, 5, itsValue);
 // Example: Changing a utility value (e.g., width)
 
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/_utilities-maps" as *; 
+@use "../node_modules/nkhilicss/sass/utils/_utilities-maps" as *; 
 
 $width-map: map.set($width-map, 5, 5px); // Setting width utility with key 5 and value 5px
 

@@ -34,7 +34,7 @@ const UtilitiesConfiguration = () => {
 // Import necessary modules
 @use "sass:map"; // Import Sass map functions
 // Import utilities from nkhilicss
-@use "../node_modules/nkhilicss/sass/partials/utilities" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities" as *;
 
 // Access the desired utility from the utilities map
 $utility-to-modify: map.get($utilities, "css-property");
@@ -48,7 +48,7 @@ $updated-utility: map.set($utility-to-modify, prefix, yourCustomPrefix);
 
   const modifyPrefixExampleCode = `
  @use "sass:map";
- @use "../node_modules/nkhilicss/sass/partials/utilities" as *;
+ @use "../node_modules/nkhilicss/sass/utils/utilities" as *;
  
  // Access the resize utility from the utilities map
  $resize-utility: map.get($utilities, "resize");
@@ -78,7 +78,7 @@ $updated-utility: map.set($utility-to-modify, prefix, yourCustomPrefix);
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $css-property-map: map.set($css-property-map, utilityClass, itsValue);
 
@@ -87,7 +87,7 @@ $css-property-map: map.set($css-property-map, utilityClass, itsValue);
 // Example: 
 
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $flex-basis-map: map.set($flex-basis-map, 110, 26rem);
 
@@ -107,7 +107,7 @@ $flex-basis-map: map.set($flex-basis-map, 110, 26rem);
 // Method 2: Add and modify utilities
 
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $css-property-map: map.set($css-property-map, utilityClass, itsValue);
 
@@ -122,7 +122,7 @@ $css-property-map: map.set($css-property-map, utilityClass, itsValue);
 
 // Method 2:
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $letter-spacing-map: map.set($letter-spacing-map, tight, -0.030em);
 
@@ -207,7 +207,7 @@ $letter-spacing-map: map.set($letter-spacing-map, tight, -0.030em);
               code={`
 // Import necessary modules
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities" as *;
 
 // Access the desired utility from the utilities map
 $utility-to-modify: map.get($utilities, "css-property");

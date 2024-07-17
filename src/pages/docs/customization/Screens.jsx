@@ -72,7 +72,7 @@ $breakpoints: (
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/breakpoints" as *;
+@use "../node_modules/nkhilicss/sass/layout/breakpoints" as *;
 
 $breakpoints: map.set($breakpoints, predefinedBreakpoint, itsValue);
 
@@ -80,7 +80,7 @@ $breakpoints: map.set($breakpoints, predefinedBreakpoint, itsValue);
 
 // Example: 
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/breakpoints" as *;
+@use "../node_modules/nkhilicss/sass/layout/breakpoints" as *;
 
 // Here, we are setting a custom value for a predefined (sm) breakpoint
 $breakpoints: map.set($breakpoints, sm, 700px);
@@ -102,7 +102,11 @@ $breakpoints: map.set($breakpoints, sm, 700px);
             description="In this guide, we will walk you through the process of customizing the default breakpoints (screens) in your Nkhili CSS project. Customizing breakpoints allows you to tailor the responsive design of your project to better fit your specific needs. By the end of this guide, you will have a clear understanding of how to extend the default breakpoints in Nkhili CSS and apply your custom breakpoints in your project."
           />
         </section>
-        <section className="docs-section" id="default-screens-map" ref={defaultScreensMapRef}>
+        <section
+          className="docs-section"
+          id="default-screens-map"
+          ref={defaultScreensMapRef}
+        >
           <SectionHeader title="Default screens map" />
           <Code code={breakpointsMap} language="javaScript" />
         </section>
