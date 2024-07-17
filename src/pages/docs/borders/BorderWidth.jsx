@@ -72,7 +72,7 @@ const BorderWidth = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -182,7 +182,7 @@ $border-width-map: (
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/_utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/_utilities-maps" as *;
 
 $border-width-map: map.set($border-width-map, yourCustomUtility, itsValue);
 
@@ -195,7 +195,7 @@ $border-width-map: map.set($border-width-map, yourCustomUtility, itsValue);
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/_utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/_utilities-maps" as *;
 
 $border-width-map: map.set($border-width-map, 5, itsValue);
 
@@ -214,155 +214,184 @@ $border-width-map: map.set($border-width-map, 5, itsValue);
           pageTitle="border width"
           pageDesc="Pre-built CSS classes for managing element border width"
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
-          <h3
-            className="font-medium mt-5 text-light-periwinkle"
+          <div
             id="border-width-reference"
             ref={borderWidthRef}
+            className="docs-section"
           >
-            border width Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={borderWidthReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-5 text-light-periwinkle">
+              border width Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={borderWidthReference}
+            />
+          </div>
+          <div
             id="border-width-top-reference"
             ref={borderWidthTopRef}
+            className="docs-section"
           >
-            border width top Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={borderWidthTopReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              border width top Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={borderWidthTopReference}
+            />
+          </div>
+          <div
             id="border-width-right-reference"
             ref={borderWidthRightRef}
+            className="docs-section"
           >
-            border Width right Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={borderWidthRightReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              border Width right Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={borderWidthRightReference}
+            />
+          </div>
+          <div
             id="border-width-bottom-reference"
             ref={borderWidthBottomRef}
+            className="docs-section"
           >
-            border Width bottom Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={borderWidthBottomReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              border Width bottom Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={borderWidthBottomReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="border-width-left-reference"
             ref={borderWidthLeftRef}
           >
-            border width left Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={borderWidthLeftReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              border width left Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={borderWidthLeftReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="vertical-border-width-reference"
             ref={verticalBorderWidthRef}
           >
-            vertical border width Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={verticalBorderWidthReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              vertical border width Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={verticalBorderWidthReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="horizontal-border-width-reference"
             ref={horizontalBorderWidthRef}
           >
-            horizontal border width Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={horizontalBorderWidthReference}
-          />
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              horizontal border width Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={horizontalBorderWidthReference}
+            />
+          </div>
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader title="Usage" />
-          <h3
-            className="text-sm font-medium text-primary"
+          <div
+            className="docs-section"
             id="border-width-single-side"
             ref={usageBorderWidthSingleSideRef}
           >
-            border width: single Side
-          </h3>
-          <p className="text-light-periwinkle text-sm mt-2">
-            Use the &quot;<span className="text-primary">border-t-*</span>&quot;,{" "}
-            &quot;<span className="text-primary">border-r-*</span>&quot;, &quot;
-            <span className="text-primary">border-b-*</span>&quot;, and &quot;
-            <span className="text-primary">border-l-*</span>&quot; classes to
-            precisely adjust the border Width on specific sides of an element.
-          </p>
-          <div className="text-light-periwinkle text-sm mt-3">
-            <label>For instance :</label>
-            <ul className="mt-2 ml-5">
-              <li>
-                <span className="text-primary">border-t-6 :</span> Adds a border width
-                of 6px to the top of the element.
-              </li>
-              <li>
-                <span className="text-primary">border-r-4 :</span> Adds a border width
-                of 4px to the right of the element.
-              </li>
-              <li>
-                <span className="text-primary">border-b-8 :</span> Adds a border width
-                of 8px to the bottom of the element.
-              </li>
-              <li>
-                <span className="text-primary">border-l-2 :</span> Adds a border width
-                of 2px to the left of the element.
-              </li>
-            </ul>
+            <h3 className="text-sm font-medium text-primary">
+              border width: single Side
+            </h3>
+            <p className="text-light-periwinkle text-sm mt-2">
+              Use the &quot;<span className="text-primary">border-t-*</span>
+              &quot;, &quot;<span className="text-primary">border-r-*</span>
+              &quot;, &quot;
+              <span className="text-primary">border-b-*</span>&quot;, and &quot;
+              <span className="text-primary">border-l-*</span>&quot; classes to
+              precisely adjust the border Width on specific sides of an element.
+            </p>
+            <div className="text-light-periwinkle text-sm mt-3">
+              <label>For instance :</label>
+              <ul className="mt-2 ml-5">
+                <li>
+                  <span className="text-primary">border-t-6 :</span> Adds a
+                  border width of 6px to the top of the element.
+                </li>
+                <li>
+                  <span className="text-primary">border-r-4 :</span> Adds a
+                  border width of 4px to the right of the element.
+                </li>
+                <li>
+                  <span className="text-primary">border-b-8 :</span> Adds a
+                  border width of 8px to the bottom of the element.
+                </li>
+                <li>
+                  <span className="text-primary">border-l-2 :</span> Adds a
+                  border width of 2px to the left of the element.
+                </li>
+              </ul>
+            </div>
+            <Code code={singleBorderWidthCode} language="html" />
           </div>
-          <Code code={singleBorderWidthCode} language="html" />
-          <h3
-            className="text-sm font-medium text-primary"
+          <div
+            className="docs-section"
             id="border-width-vertical"
             ref={usageVerticalBorderWidthRef}
           >
-            border width: vertical
-          </h3>
-          <p className="text-light-periwinkle text-sm mt-2">
-            Use The <span className="text-primary">&quot;border-y-*&quot;</span> class
-            to add border width to both vertical sides of an element (top and
-            bottom).
-          </p>
-          <Code code={verticalBorderWidthCode} language="html" />
-          <h3
-            className="text-sm font-medium text-primary"
+            <h3 className="text-sm font-medium text-primary">
+              border width: vertical
+            </h3>
+            <p className="text-light-periwinkle text-sm mt-2">
+              Use The{" "}
+              <span className="text-primary">&quot;border-y-*&quot;</span> class
+              to add border width to both vertical sides of an element (top and
+              bottom).
+            </p>
+            <Code code={verticalBorderWidthCode} language="html" />
+          </div>
+          <div
+            className="docs-section"
             id="border-width-horizontal"
             ref={usageHorizontalBorderWidthRef}
           >
-            border width: horizontal
-          </h3>
-          <p className="text-light-periwinkle text-sm mt-2">
-            Use The <span className="text-primary">&quot;border-x-*&quot;</span> class
-            to add border width to both horizontal sides of an element (left and
-            right).
-          </p>
-          <Code code={horizontalBorderWidthCode} language="html" />
-          <h3
-            className="text-sm font-medium text-primary"
+            <h3 className="text-sm font-medium text-primary">
+              border width: horizontal
+            </h3>
+            <p className="text-light-periwinkle text-sm mt-2">
+              Use The{" "}
+              <span className="text-primary">&quot;border-x-*&quot;</span> class
+              to add border width to both horizontal sides of an element (left
+              and right).
+            </p>
+            <Code code={horizontalBorderWidthCode} language="html" />
+          </div>
+          <div
+            className="docs-section"
             id="border-width-all-sides"
             ref={usageAllSidesBorderWidthRef}
           >
-            border width: all sides
-          </h3>
-          <p className="text-light-periwinkle text-sm mt-2">
-            Use The <span className="text-primary">&quot;border-*&quot;</span> class
-            to add border width to all sides of an element.
-          </p>
-          <Code code={allSidesBorderWidthCode} language="html" />
+            <h3 className="text-sm font-medium text-primary">
+              border width: all sides
+            </h3>
+            <p className="text-light-periwinkle text-sm mt-2">
+              Use The <span className="text-primary">&quot;border-*&quot;</span>{" "}
+              class to add border width to all sides of an element.
+            </p>
+            <Code code={allSidesBorderWidthCode} language="html" />
+          </div>
         </section>
         <ConditionalCss
           headerRef={executingUnderCertainConditionsRef}

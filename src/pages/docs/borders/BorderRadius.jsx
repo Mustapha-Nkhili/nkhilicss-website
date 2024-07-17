@@ -142,7 +142,7 @@ const BorderRadius = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -199,7 +199,7 @@ $border-radius-map: (
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $border-radius-map: map.set($border-radius-map, yourCustomUtility, itsValue);
 
@@ -208,7 +208,7 @@ $border-radius-map: map.set($border-radius-map, yourCustomUtility, itsValue);
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $border-radius-map: map.set($border-radius-map, 3xl, itsValue);
 
@@ -223,11 +223,11 @@ $border-radius-map: map.set($border-radius-map, 3xl, itsValue);
           pageTitle="border radius"
           pageDesc="Pre-built CSS classes allow you to specify the roundness of the corners, either uniformly or for individual corners."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section className="docs-section" id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

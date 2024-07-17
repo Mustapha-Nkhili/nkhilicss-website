@@ -72,7 +72,7 @@ const BorderColor = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -213,156 +213,184 @@ $colors: (
           pageTitle="border color"
           pageDesc="Pre-built CSS classes for managing the border color of an element."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
-          <h3
-            className="font-medium mt-5 text-light-periwinkle"
+          <div
+            className="docs-section"
             id="border-color-reference"
             ref={borderColorRef}
           >
-            border color Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={borderColorReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-5 text-light-periwinkle">
+              border color Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={borderColorReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="border-color-top-reference"
             ref={borderColorTopRef}
           >
-            border color top Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={borderColorTopReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              border color top Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={borderColorTopReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="border-color-right-reference"
             ref={borderColorRightRef}
           >
-            border color right Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={borderColorRightReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              border color right Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={borderColorRightReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="border-color-bottom-reference"
             ref={borderColorBottomRef}
           >
-            border color bottom Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={borderColorBottomReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              border color bottom Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={borderColorBottomReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="border-color-left-reference"
             ref={borderColorLeftRef}
           >
-            border color left Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={borderColorLeftReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              border color left Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={borderColorLeftReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="vertical-border-color-reference"
             ref={verticalBorderColorRef}
           >
-            vertical border color Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={verticalBorderColorReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              vertical border color Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={verticalBorderColorReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="horizontal-border-color-reference"
             ref={horizontalBorderColorRef}
           >
-            horizontal border color Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={horizontalBorderColorReference}
-          />
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              horizontal border color Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={horizontalBorderColorReference}
+            />
+          </div>
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader title="Usage" />
-          <h3
-            className="text-sm font-medium text-primary"
+          <div
+            className="docs-section"
             id="border-color-single-side"
             ref={usageBorderColorSingleSideRef}
           >
-            border color: single Side
-          </h3>
-          <p className="text-light-periwinkle text-sm mt-2">
-            Use the &quot;<span className="text-primary">border-t-*</span>
-            &quot;, &quot;<span className="text-primary">border-r-*</span>
-            &quot;, &quot;
-            <span className="text-primary">border-b-*</span>&quot;, and &quot;
-            <span className="text-primary">border-l-*</span>&quot; classes to
-            precisely adjust the border color on specific sides of an element.
-          </p>
-          <div className="text-light-periwinkle text-sm mt-3">
-            <label>For instance :</label>
-            <ul className="mt-2 ml-5">
-              <li>
-                <span className="text-primary">border-t-red :</span> Adds a red border
-                color on the top of the element.
-              </li>
-              <li>
-                <span className="text-primary">border-r-yellow :</span> Adds a yellow border
-                color on the right of the element.
-              </li>
-              <li>
-                <span className="text-primary">border-b-green :</span> Adds a green border
-                color on the bottom of the element.
-              </li>
-              <li>
-                <span className="text-primary">border-l-black :</span> Adds a black border
-                color on the left of the element.
-              </li>
-            </ul>
+            <h3 className="text-sm font-medium text-primary">
+              border color: single Side
+            </h3>
+            <p className="text-light-periwinkle text-sm mt-2">
+              Use the &quot;<span className="text-primary">border-t-*</span>
+              &quot;, &quot;<span className="text-primary">border-r-*</span>
+              &quot;, &quot;
+              <span className="text-primary">border-b-*</span>&quot;, and &quot;
+              <span className="text-primary">border-l-*</span>&quot; classes to
+              precisely adjust the border color on specific sides of an element.
+            </p>
+            <div className="text-light-periwinkle text-sm mt-3">
+              <label>For instance :</label>
+              <ul className="mt-2 ml-5">
+                <li>
+                  <span className="text-primary">border-t-red :</span> Adds a
+                  red border color on the top of the element.
+                </li>
+                <li>
+                  <span className="text-primary">border-r-yellow :</span> Adds a
+                  yellow border color on the right of the element.
+                </li>
+                <li>
+                  <span className="text-primary">border-b-green :</span> Adds a
+                  green border color on the bottom of the element.
+                </li>
+                <li>
+                  <span className="text-primary">border-l-black :</span> Adds a
+                  black border color on the left of the element.
+                </li>
+              </ul>
+            </div>
+            <Code code={singleBorderColorCode} language="html" />
           </div>
-          <Code code={singleBorderColorCode} language="html" />
-          <h3
-            className="text-sm font-medium text-primary"
+          <div
+            className="docs-section"
             id="border-color-vertical"
             ref={usageVerticalBorderColorRef}
           >
-            border color: vertical
-          </h3>
-          <p className="text-light-periwinkle text-sm mt-2">
-            Use The <span className="text-primary">&quot;border-y-*&quot;</span>{" "}
-            class to add border color to both vertical sides of an element (top
-            and bottom).
-          </p>
-          <Code code={verticalBorderColorCode} language="html" />
-          <h3
-            className="text-sm font-medium text-primary"
+            <h3 className="text-sm font-medium text-primary">
+              border color: vertical
+            </h3>
+            <p className="text-light-periwinkle text-sm mt-2">
+              Use The{" "}
+              <span className="text-primary">&quot;border-y-*&quot;</span> class
+              to add border color to both vertical sides of an element (top and
+              bottom).
+            </p>
+            <Code code={verticalBorderColorCode} language="html" />
+          </div>
+          <div
+            className="docs-section"
             id="border-color-horizontal"
             ref={usageHorizontalBorderColorRef}
           >
-            border color: horizontal
-          </h3>
-          <p className="text-light-periwinkle text-sm mt-2">
-            Use The <span className="text-primary">&quot;border-x-*&quot;</span>{" "}
-            class to add border color to both horizontal sides of an element
-            (left and right).
-          </p>
-          <Code code={horizontalBorderColorCode} language="html" />
-          <h3
-            className="text-sm font-medium text-primary"
+            <h3 className="text-sm font-medium text-primary">
+              border color: horizontal
+            </h3>
+            <p className="text-light-periwinkle text-sm mt-2">
+              Use The{" "}
+              <span className="text-primary">&quot;border-x-*&quot;</span> class
+              to add border color to both horizontal sides of an element (left
+              and right).
+            </p>
+            <Code code={horizontalBorderColorCode} language="html" />
+          </div>
+          <div
+            className="docs-section"
             id="border-color-all-sides"
             ref={usageAllSidesBorderColorRef}
           >
-            border color: all sides
-          </h3>
-          <p className="text-light-periwinkle text-sm mt-2">
-            Use The <span className="text-primary">&quot;border-*&quot;</span>{" "}
-            class to add border color to all sides of an element.
-          </p>
-          <Code code={allSidesBorderColorCode} language="html" />
+            <h3 className="text-sm font-medium text-primary">
+              border color: all sides
+            </h3>
+            <p className="text-light-periwinkle text-sm mt-2">
+              Use The <span className="text-primary">&quot;border-*&quot;</span>{" "}
+              class to add border color to all sides of an element.
+            </p>
+            <Code code={allSidesBorderColorCode} language="html" />
+          </div>
         </section>
         <ConditionalCss
           headerRef={executingUnderCertainConditionsRef}
@@ -380,7 +408,7 @@ $colors: (
           addUtilityCode={addUtilityCode}
           changeUtilityValueRef={changeUtilityValueRef}
           changeUtilityValueCode={changeUtilityValueCode}
-          utility={"border color"}
+          utility={"color"}
         />
         <Footer prevPage={"border width"} nextPage={"border style"} />
       </div>

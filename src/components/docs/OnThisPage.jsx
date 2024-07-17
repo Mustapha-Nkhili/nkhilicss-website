@@ -1,5 +1,4 @@
 const OnThisPage = ({ onThisPage }) => {
-  
   const scrollTo = (elRef) => {
     elRef.current.style.scrollMarginTop = "90px";
     elRef.current.scrollIntoView({
@@ -35,6 +34,12 @@ const OnThisPage = ({ onThisPage }) => {
                       className={`docs-aside__link cursor-pointer text-xs text-light-periwinkle list-style-disc ${
                         subLabel.label === "Hover, focus, and other states"
                           ? "hover-focus-and-other-states"
+                          : subLabel.label.includes(": ")
+                          ? subLabel.label
+                              .toLowerCase()
+                              .replace(": ", " ")
+                              .split(" ")
+                              .join("-")
                           : subLabel.label.toLowerCase().split(" ").join("-")
                       }`}
                       onClick={() => scrollTo(subLabel.ref)}

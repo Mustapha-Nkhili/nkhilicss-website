@@ -50,7 +50,7 @@ const OutlineOffset = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -102,7 +102,7 @@ $outline-offset-map: (
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $outline-offset-map: map.set($outline-offset-map, yourCustomUtility, itsValue);
 
@@ -111,7 +111,7 @@ $outline-offset-map: map.set($outline-offset-map, yourCustomUtility, itsValue);
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $outline-offset-map: map.set($outline-offset-map, 10, itsValue);
 
@@ -126,11 +126,11 @@ $outline-offset-map: map.set($outline-offset-map, 10, itsValue);
           pageTitle="outline offset"
           pageDesc="Pre-built CSS classes to control the offset distance of an element's outline"
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section className="docs-section" id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={
