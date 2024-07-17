@@ -7,9 +7,9 @@ import SectionHeader from "../../../components/docs/SectionHeader";
 
 const Spacing = () => {
   const overviewRef = useRef(null);
-  const defaultColorMapRef = useRef(null);
+  const defaultSpacingMapRef = useRef(null);
   const CustomSpacingRef = useRef(null);
-  const extendColorMapRef = useRef(null);
+  const extendSpacingMapRef = useRef(null);
   const modifyDefaultSpacing = useRef(null);
 
   const onThisPage = [
@@ -19,13 +19,13 @@ const Spacing = () => {
     },
     {
       label: "Default spacing map",
-      ref: defaultColorMapRef,
+      ref: defaultSpacingMapRef,
     },
     {
       label: "Custom spacing",
       ref: CustomSpacingRef,
       subLabels: [
-        { ref: extendColorMapRef, label: "Extend spacing map" },
+        { ref: extendSpacingMapRef, label: "Extend spacing map" },
         { ref: modifyDefaultSpacing, label: "Modify default spacing" },
       ],
     },
@@ -140,13 +140,17 @@ $width-map: map.set($width-map, 5, 5px); // Setting width utility with key 5 and
           pageTitle="Customizing Spacing"
           pageDesc="Customizing the default spacing and sizing scale for your project."
         />
-        <section id="overview" ref={overviewRef}>
+        <section className="docs-section" id="overview" ref={overviewRef}>
           <SectionHeader
             title="Overview"
             description="Discover techniques to customize the default spacing and sizing scales to better suit your project’s needs. This page covers various methods and best practices for effectively managing spacing and sizing across your application."
           />
         </section>
-        <section id="default-color-map" ref={defaultColorMapRef}>
+        <section
+          className="docs-section"
+          id="default-spacing-map"
+          ref={defaultSpacingMapRef}
+        >
           <SectionHeader title="Default spacing map" />
           <Code code={spacingMap} language="javaScript" />
           <p className="text-sm text-light-periwinkle">
@@ -156,30 +160,36 @@ $width-map: map.set($width-map, 5, 5px); // Setting width utility with key 5 and
           </p>
         </section>
 
-        <section id="Custom spacing" ref={CustomSpacingRef}>
+        <section
+          className="docs-section"
+          id="custom-spacing"
+          ref={CustomSpacingRef}
+        >
           <SectionHeader
             title="Custom spacing"
             description="Effortlessly customize the spacing values to perfectly suit your preferences."
           />
-          <h4
-            className="capitalize font-medium mt-4"
+          <div
+            className="docs-section"
             id="extend-spacing-map"
-            ref={extendColorMapRef}
+            ref={extendSpacingMapRef}
           >
-            Extend spacing map
-          </h4>
-          <Code code={addUtilityCode} language="javaScript" />
-          <h4
-            className="capitalize font-medium mt-4"
+            <h4 className="capitalize font-medium mt-4">Extend spacing map</h4>
+            <Code code={addUtilityCode} language="javaScript" />
+          </div>
+          <div
+            className="docs-section"
             id="modify-default-spacing"
             ref={modifyDefaultSpacing}
           >
-            Modify default spacing
-          </h4>
-          <Code code={changeUtilityValueCode} language="javaScript" />
+            <h4 className="capitalize font-medium mt-4">
+              Modify default spacing
+            </h4>
+            <Code code={changeUtilityValueCode} language="javaScript" />
+          </div>
         </section>
 
-        <Footer prevPage={"colors"} nextPage={"screens"} />
+        <Footer prevPage={"Spacings"} nextPage={"screens"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>

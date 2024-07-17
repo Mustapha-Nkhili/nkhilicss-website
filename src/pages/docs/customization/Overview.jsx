@@ -166,7 +166,7 @@ $blur-sm: 4px !default;
           pageTitle="How can NkhiliCSS be customized"
           pageDesc="Create a personalized theme with extensive customization capabilities. Adapt every detail to fit your project's requirements, guaranteeing total control and flexibility in styling."
         />
-        <section id="overview" ref={overviewRef}>
+        <section className="docs-section" id="overview" ref={overviewRef}>
           <SectionHeader
             title="Overview"
             description="NkhiliCSS offers extensive customization options as a versatile CSS framework. Users can personalize everything from colors and typography to spacing, sizes, and layouts. This flexibility is achieved through a variety of customization levels"
@@ -176,69 +176,69 @@ $blur-sm: 4px !default;
             language={"html"}
           />
         </section>
-        <section id="sass-variables" ref={sassVariablesRef}>
+        <section className="docs-section" id="sass-variables" ref={sassVariablesRef}>
           <SectionHeader
             title="Sass Variables"
             description="In NkhiliCSS, Sass variables are globally defined in the variables file located within the partials folder"
           />
-          <h4
-            className="font-medium mt-4"
-            id="theme-colors"
-            ref={themeColorsRef}
-          >
-            Theme Colors
-          </h4>
-          <Code code={themeColorsCode} language={"javascript"} />
+          <div className="docs-section" id="theme-colors" ref={themeColorsRef}>
+            <h4 className="font-medium mt-4">Theme Colors</h4>
+            <Code code={themeColorsCode} language={"javascript"} />
+          </div>
 
-          <h4 className="font-medium mt-4" id="colors-maps" ref={colorsMapsRef}>
-            Colors Maps
-          </h4>
-          <Code code={colorsMapCode} language={"javascript"} />
-          <p className="text-sm">
-            <span className="text-info">Note:</span> To add colors to the colors
-            map, simply add them to the custom colors map. To change the value
-            or color of a predefined variable, update the value of that specific
-            variable. For example, to change the primary color.
-          </p>
-          <Code code={customColorCode} language={"javascript"} />
-          <h4
-            className="font-medium mt-4"
+          <div className="docs-section" id="colors-maps" ref={colorsMapsRef}>
+            <h4 className="font-medium mt-4">Colors Maps</h4>
+            <Code code={colorsMapCode} language={"javascript"} />
+            <p className="text-sm">
+              <span className="text-info">Note:</span> To add colors to the
+              colors map, simply add them to the custom colors map. To change
+              the value or color of a predefined variable, update the value of
+              that specific variable. For example, to change the primary color.
+            </p>
+            <Code code={customColorCode} language={"javascript"} />
+          </div>
+
+          <div
+            className="docs-section"
             id="spacing-variables"
             ref={spacingVariablesRef}
           >
-            Spacing Variables
-          </h4>
-          <Code code={spacingVariablesCode} language={"javascript"} />
-          <h4 className="font-medium mt-4" id="borders" ref={bordersRef}>
-            Borders
-          </h4>
-          <Code code={bordersCode} language={"javascript"} />
-          <h4 className="font-medium mt-4" id="fonts" ref={fontsRef}>
-            Fonts
-          </h4>
-          <Code code={fontsCode} language={"javascript"} />
-          <h4
-            className="font-medium mt-4"
+            <h4 className="font-medium mt-4">Spacing Variables</h4>
+            <Code code={spacingVariablesCode} language={"javascript"} />
+          </div>
+          <div className="docs-section" id="borders" ref={bordersRef}>
+            <h4 className="font-medium mt-4">Borders</h4>
+            <Code code={bordersCode} language={"javascript"} />
+          </div>
+          <div className="docs-section" id="fonts" ref={fontsRef}>
+            <h4 className="font-medium mt-4">Fonts</h4>
+            <Code code={fontsCode} language={"javascript"} />
+          </div>
+          <div
+            className="docs-section"
             id="letter-spacing"
             ref={letterSpacingRef}
           >
-            Letter Spacing
-          </h4>
-          <Code code={letterSpacingCode} language={"javascript"} />
-          <h4 className="font-medium mt-4" id="line-height" ref={lineHeightRef}>
-            Line Height
-          </h4>
-          <Code code={lineHeightCode} language={"javascript"} />
-          <h4 className="font-medium mt-4" id="text" ref={textRef}>
-            Text
-          </h4>
-          <Code code={textCode} language={"javascript"} />
-          <h4 className="font-medium mt-4" id="filters" ref={filtersRef}>
-            Filters
-          </h4>
-          <Code code={filtersCode} language={"javascript"} />
+            <h4 className="font-medium mt-4">Letter Spacing</h4>
+            <Code code={letterSpacingCode} language={"javascript"} />
+          </div>
+          <div className="docs-section" id="line-height" ref={lineHeightRef}>
+            <h4 className="font-medium mt-4">Line Height</h4>
+            <Code code={lineHeightCode} language={"javascript"} />
+          </div>
+          <div className="docs-section" id="text" ref={textRef}>
+            <h4 className="font-medium mt-4">Text</h4>
+            <Code code={textCode} language={"javascript"} />
+          </div>
+          <div className="docs-section" id="filters" ref={filtersRef}>
+            <h4 className="font-medium mt-4">Filters</h4>
+            <Code code={filtersCode} language={"javascript"} />
+          </div>
         </section>
-        <Footer prevPage={"installation"} nextPage={"utilities configuration"} />
+        <Footer
+          prevPage={"installation"}
+          nextPage={"utilities configuration"}
+        />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>

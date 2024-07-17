@@ -108,13 +108,17 @@ const Colors = () => {
           pageTitle="Customizing Color Palette"
           pageDesc="To customize the default color palette for your project, you can extend the existing palette by defining your own colors."
         />
-        <section id="overview" ref={overviewRef}>
+        <section className="docs-section" id="overview" ref={overviewRef}>
           <SectionHeader
             title="Overview"
             description="In this guide, we will walk you through the process of customizing the default color palette in your Nkhili CSS project. Customizing the color palette allows you to create a unique visual identity for your project, ensuring consistency and coherence across your design. By the end of this guide, you will have a clear understanding of how to extend Nkhili CSS default color palette, and use your custom colors in your project."
           />
         </section>
-        <section id="default-color-palette" ref={defaultColorPaletteRef}>
+        <section
+          className="docs-section"
+          id="default-color-palette"
+          ref={defaultColorPaletteRef}
+        >
           <SectionHeader title="Default color palette" />
           <div className="flex justify-center items-center md-flex-column gap-5 mb-5 mt-10 flex-wrap">
             {Object.keys(colors).map((key, index) => (
@@ -162,35 +166,43 @@ const Colors = () => {
           </p>
         </section>
 
-        <section id="Custom colors" ref={CustomColorsRef}>
+        <section
+          className="docs-section"
+          id="custom-colors"
+          ref={CustomColorsRef}
+        >
           <SectionHeader
             title="Custom colors"
             description="Effortlessly customize the colors to perfectly suit your preferences."
           />
-          <h4
-            className="capitalize font-medium mt-4"
+          <div
+            className="docs-section"
             id="color-palette-map"
             ref={colorPaletteMapRef}
           >
-            Color palette map
-          </h4>
-          <Code code={colorMap} language="javaScript" />
-          <h4
-            className="capitalize font-medium mt-4"
+            <h4 className="capitalize font-medium mt-4">Color palette map</h4>
+            <Code code={colorMap} language="javaScript" />
+          </div>
+          <div
+            className="docs-section"
             id="extend-color-palette"
             ref={extendColorPaletteRef}
           >
-            Extend color palette
-          </h4>
-          <Code code={addUtilityCode} language="javaScript" />
-          <h4
-            className="capitalize font-medium mt-4"
+            <h4 className="capitalize font-medium mt-4">
+              Extend color palette
+            </h4>
+            <Code code={addUtilityCode} language="javaScript" />
+          </div>
+          <div
+            className="docs-section"
             id="modify-default-colors"
             ref={modifyDefaultColors}
           >
-            Modify default colors
-          </h4>
-          <Code code={changeUtilityValueCode} language="javaScript" />
+            <h4 className="capitalize font-medium mt-4">
+              Modify default colors
+            </h4>
+            <Code code={changeUtilityValueCode} language="javaScript" />
+          </div>
         </section>
 
         <Footer prevPage={"utilities configuration"} nextPage={"spacing"} />

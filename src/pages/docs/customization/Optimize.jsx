@@ -21,7 +21,7 @@ const Optimize = () => {
       ref: fileStructureRef,
     },
     {
-      label: "Minimal sass with `@use`",
+      label: "Minimal sass with use",
       ref: minimalSassRef,
     },
     {
@@ -65,18 +65,26 @@ sass/
           pageTitle="Optimize"
           pageDesc="Optimize your Nkhili CSS project to keep it streamlined, responsive, and maintainable."
         />
-        <section id="overview" ref={overviewRef}>
+        <section className="docs-section" id="overview" ref={overviewRef}>
           <SectionHeader
             title="Overview"
             description="In this guide, we will walk you through the process of optimizing your Nkhili CSS project. Deliver the best experience by keeping your projects streamlined, responsive, and maintainable. By the end of this guide, you will have a clear understanding of how to enhance the efficiency of your project, allowing you to focus on more important tasks."
           />
         </section>
-        <section id="file-structure" ref={fileStructureRef}>
+        <section
+          className="docs-section"
+          id="file-structure"
+          ref={fileStructureRef}
+        >
           <SectionHeader title="File structure" />
           <Code code={fileStructureCode} language="sh" />
         </section>
 
-        <section id="minimal-sass-with-@use" ref={minimalSassRef}>
+        <section
+          className="docs-section"
+          id="minimal-sass-with-use"
+          ref={minimalSassRef}
+        >
           <SectionHeader
             title={
               <>
@@ -89,12 +97,15 @@ sass/
           <Code code={minimalSassCode} language="javaScript" />
         </section>
 
-        <section id="Minify-and-gzip-for-smaller-files" ref={minifyGzipRef}>
+        <section
+          className="docs-section"
+          id="Minify-and-gzip-for-smaller-files"
+          ref={minifyGzipRef}
+        >
           <SectionHeader
             title="Minify and gzip for smaller files"
             description="Always compress your code for faster loading. Use minified nkhilicss files (with .min.css extension) or minify your own HTML, and CSS when building nkhilicss from source"
           />
-
         </section>
 
         <Footer prevPage={"screens"} nextPage={"aspect ratio"} />

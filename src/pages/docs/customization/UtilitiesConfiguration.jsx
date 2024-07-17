@@ -158,6 +158,7 @@ $letter-spacing-map: map.set($letter-spacing-map, tight, -0.030em);
           pageDesc="Enhance the utilities collection with extensive customization options, allowing you to tailor each detail to perfectly suit your project's requirements and offering complete control and flexibility in styling."
         />
         <section
+          className="docs-section"
           id="modify-prefix-and-values-in-utilities"
           ref={modifyPrefixUtilities}
         >
@@ -165,46 +166,45 @@ $letter-spacing-map: map.set($letter-spacing-map, tight, -0.030em);
             title="Modify Prefix and Values in Utilities"
             description="Effortlessly update the prefix and utilities of a predefined utility."
           />
-          <h4
-            className="font-medium mt-4"
+          <div
+            className="docs-section"
             id="modify-prefix"
             ref={modifyPrefixRef}
           >
-            Modify prefix
-          </h4>
-          <Code code={modifyPrefixCode} language={"javaScript"} />
-          <h4
-            className="font-medium mt-4"
+            <h4 className="font-medium mt-4">Modify prefix</h4>
+            <Code code={modifyPrefixCode} language={"javaScript"} />
+          </div>
+          <div
+            className="docs-section"
             id="modify-prefix-example"
             ref={modifyPrefixExampleRef}
           >
-            Modify prefix example
-          </h4>
-          <Code code={modifyPrefixExampleCode} language={"javaScript"} />
+            <h4 className="font-medium mt-4">Modify prefix example</h4>
+            <Code code={modifyPrefixExampleCode} language={"javaScript"} />
+          </div>
         </section>
         <section>
-          <h4
-            className="font-medium mt-10"
+          <div
+            className="docs-section"
             id="add-utility-to-sass-map"
             ref={addUtilityToSassMapRef}
           >
-            Add Utility to Sass Map
-          </h4>
-          <p className="text-sm text-light-periwinkle mt-2">
-            Adding a new utility to the collection? Just set it into the
-            existing map!
-          </p>
-          <Code code={addUtilityCode} language="javascript" />
-          <p className="text-sm text-bold text-light-periwinkle">
-            <span className="text-info">NB: </span>If you want to add a utility
-            to a CSS property that typically does not require additional
-            utilities, such as overflow (since it already encompasses all
-            necessary properties), you can easily extend it. In the future, if
-            new properties are added and you wish to use them, follow these
-            steps :
-          </p>
-          <Code
-            code={`
+            <h4 className="font-medium mt-10">Add Utility to Sass Map</h4>
+            <p className="text-sm text-light-periwinkle mt-2">
+              Adding a new utility to the collection? Just set it into the
+              existing map!
+            </p>
+            <Code code={addUtilityCode} language="javascript" />
+            <p className="text-sm text-bold text-light-periwinkle">
+              <span className="text-info">NB: </span>If you want to add a
+              utility to a CSS property that typically does not require
+              additional utilities, such as overflow (since it already
+              encompasses all necessary properties), you can easily extend it.
+              In the future, if new properties are added and you wish to use
+              them, follow these steps :
+            </p>
+            <Code
+              code={`
 // Import necessary modules
 @use "sass:map";
 @use "../node_modules/nkhilicss/sass/partials/utilities" as *;
@@ -250,28 +250,30 @@ $updated-utility: map.set($utility-to-modify, values, $new-values-map);
 //   ),
 // );
  `}
-            language="javascript"
-          />
-          <h4
-            className="font-medium mt-10"
+              language="javascript"
+            />
+          </div>
+          <div
+            className="docs-section"
             id="change-utility-value"
             ref={changeUtilityValueRef}
           >
-            Change a utility value
-          </h4>
-          <p className="text-sm text-light-periwinkle mt-2">
-            Modifying a utility value? just a quick update to the property
-            within the map does the trick!
-          </p>
-          <Code code={changeUtilityValueCode} language="javascript" />
-          <p className="text-sm text-bold text-light-periwinkle">
-            <span className="text-info">NB: </span>To learn more about
-            customizing a utility's default settings, please refer to its
-            dedicated documentation page.
-          </p>
+            <h4 className="font-medium mt-10">Change a utility value</h4>
+            <p className="text-sm text-light-periwinkle mt-2">
+              Modifying a utility value? just a quick update to the property
+              within the map does the trick!
+            </p>
+            <Code code={changeUtilityValueCode} language="javascript" />
+            <p className="text-sm text-bold text-light-periwinkle">
+              <span className="text-info">NB: </span>To learn more about
+              customizing a utility's default settings, please refer to its
+              dedicated documentation page.
+            </p>
+          </div>
         </section>
         <section
-          id="extend-utilities-collection-with-CSS-properties"
+          className="docs-section"
+          id="extend-utilities-collection-with-css-properties"
           ref={addCSSPropertyRef}
         >
           <SectionHeader
