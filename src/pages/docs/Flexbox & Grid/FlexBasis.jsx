@@ -45,7 +45,7 @@ const FlexBasis = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -124,7 +124,7 @@ full: 100%,
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $flex-basis-map: map.set($flex-basis-map, yourCustomUtility, itsValue);
 
@@ -133,7 +133,7 @@ $flex-basis-map: map.set($flex-basis-map, yourCustomUtility, itsValue);
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $flex-basis-map: map.set($flex-basis-map, 100, itsValue);
 
@@ -148,11 +148,11 @@ $flex-basis-map: map.set($flex-basis-map, 100, itsValue);
           pageTitle="flex basis"
           pageDesc="Pre-Built CSS Classes for Controlling Flex Item Sizes"
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section className="docs-section" id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

@@ -47,7 +47,7 @@ const FlexGrow = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -90,7 +90,7 @@ const FlexGrow = () => {
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $flex-grow-map: map.set($flex-grow-map, yourCustomUtility, itsValue);
 
@@ -99,7 +99,7 @@ $flex-grow-map: map.set($flex-grow-map, yourCustomUtility, itsValue);
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $flex-grow-map: map.set($flex-grow-map, 0, itsValue);
 
@@ -114,11 +114,11 @@ $flex-grow-map: map.set($flex-grow-map, 0, itsValue);
           pageTitle="flex grow"
           pageDesc="Pre-built CSS Classes for Controlling How Flex items grow within a flex container"
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section className="docs-section" id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

@@ -69,7 +69,7 @@ const Gap = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -150,7 +150,7 @@ px: 1px,
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/_utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/_utilities-maps" as *;
 
 $gap-map: map.set($gap-map, yourCustomUtility, itsValue);
 
@@ -159,7 +159,7 @@ $gap-map: map.set($gap-map, yourCustomUtility, itsValue);
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/_utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/_utilities-maps" as *;
 
 $gap-map: map.set($gap-map, 0, itsValue);
 
@@ -174,34 +174,47 @@ $gap-map: map.set($gap-map, 0, itsValue);
           pageTitle="gap"
           pageDesc="Pre-built CSS classes for controlling spacing between grid and flexbox items."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
-          <h3
-            className="font-medium mt-5 text-light-periwinkle"
+          <div
+            className="docs-section"
             id="gap-reference"
             ref={gapReferenceRef}
           >
-            gap Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={gapReference} />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-5 text-light-periwinkle">
+              gap Reference
+            </h3>
+            <CssClassesReferenceTable cssClassesReference={gapReference} />
+          </div>
+
+          <div
+            className="docs-section"
             id="row-gap-reference"
             ref={rowGapReferenceRef}
           >
-            row-gap Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={rowGapReference} />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              row-gap Reference
+            </h3>
+            <CssClassesReferenceTable cssClassesReference={rowGapReference} />
+          </div>
+          <div
+            className="docs-section"
             id="column-gap-reference"
             ref={columnGapReferenceRef}
           >
-            column-gap Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={columnGapReference} />
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              column-gap Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={columnGapReference}
+            />
+          </div>
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={
