@@ -50,7 +50,7 @@ const WillChange = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
   ];
@@ -81,11 +81,11 @@ const WillChange = () => {
           pageTitle="will change"
           pageDesc="Pre-built CSS classes for optimizing upcoming animations of elements that are expected to change."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section className="docs-section" id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={
