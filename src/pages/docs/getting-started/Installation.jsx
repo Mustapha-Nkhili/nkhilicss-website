@@ -27,8 +27,8 @@ const Installation = () => {
       label: "Get the nkhilicss CSS file",
       ref: getNkhiliCssRef,
       subLabels: [
-        { ref: htmlLinkRef, label: "html <link />" },
-        { ref: importCssLinkRef, label: "css @import" },
+        { ref: htmlLinkRef, label: "html link" },
+        { ref: importCssLinkRef, label: "css import" },
       ],
     },
   ];
@@ -40,7 +40,11 @@ const Installation = () => {
           pageTitle="how to install nkhili CSS"
           pageDesc="Craft your unique theme with complete customization options. Tailor every aspect to suit your project's needs, ensuring full control and flexibility throughout the styling process"
         />
-        <section id="package-managers" ref={packageManagers}>
+        <section
+          className="docs-section"
+          id="package-managers"
+          ref={packageManagers}
+        >
           <SectionHeader
             title="Package managers"
             description="Integrate nkhilicss's source files seamlessly into your project
@@ -48,61 +52,69 @@ const Installation = () => {
             manager you choose, ensure you have a Sass compiler installed to
             replicate the setup found in our official compiled versions"
           />
-          <h4 className="font-medium mt-4" id="npm" ref={npmRef}>
-            npm
-          </h4>
-          <p className="text-xs text-light-periwinkle mb-4">
-            Add nkhilicss to your Node.js applications effortlessly using the{" "}
-            <Link
-              to="https://www.npmjs.com/package/nkhilicss"
-              className="text-primary text-dec-underline"
-              target="_blanck"
-            >
-              npm package manager
-            </Link>{" "}
-            :
-          </p>
-          <Code code={`npm install nkhilicss`} language={"bash"} />
+          <div className="docs-section" id="npm" ref={npmRef}>
+            <h4 className="font-medium mt-4">npm</h4>
+            <p className="text-xs text-light-periwinkle mb-4">
+              Add nkhilicss to your Node.js applications effortlessly using the{" "}
+              <Link
+                to="https://www.npmjs.com/package/nkhilicss"
+                className="text-primary text-dec-underline"
+                target="_blanck"
+              >
+                npm package manager
+              </Link>{" "}
+              :
+            </p>
+            <Code code={`npm install nkhilicss`} language={"bash"} />
+          </div>
 
-          <h4 className="font-medium mt-4" id="yarn" ref={yarnRef}>
-            yarn
-          </h4>
-          <p className="text-xs text-light-periwinkle mb-4">
-            Add nkhilicss to your Node.js applications effortlessly using the{" "}
-            <Link
-              to="https://classic.yarnpkg.com/en/package/nkhilicss"
-              className="text-primary text-dec-underline"
-              target="_blanck"
-            >
-              yarn package manager
-            </Link>{" "}
-            :
-          </p>
-          <Code code={`npm install nkhilicss`} language={"bash"} />
+          <div className="docs-section" id="yarn" ref={yarnRef}>
+            <h4 className="font-medium mt-4">yarn</h4>
+            <p className="text-xs text-light-periwinkle mb-4">
+              Add nkhilicss to your Node.js applications effortlessly using the{" "}
+              <Link
+                to="https://classic.yarnpkg.com/en/package/nkhilicss"
+                className="text-primary text-dec-underline"
+                target="_blanck"
+              >
+                yarn package manager
+              </Link>{" "}
+              :
+            </p>
+            <Code code={`npm install nkhilicss`} language={"bash"} />
+          </div>
         </section>
-        <section id="get-the-nkhilicss-CSS-file" ref={getNkhiliCssRef}>
+        <section
+          className="docs-section"
+          id="get-the-nkhilicss-css-file"
+          ref={getNkhiliCssRef}
+        >
           <SectionHeader
             title="Get the nkhilicss CSS file"
             description="Access the minified .css file containing the entire NkhiliCSS framework"
           />
-          <h4 className="font-medium mt-4" id="html-link" ref={htmlLinkRef}>
-            HTML <code className="ml-2 text-primary">{`<link />`}</code>
-          </h4>
-          <Code
-            code={`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nkhilicss@2.0.0/dist/css/nkhilicss.min.css" />`}
-            language="html"
-          />
-          <h4
-            className="font-medium mt-4"
+          <div className="docs-section" id="html-link" ref={htmlLinkRef}>
+            <h4 className="font-medium mt-4">
+              HTML <code className="ml-2 text-primary">{`<link />`}</code>
+            </h4>
+            <Code
+              code={`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nkhilicss@2.0.0/dist/css/nkhilicss.min.css" />`}
+              language="html"
+            />
+          </div>
+          <div
+            className="docs-section"
             id="css-import-link"
             ref={importCssLinkRef}
           >
-            CSS <code className="ml-2 text-primary">{`@import`}</code>
-          </h4>
-          <Code
-            code={`@import "https://cdn.jsdelivr.net/npm/nkhilicss@2.0.0/dist/css/nkhilicss.min.css";`}
-            language="css"
-          />
+            <h4 className="font-medium mt-4">
+              CSS <code className="ml-2 text-primary">{`@import`}</code>
+            </h4>
+            <Code
+              code={`@import "https://cdn.jsdelivr.net/npm/nkhilicss@2.0.0/dist/css/nkhilicss.min.css";`}
+              language="css"
+            />
+          </div>
         </section>
         <Footer prevPage={"introduction"} nextPage={"overview"} />
       </div>

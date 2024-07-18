@@ -53,7 +53,7 @@ const Introduction = () => {
           more on the functionality and user experience of their web
           applications."
         />
-        <section id="quick-start" ref={quickStartRef}>
+        <section className="docs-section" id="quick-start" ref={quickStartRef}>
           <SectionHeader
             title="Quick start"
             description={
@@ -70,10 +70,10 @@ const Introduction = () => {
           <Code code={htmlCode} language="html" />
         </section>
         <section
-          id="instalation-via-package-managers"
+          className="docs-section" id="instalation-via-package-managers"
           ref={instViaPackagemanRef}
         >
-          <ul className="flex items-center gap-5">
+          <ul className="flex items-center gap-5 mt-10">
             <li
               className="pb-1 border-b-2 border-b-primary border-b-solid cursor-pointer"
               onClick={() => setPackageManagerCode("npm i nkhilicss")}
@@ -96,7 +96,7 @@ const Introduction = () => {
             official compiled versions.
           </p>
         </section>
-        <section id="viewport-meta" ref={viewportMeta}>
+        <section className="docs-section mb-32" id="viewport-meta" ref={viewportMeta}>
           <SectionHeader
             title="Viewport meta"
             description="  nkhilicss employs a mobile-first approach, prioritizing code
