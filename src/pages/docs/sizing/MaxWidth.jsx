@@ -53,7 +53,7 @@ const MaxWidth = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -140,7 +140,7 @@ px: 1px,
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $max-width-map: map.set($max-width-map, yourCustomUtility, itsValue);
 
@@ -149,7 +149,7 @@ $max-width-map: map.set($max-width-map, yourCustomUtility, itsValue);
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $max-width-map: map.set($max-width-map, 100, itsValue);
 
@@ -164,11 +164,11 @@ $max-width-map: map.set($max-width-map, 100, itsValue);
           pageTitle="max-width"
           pageDesc="Pre-built CSS classes for managing the Maximum width of elements."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section className="docs-section" id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={
