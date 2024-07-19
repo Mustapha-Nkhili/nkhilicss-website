@@ -1,12 +1,26 @@
+import React from "react";
+
 const OnThisPage = ({ onThisPage }) => {
   const scrollTo = (elRef) => {
-    elRef.current.style.scrollMarginTop = "90px";
-    elRef.current.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest",
-    });
-    history.pushState(null, null, `#${elRef.current.id}`);
+    if (elRef.current) {
+      elRef.current.style.scrollMarginTop = "90px";
+      elRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+      history.pushState(null, null, `#${elRef.current.id}`);
+    }
+  };
+
+  const formatClassName = (label) => {
+    if (label === "Hover, focus, and other states") {
+      return "hover-focus-and-other-states";
+    }
+    if (label === "Flex") {
+      return "flex-";
+    }
+    return label.toLowerCase().replace(/: /g, " ").split(" ").join("-");
   };
 
   return (
@@ -15,38 +29,24 @@ const OnThisPage = ({ onThisPage }) => {
         <label className="block pb-4">On This Page</label>
         <ul>
           {onThisPage.map((hash, index) => (
-            <li key={hash + index} className="text-sm pb-3">
+            <li key={hash.label + index} className="text-sm pb-3">
               <span
                 onClick={() => scrollTo(hash.ref)}
-                className={`docs-aside__link cursor-pointer text-light-periwinkle ${hash.label
-                  .toLowerCase()
-                  .split(" ")
-                  .join("-")}`}
+                className={`docs-aside__link cursor-pointer text-light-periwinkle ${formatClassName(hash.label)}`}
               >
-                {" "}
                 {hash.label}
               </span>
               {hash.subLabels && (
                 <ul className="pt-2 pl-7">
-                  {hash.subLabels.map((subLabel, index) => (
+                  {hash.subLabels.map((subLabel, subIndex) => (
                     <li
-                      key={index + subLabel}
-                      className={`docs-aside__link cursor-pointer text-xs text-light-periwinkle list-style-disc ${
-                        subLabel.label === "Hover, focus, and other states"
-                          ? "hover-focus-and-other-states"
-                          : subLabel.label.includes(": ")
-                          ? subLabel.label
-                              .toLowerCase()
-                              .replace(": ", " ")
-                              .split(" ")
-                              .join("-")
-                          : subLabel.label.toLowerCase().split(" ").join("-")
-                      }`}
+                      key={subIndex + subLabel.label}
+                      className={`docs-aside__link cursor-pointer text-xs text-light-periwinkle list-style-disc ${formatClassName(subLabel.label)}`}
                       onClick={() => scrollTo(subLabel.ref)}
                     >
                       {subLabel.label}
                     </li>
-                  ))}{" "}
+                  ))}
                 </ul>
               )}
             </li>
