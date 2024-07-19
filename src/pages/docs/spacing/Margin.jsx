@@ -60,7 +60,7 @@ const Margin = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -287,7 +287,7 @@ const Margin = () => {
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/_utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/_utilities-maps" as *;
 
 $margin-map: map.set($margin-map, yourCustomUtility, itsValue);
 
@@ -300,7 +300,7 @@ $margin-map: map.set($margin-map, yourCustomUtility, itsValue);
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/_utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/_utilities-maps" as *;
 
 $margin-map: map.set($margin-map, 5, itsValue);
 
@@ -319,148 +319,175 @@ $margin-map: map.set($margin-map, 5, itsValue);
           pageTitle="margin"
           pageDesc="Pre-built CSS classes for managing element margin"
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
-          <h3
-            className="font-medium mt-5 text-light-periwinkle"
-            id="margin-reference"
-            ref={marginRef}
-          >
-            margin Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={marginReference} />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+          <div className="docs-section" id="margin-reference" ref={marginRef}>
+            <h3 className="font-medium mt-5 text-light-periwinkle">
+              margin Reference
+            </h3>
+            <CssClassesReferenceTable cssClassesReference={marginReference} />
+          </div>
+          <div
+            className="docs-section"
             id="margin-top-reference"
             ref={marginTopRef}
           >
-            margin-top Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={marginTopReference} />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              margin-top Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={marginTopReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="margin-right-reference"
             ref={marginRightRef}
           >
-            margin-right Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={marginRightReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              margin-right Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={marginRightReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="margin-bottom-reference"
             ref={marginBottomRef}
           >
-            margin-bottom Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={marginBottomReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              margin-bottom Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={marginBottomReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="margin-left-reference"
             ref={marginLeftRef}
           >
-            margin-left Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={marginLeftReference} />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              margin-left Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={marginLeftReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="vertical-margin-reference"
             ref={verticalMargingRef}
           >
-            vertical-margin Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={verticalMargingReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              vertical-margin Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={verticalMargingReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="horizontal-margin-reference"
             ref={horizontalMargingRef}
           >
-            horizontal-margin Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={horizontalMargingReference}
-          />
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              horizontal-margin Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={horizontalMargingReference}
+            />
+          </div>
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader title="Usage" />
-          <h3
-            className="text-sm font-medium text-primary"
+          <div
+            className="docs-section"
             id="margin-single-side"
             ref={usageMarginSingleSideRef}
           >
-            margin: single Side
-          </h3>
-          <p className="text-light-periwinkle text-sm mt-2">
-            Use the &quot;<span className="text-primary">mt-*</span>&quot;,{" "}
-            &quot;<span className="text-primary">mr-*</span>&quot;, &quot;
-            <span className="text-primary">mb-*</span>&quot;, and &quot;
-            <span className="text-primary">ml-*</span>&quot; classes to
-            precisely adjust the margin on specific sides of an element.
-          </p>
-          <div className="text-light-periwinkle text-sm mt-3">
-            <label>For instance :</label>
-            <ul className="mt-2 ml-5">
-              <li>
-                <span className="text-primary">mt-6 :</span> Adds a margin of
-                1.5rem to the top of the element.
-              </li>
-              <li>
-                <span className="text-primary">mr-4 :</span> Adds a margin of
-                1rem to the right of the element.
-              </li>
-              <li>
-                <span className="text-primary">mb-8 :</span> Adds a margin of
-                2rem to the bottom of the element.
-              </li>
-              <li>
-                <span className="text-primary">ml-2 :</span> Adds a margin of
-                0.5rem to the left of the element.
-              </li>
-            </ul>
+            <h3 className="text-sm font-medium text-primary">
+              margin: single Side
+            </h3>
+            <p className="text-light-periwinkle text-sm mt-2">
+              Use the &quot;<span className="text-primary">mt-*</span>&quot;,{" "}
+              &quot;<span className="text-primary">mr-*</span>&quot;, &quot;
+              <span className="text-primary">mb-*</span>&quot;, and &quot;
+              <span className="text-primary">ml-*</span>&quot; classes to
+              precisely adjust the margin on specific sides of an element.
+            </p>
+            <div className="text-light-periwinkle text-sm mt-3">
+              <label>For instance :</label>
+              <ul className="mt-2 ml-5">
+                <li>
+                  <span className="text-primary">mt-6 :</span> Adds a margin of
+                  1.5rem to the top of the element.
+                </li>
+                <li>
+                  <span className="text-primary">mr-4 :</span> Adds a margin of
+                  1rem to the right of the element.
+                </li>
+                <li>
+                  <span className="text-primary">mb-8 :</span> Adds a margin of
+                  2rem to the bottom of the element.
+                </li>
+                <li>
+                  <span className="text-primary">ml-2 :</span> Adds a margin of
+                  0.5rem to the left of the element.
+                </li>
+              </ul>
+            </div>
+            <Code code={singleMarginCode} language="html" />
           </div>
-          <Code code={singleMarginCode} language="html" />
-          <h3
-            className="text-sm font-medium text-primary"
+          <div
+            className="docs-section"
             id="margin-vertical"
             ref={usageVerticalMargingRef}
           >
-            margin: vertical
-          </h3>
-          <p className="text-light-periwinkle text-sm mt-2">
-            Use The <span className="text-primary">&quot;my-*&quot;</span> class
-            to add margin to both vertical sides of an element (top and bottom).
-          </p>
-          <Code code={verticalmarginCode} language="html" />
-          <h3
-            className="text-sm font-medium text-primary"
+            <h3 className="text-sm font-medium text-primary">
+              margin: vertical
+            </h3>
+            <p className="text-light-periwinkle text-sm mt-2">
+              Use The <span className="text-primary">&quot;my-*&quot;</span>{" "}
+              class to add margin to both vertical sides of an element (top and
+              bottom).
+            </p>
+            <Code code={verticalmarginCode} language="html" />
+          </div>
+          <div
+            className="docs-section"
             id="margin-horizontal"
             ref={usageHorizontalMargingRef}
           >
-            margin: horizontal
-          </h3>
-          <p className="text-light-periwinkle text-sm mt-2">
-            Use The <span className="text-primary">&quot;mx-*&quot;</span> class
-            to add margin to both horizontal sides of an element (left and
-            right).
-          </p>
-          <Code code={horizontalmarginCode} language="html" />
-          <h3
-            className="text-sm font-medium text-primary"
+            <h3 className="text-sm font-medium text-primary">
+              margin: horizontal
+            </h3>
+            <p className="text-light-periwinkle text-sm mt-2">
+              Use The <span className="text-primary">&quot;mx-*&quot;</span>{" "}
+              class to add margin to both horizontal sides of an element (left
+              and right).
+            </p>
+            <Code code={horizontalmarginCode} language="html" />
+          </div>
+          <div
+            className="docs-section"
             id="margin-all-sides"
             ref={usageAllSidesMargingRef}
           >
-            margin: all sides
-          </h3>
-          <p className="text-light-periwinkle text-sm mt-2">
-            Use The <span className="text-primary">&quot;m-*&quot;</span> class
-            to add margin to all sides of an element.
-          </p>
-          <Code code={allSidesmarginCode} language="html" />
+            <h3 className="text-sm font-medium text-primary">
+              margin: all sides
+            </h3>
+            <p className="text-light-periwinkle text-sm mt-2">
+              Use The <span className="text-primary">&quot;m-*&quot;</span>{" "}
+              class to add margin to all sides of an element.
+            </p>
+            <Code code={allSidesmarginCode} language="html" />
+          </div>
         </section>
         <ConditionalCss
           headerRef={executingUnderCertainConditionsRef}

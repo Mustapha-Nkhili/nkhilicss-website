@@ -60,7 +60,7 @@ const Padding = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -257,7 +257,7 @@ const Padding = () => {
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/_utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/_utilities-maps" as *;
 
 $padding-map: map.set($padding-map, yourCustomUtility, itsValue);
 
@@ -270,7 +270,7 @@ $padding-map: map.set($padding-map, yourCustomUtility, itsValue);
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/_utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/_utilities-maps" as *;
 
 $padding-map: map.set($padding-map, 5, itsValue);
 
@@ -289,151 +289,175 @@ $padding-map: map.set($padding-map, 5, itsValue);
           pageTitle="padding"
           pageDesc="Pre-built CSS classes for managing element padding"
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
-          <h3
-            className="font-medium mt-5 text-light-periwinkle"
-            id="padding-reference"
-            ref={paddingRef}
-          >
-            padding Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={paddingReference} />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+          <div className="docs-section" id="padding-reference" ref={paddingRef}>
+            <h3 className="font-medium mt-5 text-light-periwinkle">
+              padding Reference
+            </h3>
+            <CssClassesReferenceTable cssClassesReference={paddingReference} />
+          </div>
+          <div
+            className="docs-section"
             id="padding-top-reference"
             ref={paddingTopRef}
           >
-            padding-top Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={paddingTopReference} />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              padding-top Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={paddingTopReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="padding-right-reference"
             ref={paddingRightRef}
           >
-            padding-right Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={paddingRightReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              padding-right Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={paddingRightReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="padding-bottom-reference"
             ref={PaddingBottomRef}
           >
-            padding-bottom Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={paddingBottomReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              padding-bottom Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={paddingBottomReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="padding-left-reference"
             ref={PaddingLeftRef}
           >
-            padding-left Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={paddingLeftReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              padding-left Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={paddingLeftReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="vertical-padding-reference"
             ref={verticalPaddingRef}
           >
-            vertical-padding Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={verticalPaddingReference}
-          />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              vertical-padding Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={verticalPaddingReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="horizontal-padding-reference"
             ref={horizontalPaddingRef}
           >
-            horizontal-padding Reference
-          </h3>
-          <CssClassesReferenceTable
-            cssClassesReference={horizontalPaddingReference}
-          />
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              horizontal-padding Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={horizontalPaddingReference}
+            />
+          </div>
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader title="Usage" />
-          <h3
-            className="text-sm font-medium text-primary"
+          <div
+            className="docs-section"
             id="padding-single-side"
             ref={usagePaddingSingleSideRef}
           >
-            Padding: single Side
-          </h3>
-          <p className="text-light-periwinkle text-sm mt-2">
-            Use the &quot;<span className="text-primary">pt-*</span>&quot;,{" "}
-            &quot;<span className="text-primary">pr-*</span>&quot;, &quot;
-            <span className="text-primary">pb-*</span>&quot;, and &quot;
-            <span className="text-primary">pl-*</span>&quot; classes to
-            precisely adjust the padding on specific sides of an element.
-          </p>
-          <div className="text-light-periwinkle text-sm mt-3">
-            <label>For instance :</label>
-            <ul className="mt-2 ml-5">
-              <li>
-                <span className="text-primary">pt-6 :</span> Adds a padding of
-                1.5rem to the top of the element.
-              </li>
-              <li>
-                <span className="text-primary">pr-4 :</span> Adds a padding of
-                1rem to the right of the element.
-              </li>
-              <li>
-                <span className="text-primary">pb-8 :</span> Adds a padding of
-                2rem to the bottom of the element.
-              </li>
-              <li>
-                <span className="text-primary">pl-2 :</span> Adds a padding of
-                0.5rem to the left of the element.
-              </li>
-            </ul>
+            <h3 className="text-sm font-medium text-primary">
+              Padding: single Side
+            </h3>
+            <p className="text-light-periwinkle text-sm mt-2">
+              Use the &quot;<span className="text-primary">pt-*</span>&quot;,{" "}
+              &quot;<span className="text-primary">pr-*</span>&quot;, &quot;
+              <span className="text-primary">pb-*</span>&quot;, and &quot;
+              <span className="text-primary">pl-*</span>&quot; classes to
+              precisely adjust the padding on specific sides of an element.
+            </p>
+            <div className="text-light-periwinkle text-sm mt-3">
+              <label>For instance :</label>
+              <ul className="mt-2 ml-5">
+                <li>
+                  <span className="text-primary">pt-6 :</span> Adds a padding of
+                  1.5rem to the top of the element.
+                </li>
+                <li>
+                  <span className="text-primary">pr-4 :</span> Adds a padding of
+                  1rem to the right of the element.
+                </li>
+                <li>
+                  <span className="text-primary">pb-8 :</span> Adds a padding of
+                  2rem to the bottom of the element.
+                </li>
+                <li>
+                  <span className="text-primary">pl-2 :</span> Adds a padding of
+                  0.5rem to the left of the element.
+                </li>
+              </ul>
+            </div>
+            <Code code={singlepaddingCode} language="html" />
           </div>
-          <Code code={singlepaddingCode} language="html" />
-          <h3
-            className="text-sm font-medium text-primary"
+          <div
+            className="docs-section"
             id="padding-vertical"
             ref={usageVerticalPaddingRef}
           >
-            Padding: vertical
-          </h3>
-          <p className="text-light-periwinkle text-sm mt-2">
-            Use The <span className="text-primary">&quot;py-*&quot;</span> class
-            to add padding to both vertical sides of an element (top and
-            bottom).
-          </p>
-          <Code code={verticalPaddingCode} language="html" />
-          <h3
-            className="text-sm font-medium text-primary"
+            <h3 className="text-sm font-medium text-primary">
+              Padding: vertical
+            </h3>
+            <p className="text-light-periwinkle text-sm mt-2">
+              Use The <span className="text-primary">&quot;py-*&quot;</span>{" "}
+              class to add padding to both vertical sides of an element (top and
+              bottom).
+            </p>
+            <Code code={verticalPaddingCode} language="html" />
+          </div>
+          <div
+            className="docs-section"
             id="padding-horizontal"
             ref={usageHorizontalPaddingRef}
           >
-            Padding: horizontal
-          </h3>
-          <p className="text-light-periwinkle text-sm mt-2">
-            Use The <span className="text-primary">&quot;px-*&quot;</span> class
-            to add padding to both horizontal sides of an element (left and
-            right).
-          </p>
-          <Code code={horizontalPaddingCode} language="html" />
-          <h3
-            className="text-sm font-medium text-primary"
+            <h3 className="text-sm font-medium text-primary">
+              Padding: horizontal
+            </h3>
+            <p className="text-light-periwinkle text-sm mt-2">
+              Use The <span className="text-primary">&quot;px-*&quot;</span>{" "}
+              class to add padding to both horizontal sides of an element (left
+              and right).
+            </p>
+            <Code code={horizontalPaddingCode} language="html" />
+          </div>
+          <div
+            className="docs-section"
             id="padding-all-sides"
             ref={usageAllSidesPaddingRef}
           >
-            Padding: all sides
-          </h3>
-          <p className="text-light-periwinkle text-sm mt-2">
-            Use The <span className="text-primary">&quot;p-*&quot;</span> class
-            to add padding to all sides of an element.
-          </p>
-          <Code code={allSidesPaddingCode} language="html" />
+            <h3 className="text-sm font-medium text-primary">
+              Padding: all sides
+            </h3>
+            <p className="text-light-periwinkle text-sm mt-2">
+              Use The <span className="text-primary">&quot;p-*&quot;</span>{" "}
+              class to add padding to all sides of an element.
+            </p>
+            <Code code={allSidesPaddingCode} language="html" />
+          </div>
         </section>
         <ConditionalCss
           headerRef={executingUnderCertainConditionsRef}
