@@ -6,7 +6,6 @@ import { useRef } from "react";
 import CssClassesReferenceTable from "../../../components/docs/CssClassesReferenceTable";
 import Code from "../../../components/docs/Code";
 import ConditionalCss from "../../../components/docs/ConditionalCss";
-import avatar from "../../../assets/guy-avatar.avif";
 
 const BoxSizing = () => {
   const quickReferenceRef = useRef(null);
@@ -49,7 +48,7 @@ const BoxSizing = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
   ];
@@ -84,42 +83,47 @@ const BoxSizing = () => {
           pageTitle="box sizing"
           pageDesc="Pre-built classes offer control over the calculation of an element's total size within the browser."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader title="Usage" />
-          <h4 className="font-medium mt-5" id="border-box" ref={borderBox}>
-            border-box
-          </h4>
-          <p className="text-sm text-light-periwinkle mt-2 mb-10">
-            To include padding and borders in an element's size calculation, use
-            the <span className="text-primary">&quot;box-border&quot;</span>{" "}
-            utility. It sets the{" "}
-            <span className="text-primary">&quot;box-sizing&quot;</span>{" "}
-            property to{" "}
-            <span className="text-primary">&quot;border-box&quot;</span>, making
-            the browser consider both borders and padding when defining the
-            element's height or width.
-          </p>
+          <div className="docs-section" id="border-box" ref={borderBox}>
+            <h4 className="font-medium mt-5">border-box</h4>
+            <p className="text-sm text-light-periwinkle mt-2 mb-10">
+              To include padding and borders in an element's size calculation,
+              use the{" "}
+              <span className="text-primary">&quot;box-border&quot;</span>{" "}
+              utility. It sets the{" "}
+              <span className="text-primary">&quot;box-sizing&quot;</span>{" "}
+              property to{" "}
+              <span className="text-primary">&quot;border-box&quot;</span>,
+              making the browser consider both borders and padding when defining
+              the element's height or width.
+            </p>
 
-          <Code code={borderBoxCode} language="html" />
-          <h4 className="font-medium mt-5" id="content-box" ref={contentBoxRef}>
-            content-box
-          </h4>
-          <p className="text-sm text-light-periwinkle mt-2 mb-10">
-            To exclude padding and borders from an element's size calculation,
-            apply the{" "}
-            <span className="text-primary">&quot;box-content&quot;</span>{" "}
-            utility. This sets the{" "}
-            <span className="text-primary">&quot;box-sizing&quot;</span>{" "}
-            property to{" "}
-            <span className="text-primary">&quot;content-box&quot;</span>,
-            prompting the browser to only consider the element's content when
-            specifying its height or width.
-          </p>
-          <Code code={contentBoxCode} language="html" />
+            <Code code={borderBoxCode} language="html" />
+          </div>
+          <div className="docs-section" id="content-box" ref={contentBoxRef}>
+            <h4 className="font-medium mt-5">content-box</h4>
+            <p className="text-sm text-light-periwinkle mt-2 mb-10">
+              To exclude padding and borders from an element's size calculation,
+              apply the{" "}
+              <span className="text-primary">&quot;box-content&quot;</span>{" "}
+              utility. This sets the{" "}
+              <span className="text-primary">&quot;box-sizing&quot;</span>{" "}
+              property to{" "}
+              <span className="text-primary">&quot;content-box&quot;</span>,
+              prompting the browser to only consider the element's content when
+              specifying its height or width.
+            </p>
+            <Code code={contentBoxCode} language="html" />
+          </div>
         </section>
         <ConditionalCss
           headerRef={executingUnderCertainConditionsRef}
@@ -129,7 +133,7 @@ const BoxSizing = () => {
           breakpointsCode={breakpointsCode}
           utility={"box-border"}
         />
-        <Footer prevPage={"aspect ratio"} />
+        <Footer prevPage={"aspect ratio"} nextPage={"display"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>

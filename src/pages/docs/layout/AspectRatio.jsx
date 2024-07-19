@@ -55,7 +55,7 @@ const AspectRatio = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -103,16 +103,20 @@ const AspectRatio = () => {
 
   const addUtilityCode = `
 @use "sass:map";
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
-@import "../node_modules/nkhilicss/sass/partials/maps";
-$aspect-ratio-map: map.set($aspect-ratio-map, yourCustomUtility, itsValue))
+$aspect-ratio-map: map.set($aspect-ratio-map, yourCustomUtility, itsValue);
+
+@use "../node_modules/nkhilicss/sass/index";
 `;
 
   const changeUtilityValueCode = `
 @use "sass:map";
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
-@import "../node_modules/nkhilicss/sass/partials/maps";
-$aspect-ratio-map: map.set($aspect-ratio-map, square, yourCustomValue)
+$aspect-ratio-map: map.set($aspect-ratio-map, square, yourCustomValue);
+
+@use "../node_modules/nkhilicss/sass/index";
 `;
   return (
     <>
@@ -122,11 +126,15 @@ $aspect-ratio-map: map.set($aspect-ratio-map, square, yourCustomValue)
           pageTitle="aspect ratio"
           pageDesc="Pre-built CSS classes for controlling the dimensions of an element"
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          id="quick-reference"
+          ref={quickReferenceRef}
+          className="docs-section"
+        >
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section id="usage" ref={usageRef} className="docs-section">
           <SectionHeader
             title="Usage"
             description="Utilize the aspect-* Pre-built CSS classes to establish the preferred aspect ratio for an element"
@@ -159,9 +167,9 @@ $aspect-ratio-map: map.set($aspect-ratio-map, square, yourCustomValue)
           addUtilityCode={addUtilityCode}
           changeUtilityValueRef={changeUtilityValueRef}
           changeUtilityValueCode={changeUtilityValueCode}
-          utility={"aspect-ratio"}
+          utility={"ratios"}
         />
-        <Footer prevPage={"optimize"} nextPage={"display"}/>
+        <Footer prevPage={"optimize"} nextPage={"box sizing"} />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>

@@ -76,7 +76,7 @@ const Display = () => {
       label: "Usage",
       ref: usageRef,
       subLabels: [
-        { ref: blockInlineUsageRef, label: "Block & Inline-block" },
+        { ref: blockInlineUsageRef, label: "Block and Inline-block" },
         { ref: flexUsageRef, label: "Flex" },
       ],
     },
@@ -85,7 +85,7 @@ const Display = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
   ];
@@ -149,66 +149,70 @@ const Display = () => {
           pageTitle="display"
           pageDesc="Pre-built classes determine how an element appears in the browser by controlling its display box type."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader title="Usage" />
-          <h4
-            className="font-medium mt-5"
-            id="block-and-inline"
+          <div
+            className="docs-section"
+            id="block-and-inline-block"
             ref={blockInlineUsageRef}
           >
-            Block & Inline-block
-          </h4>
-          <p className="text-sm text-light-periwinkle mt-2 mb-10">
-            Utilize inline-block, and block utilities for precise control over
-            element positioning
-          </p>
+            <h4 className="font-medium mt-5">Block & Inline-block</h4>
+            <p className="text-sm text-light-periwinkle mt-2 mb-10">
+              Utilize inline-block, and block utilities for precise control over
+              element positioning
+            </p>
 
-          <div className="m-auto w-fit text-black font-semibold text-sm">
-            <div className="inline-block p-5 bg-primary rounded-2 mr-5">
-              display: inline-block;
+            <div className="m-auto w-fit text-black font-semibold text-sm">
+              <div className="inline-block p-5 bg-primary rounded-2 mr-5">
+                display: inline-block;
+              </div>
+              <div className="inline-block p-5 bg-primary rounded-2">
+                display: inline-block;
+              </div>
             </div>
-            <div className="inline-block p-5 bg-primary rounded-2">
-              display: inline-block;
-            </div>
-          </div>
 
-          <Code code={blockInlineUsageCode} language="html" />
+            <Code code={blockInlineUsageCode} language="html" />
 
-          <div className="block p-5 text-black font-semibold text-sm bg-primary rounded-2 mb-5 mt-10">
-            display: block;
-          </div>
-          <div className="block p-5 text-black font-semibold text-sm bg-primary rounded-2">
-            display: block;
-          </div>
-          <Code code={blockUsageCode} language="html" />
-          <h4 className="font-medium mt-5" id="flex" ref={flexUsageRef}>
-            Flex
-          </h4>
-          <p className="text-sm text-light-periwinkle mt-2 mb-10">
-            Utilize the <span className="text-primary">flex</span> utility to
-            establish a block-level flex container.
-          </p>
-          <div className="flex items-center flex-column bg-primary p-5 rounded gap-6 w-64 text-center m-auto">
-            <img
-              src={avatar}
-              alt="anime avatar"
-              className="w-16 rounded-full"
-            />
-            <div>
-              <h3>Mustapha Nkhili</h3>
-              <span className="text-sm text-light-periwinkle pt-3">
-                Front End Developer
-              </span>
+            <div className="block p-5 text-black font-semibold text-sm bg-primary rounded-2 mb-5 mt-10">
+              display: block;
             </div>
-            <button className="text-sm p-2 w-24 bg-black border-none rounded cursor-pointer">
-              Connect
-            </button>
+            <div className="block p-5 text-black font-semibold text-sm bg-primary rounded-2">
+              display: block;
+            </div>
+            <Code code={blockUsageCode} language="html" />
           </div>
-          <Code code={flexCode} language="html" />
+          <div className="docs-section" id="flex-" ref={flexUsageRef}>
+            <h4 className="font-medium mt-5">Flex</h4>
+            <p className="text-sm text-light-periwinkle mt-2 mb-10">
+              Utilize the <span className="text-primary">flex</span> utility to
+              establish a block-level flex container.
+            </p>
+            <div className="flex items-center flex-column bg-primary p-5 rounded gap-6 w-64 text-center m-auto">
+              <img
+                src={avatar}
+                alt="anime avatar"
+                className="w-16 rounded-full"
+              />
+              <div>
+                <h3>Mustapha Nkhili</h3>
+                <span className="text-sm text-light-periwinkle pt-3">
+                  Front End Developer
+                </span>
+              </div>
+              <button className="text-sm p-2 w-24 bg-black border-none rounded cursor-pointer">
+                Connect
+              </button>
+            </div>
+            <Code code={flexCode} language="html" />
+          </div>
         </section>
         <ConditionalCss
           headerRef={executingUnderCertainConditionsRef}

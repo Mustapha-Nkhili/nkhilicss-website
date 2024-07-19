@@ -103,7 +103,7 @@ const Zindex = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -158,17 +158,21 @@ $z-index-map:  (
 
   const addUtilityCode = `
 @use "sass:map";
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
-@import "../node_modules/nkhilicss/sass/partials/maps";
-$z-index-map: map.set($z-index-map, yourCustomUtility, itsValue))
-`;
+$z-index-map: map.set($z-index-map, yourCustomUtility, itsValue);
+
+@use "../node_modules/nkhilicss/sass/index";
+ `;
 
   const changeUtilityValueCode = `
 @use "sass:map";
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
-@import "../node_modules/nkhilicss/sass/partials/maps";
-$z-index-map: map.set($z-index-map, 100, yourCustomValue)
-`;
+$z-index-map: map.set($z-index-map, 50, yourCustomValue);
+
+@use "../node_modules/nkhilicss/sass/index";
+ `;
 
   return (
     <>
@@ -178,11 +182,15 @@ $z-index-map: map.set($z-index-map, 100, yourCustomValue)
           pageTitle="z index"
           pageDesc="Pre-built CSS Classes for manipulating the stacking order of an element."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

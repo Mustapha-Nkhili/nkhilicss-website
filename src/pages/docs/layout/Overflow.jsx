@@ -114,7 +114,7 @@ const Overflow = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
   ];
@@ -148,34 +148,48 @@ const Overflow = () => {
           pageDesc="
           Pre-built CSS classes for controlling how an element manages excessive content within its container."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
-          <h3
-            className="font-medium mt-5 text-light-periwinkle"
+          <div
+            className="docs-section"
             id="overflow-reference"
             ref={overflowReferenceRef}
           >
-            Overflow Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={overflowReference} />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-5 text-light-periwinkle">
+              Overflow Reference
+            </h3>
+            <CssClassesReferenceTable cssClassesReference={overflowReference} />
+          </div>
+          <div
+            className="docs-section"
             id="overflow-x-reference"
             ref={overflowXReferenceRef}
           >
-            Overflow-x Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={overflowXReference} />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              Overflow-x Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={overflowXReference}
+            />
+          </div>
+          <div
+            className="docs-section"
             id="overflow-y-reference"
             ref={overflowYReferenceRef}
           >
-            Overflow-y Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={overflowYReference} />
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              Overflow-y Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={overflowYReference}
+            />
+          </div>
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

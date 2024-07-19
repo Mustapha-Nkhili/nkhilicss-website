@@ -44,7 +44,7 @@ const TopBottomLeftRight = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -186,17 +186,21 @@ const TopBottomLeftRight = () => {
 
   const addUtilityCode = `
 @use "sass:map";
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
-@import "../node_modules/nkhilicss/sass/partials/maps";
-$spacing-map: map.set($spacing-map, yourCustomUtility, itsValue))
-`;
+$spacing-map: map.set($spacing-map, yourCustomUtility, itsValue);
+
+@use "../node_modules/nkhilicss/sass/index";
+ `;
 
   const changeUtilityValueCode = `
 @use "sass:map";
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
-@import "../node_modules/nkhilicss/sass/partials/maps";
-$spacing-map: map.set($spacing-map, 100, yourCustomValue)
-`;
+$spacing-map: map.set($spacing-map, 100, yourCustomValue);
+
+@use "../node_modules/nkhilicss/sass/index";
+ `;
 
   return (
     <>
@@ -206,42 +210,54 @@ $spacing-map: map.set($spacing-map, 100, yourCustomValue)
           pageTitle="top / bottom / left / right"
           pageDesc="Pre-built CSS Classes for Positioned Element Placement"
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
-          <h3
-            className="font-medium mt-5 text-light-periwinkle"
+          <div
+            className="docs-section"
             id="top-reference"
             ref={topReferenceRef}
           >
-            top Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={topReference} />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-5 text-light-periwinkle">
+              top Reference
+            </h3>
+            <CssClassesReferenceTable cssClassesReference={topReference} />
+          </div>
+          <div
+            className="docs-section"
             id="bottom-reference"
             ref={bottomReferenceRef}
           >
-            bottom Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={bottomReference} />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              bottom Reference
+            </h3>
+            <CssClassesReferenceTable cssClassesReference={bottomReference} />
+          </div>
+          <div
+            className="docs-section"
             id="left-reference"
             ref={leftReferenceRef}
           >
-            left Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={leftReference} />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
-            id="left-reference"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              left Reference
+            </h3>
+            <CssClassesReferenceTable cssClassesReference={leftReference} />
+          </div>
+          <div
+            className="docs-section"
+            id="right-reference"
             ref={rightReferenceRef}
           >
-            right Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={rightReference} />
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              right Reference
+            </h3>
+            <CssClassesReferenceTable cssClassesReference={rightReference} />
+          </div>
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

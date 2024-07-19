@@ -54,7 +54,7 @@ const Position = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
   ];
@@ -87,16 +87,23 @@ const Position = () => {
           pageTitle="position"
           pageDesc="Pre-built CSS Classes for DOM Element Positioning."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={
               <>
-                Utilize <span className="text-primary">&quot;relative, absolute, fixed ...&quot;</span>{" "}
+                Utilize{" "}
+                <span className="text-primary">
+                  &quot;relative, absolute, fixed ...&quot;
+                </span>{" "}
                 classes for precise element positioning.
               </>
             }
