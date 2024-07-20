@@ -41,7 +41,7 @@ const Scale = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -332,16 +332,20 @@ $scale-x-map: (
 
   const addUtilityCode = `
 @use "sass:map";
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
-@import "../node_modules/nkhilicss/sass/partials/maps";
-$scale-map: map.set($scale-map, yourCustomUtility, itsValue))
+$scale-map: map.set($scale-map, yourCustomUtility, itsValue);
+
+@use "../node_modules/nkhilicss/sass/index";
 `;
 
   const changeUtilityValueCode = `
 @use "sass:map";
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
-@import "../node_modules/nkhilicss/sass/partials/maps";
-$scale-map: map.set($scale-map, 100, yourCustomValue)
+$scale-map: map.set($scale-map, 100, yourCustomValue);
+
+@use "../node_modules/nkhilicss/sass/index";
 `;
 
   return (
@@ -352,41 +356,51 @@ $scale-map: map.set($scale-map, 100, yourCustomValue)
           pageTitle="scale / scaleY / scaleX"
           pageDesc="Pre-built CSS Classes for scaling elements with transform."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
-          <h3
-            className="font-medium mt-5 text-light-periwinkle"
+          <div
+            className="docs-section"
             id="scale-reference"
             ref={scaleReferenceRef}
           >
-            scale Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={scaleReference} />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
-            id="scaleY-reference"
+            <h3 className="font-medium mt-5 text-light-periwinkle">
+              scale Reference
+            </h3>
+            <CssClassesReferenceTable cssClassesReference={scaleReference} />
+          </div>
+          <div
+            className="docs-section"
+            id="scaley-reference"
             ref={scaleYReferenceRef}
           >
-            scaleY Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={scaleYReference} />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
-            id="scaleX-reference"
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              scaleY Reference
+            </h3>
+            <CssClassesReferenceTable cssClassesReference={scaleYReference} />
+          </div>
+          <div
+            className="docs-section"
+            id="scalex-reference"
             ref={scaleXReferenceRef}
           >
-            scaleX Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={scaleXReference} />
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              scaleX Reference
+            </h3>
+            <CssClassesReferenceTable cssClassesReference={scaleXReference} />
+          </div>
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={
               <>
                 Utilize the{" "}
                 <span className="text-primary">&quot;scale-*&quot;</span>,{" "}
-                <span className="text-primary">&quot;scale-y-*&quot;</span>,{" "} and{" "}
+                <span className="text-primary">&quot;scale-y-*&quot;</span>, and{" "}
                 <span className="text-primary">&quot;scale-x-*&quot;</span>{" "}
                 classes to scale an element.
               </>

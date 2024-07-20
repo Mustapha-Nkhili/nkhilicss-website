@@ -40,7 +40,7 @@ const Skew = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -156,16 +156,20 @@ $skew-x-map: (
 
   const addUtilityCode = `
 @use "sass:map";
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
-@import "../node_modules/nkhilicss/sass/partials/maps";
-$skew-y-map: map.set($skew-y-map, yourCustomUtility, itsValue))
+$skew-y-map: map.set($skew-y-map, yourCustomUtility, itsValue);
+
+@use "../node_modules/nkhilicss/sass/index";
 `;
 
   const changeUtilityValueCode = `
 @use "sass:map";
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
-@import "../node_modules/nkhilicss/sass/partials/maps";
-$skew-y-map: map.set($skew-y-map, 12, yourCustomValue)
+$skew-y-map: map.set($skew-y-map, 12, yourCustomValue);
+
+@use "../node_modules/nkhilicss/sass/index";
 `;
 
   return (
@@ -176,26 +180,34 @@ $skew-y-map: map.set($skew-y-map, 12, yourCustomValue)
           pageTitle="skewY / skewX"
           pageDesc="Pre-built CSS Classes for skewing elements with transform."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
-          <h3
-            className="font-medium text-light-periwinkle"
-            id="skewY-reference"
+          <div
+            className="docs-section"
+            id="skewy-reference"
             ref={skewYReferenceRef}
           >
-            skewY Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={skewYReference} />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
-            id="skewX-reference"
+            <h3 className="font-medium text-light-periwinkle">
+              skewY Reference
+            </h3>
+            <CssClassesReferenceTable cssClassesReference={skewYReference} />
+          </div>
+          <div
+            className="docs-section"
+            id="skewx-reference"
             ref={skewXReferenceRef}
           >
-            skewX Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={skewXReference} />
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              skewX Reference
+            </h3>
+            <CssClassesReferenceTable cssClassesReference={skewXReference} />
+          </div>
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

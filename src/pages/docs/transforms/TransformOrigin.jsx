@@ -33,7 +33,7 @@ const TransformOrigin = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -123,17 +123,21 @@ $transform-origin-map: (
 
   const addUtilityCode = `
 @use "sass:map";
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
-@import "../node_modules/nkhilicss/sass/partials/maps";
-$transform-origin-map: map.set($transform-origin-map, yourCustomUtility, itsValue))
-`;
+$transform-origin-map: map.set($transform-origin-map, yourCustomUtility, itsValue);
+
+@use "../node_modules/nkhilicss/sass/index";
+ `;
 
   const changeUtilityValueCode = `
 @use "sass:map";
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
-@import "../node_modules/nkhilicss/sass/partials/maps";
-$transform-origin-map: map.set($transform-origin-map, top-left, yourCustomValue)
-`;
+$transform-origin-map: map.set($transform-origin-map, top-left, yourCustomValue);
+
+@use "../node_modules/nkhilicss/sass/index";
+ `;
 
   return (
     <>
@@ -143,11 +147,13 @@ $transform-origin-map: map.set($transform-origin-map, top-left, yourCustomValue)
           pageTitle="transform origin"
           pageDesc="Pre-built CSS Classes to specify an element’s transform origin."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section className="docs-section" id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />
-          <CssClassesReferenceTable cssClassesReference={transformOriginReference} />
+          <CssClassesReferenceTable
+            cssClassesReference={transformOriginReference}
+          />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

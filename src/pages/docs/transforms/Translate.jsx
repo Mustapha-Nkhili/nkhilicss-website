@@ -40,7 +40,7 @@ const Translate = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -203,16 +203,20 @@ $translate-x-map: (
 
   const addUtilityCode = `
 @use "sass:map";
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
-@import "../node_modules/nkhilicss/sass/partials/maps";
-$translate-y-map: map.set($translate-y-map, yourCustomUtility, itsValue))
+$translate-y-map: map.set($translate-y-map, yourCustomUtility, itsValue);
+
+@use "../node_modules/nkhilicss/sass/index";
 `;
 
   const changeUtilityValueCode = `
 @use "sass:map";
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
-@import "../node_modules/nkhilicss/sass/partials/maps";
-$translate-y-map: map.set($translate-y-map, 100, yourCustomValue)
+$translate-y-map: map.set($translate-y-map, 100, yourCustomValue);
+
+@use "../node_modules/nkhilicss/sass/index";
 `;
 
   return (
@@ -223,26 +227,38 @@ $translate-y-map: map.set($translate-y-map, 100, yourCustomValue)
           pageTitle="translateY / translateX"
           pageDesc="Pre-built CSS Classes for translating elements with transform."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
-          <h3
-            className="font-medium text-light-periwinkle"
-            id="translateY-reference"
+          <div
+            className="docs-section"
+            id="translatey-reference"
             ref={translateYReferenceRef}
           >
-            translateY Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={translateYReference} />
-          <h3
-            className="font-medium mt-32 text-light-periwinkle"
-            id="translateX-reference"
+            <h3 className="font-medium text-light-periwinkle">
+              translateY Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={translateYReference}
+            />
+          </div>
+          <div
+            className="docs-section"
+            id="translatex-reference"
             ref={translateXReferenceRef}
           >
-            translateX Reference
-          </h3>
-          <CssClassesReferenceTable cssClassesReference={translateXReference} />
+            <h3 className="font-medium mt-32 text-light-periwinkle">
+              translateX Reference
+            </h3>
+            <CssClassesReferenceTable
+              cssClassesReference={translateXReference}
+            />
+          </div>
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

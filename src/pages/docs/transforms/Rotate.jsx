@@ -33,7 +33,7 @@ const Rotate = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -143,16 +143,20 @@ $rotate-map: (
 
   const addUtilityCode = `
 @use "sass:map";
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
-@import "../node_modules/nkhilicss/sass/partials/maps";
-$rotate-map: map.set($rotate-map, yourCustomUtility, itsValue))
+$rotate-map: map.set($rotate-map, yourCustomUtility, itsValue);
+
+@use "../node_modules/nkhilicss/sass/index";
 `;
 
   const changeUtilityValueCode = `
 @use "sass:map";
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
-@import "../node_modules/nkhilicss/sass/partials/maps";
-$rotate-map: map.set($rotate-map, 100, yourCustomValue)
+$rotate-map: map.set($rotate-map, 100, yourCustomValue);
+
+@use "../node_modules/nkhilicss/sass/index";
 `;
 
   return (
@@ -163,11 +167,15 @@ $rotate-map: map.set($rotate-map, 100, yourCustomValue)
           pageTitle="rotate"
           pageDesc="Pre-built CSS Classes for rotating elements with transform."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={rotateReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={
