@@ -43,7 +43,7 @@ const TextIndent = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -122,7 +122,7 @@ px: 1px,
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $text-indent-map: map.set($text-indent-map, yourCustomUtility, itsValue);
 
@@ -131,7 +131,7 @@ $text-indent-map: map.set($text-indent-map, yourCustomUtility, itsValue);
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $text-indent-map: map.set($text-indent-map, 100, itsValue);
 
@@ -146,16 +146,21 @@ $text-indent-map: map.set($text-indent-map, 100, itsValue);
           pageTitle="height"
           pageDesc="Pre-Built CSS Classes for Text Indentation."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={
               <>
-                Utilize <span className="text-primary">&quot;indent-* &quot;</span>{" "}
+                Utilize{" "}
+                <span className="text-primary">&quot;indent-* &quot;</span>{" "}
                 classes for text indentation help control the indentation of
                 text within an element.
               </>

@@ -145,7 +145,7 @@ const LineHeight = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -213,7 +213,7 @@ $line-height-map: (
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $line-height-map: map.set($line-height-map, yourCustomUtility, itsValue);
 
@@ -229,7 +229,7 @@ $line-height-map: map.set($line-height-map, yourCustomUtility, itsValue);
 
 // If you want to add and change utilities:
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $line-height-map: map.set($line-height-map, sm, itsValue);
 
@@ -244,11 +244,11 @@ $line-height-map: map.set($line-height-map, sm, itsValue);
           pageTitle="line height"
           pageDesc="Pre-built CSS classes for managing element line height."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section className="docs-section" id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

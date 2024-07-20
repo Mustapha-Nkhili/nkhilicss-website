@@ -71,7 +71,7 @@ const TextUnderlineOffset = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -128,7 +128,7 @@ $text-underline-offset-map: (
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $text-underline-offset-map: map.set($text-underline-offset-map, yourCustomUtility, itsValue);
 
@@ -144,7 +144,7 @@ $text-underline-offset-4: "Your Custom Value for 4 text underline offset",
 
 // If you want to add and change utilities:
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $text-underline-offset-map: map.set($text-underline-offset-map, 4, itsValue);
 
@@ -159,11 +159,11 @@ $text-underline-offset-map: map.set($text-underline-offset-map, 4, itsValue);
           pageTitle="text underline offset"
           pageDesc="Pre-built CSS classes to control the text underline offset."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section className="docs-section" id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

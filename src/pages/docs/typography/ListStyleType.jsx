@@ -71,7 +71,7 @@ const ListStyleType = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -126,7 +126,7 @@ $list-style-type-map: (
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $list-style-type-map: map.set($list-style-type-map, yourCustomUtility, itsValue);
 
@@ -135,7 +135,7 @@ $list-style-type-map: map.set($list-style-type-map, yourCustomUtility, itsValue)
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $list-style-type-map: map.set($list-style-type-map, disc, itsValue);
 
@@ -150,11 +150,15 @@ $list-style-type-map: map.set($list-style-type-map, disc, itsValue);
           pageTitle="list style type"
           pageDesc="pre-built CSS classes to control the list style type of list items."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

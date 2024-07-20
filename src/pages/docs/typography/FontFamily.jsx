@@ -55,7 +55,7 @@ const FontFamily = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -104,7 +104,7 @@ $font-family-map: (
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $font-family-map: map.set($font-family-map, yourCustomUtility, itsValue);
 
@@ -120,7 +120,7 @@ $font-family-map: map.set($font-family-map, yourCustomUtility, itsValue);
 
 // If you want to add and change utilities:
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $font-family-map: map.set($font-family-map, sans-serif, itsValue);
 
@@ -135,11 +135,11 @@ $font-family-map: map.set($font-family-map, sans-serif, itsValue);
           pageTitle="font family"
           pageDesc="Pre-built CSS classes to specify different font families for elements."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section className="docs-section" id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

@@ -27,9 +27,7 @@ const FontSize = () => {
         data: (
           <>
             1rem
-            <span className="ml-5 text-primary">
-              {`// 16px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 16px`}</span>
           </>
         ),
       },
@@ -38,9 +36,7 @@ const FontSize = () => {
         data: (
           <>
             0.75rem
-            <span className="ml-5 text-primary">
-              {`// 12px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 12px`}</span>
           </>
         ),
       },
@@ -49,9 +45,7 @@ const FontSize = () => {
         data: (
           <>
             0.875rem
-            <span className="ml-5 text-primary">
-              {`// 14px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 14px`}</span>
           </>
         ),
       },
@@ -60,9 +54,7 @@ const FontSize = () => {
         data: (
           <>
             1.125rem
-            <span className="ml-5 text-primary">
-              {`// 18px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 18px`}</span>
           </>
         ),
       },
@@ -71,9 +63,7 @@ const FontSize = () => {
         data: (
           <>
             1.25rem
-            <span className="ml-5 text-primary">
-              {`// 20px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 20px`}</span>
           </>
         ),
       },
@@ -82,9 +72,7 @@ const FontSize = () => {
         data: (
           <>
             1.5rem
-            <span className="ml-5 text-primary">
-              {`// 24px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 24px`}</span>
           </>
         ),
       },
@@ -93,9 +81,7 @@ const FontSize = () => {
         data: (
           <>
             1.875rem
-            <span className="ml-5 text-primary">
-              {`// 30px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 30px`}</span>
           </>
         ),
       },
@@ -104,9 +90,7 @@ const FontSize = () => {
         data: (
           <>
             2.25rem
-            <span className="ml-5 text-primary">
-              {`// 36px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 36px`}</span>
           </>
         ),
       },
@@ -115,9 +99,7 @@ const FontSize = () => {
         data: (
           <>
             3rem
-            <span className="ml-5 text-primary">
-              {`// 48px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 48px`}</span>
           </>
         ),
       },
@@ -126,9 +108,7 @@ const FontSize = () => {
         data: (
           <>
             3.75rem
-            <span className="ml-5 text-primary">
-              {`// 60px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 60px`}</span>
           </>
         ),
       },
@@ -137,9 +117,7 @@ const FontSize = () => {
         data: (
           <>
             4.5rem
-            <span className="ml-5 text-primary">
-              {`// 72px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 72px`}</span>
           </>
         ),
       },
@@ -148,9 +126,7 @@ const FontSize = () => {
         data: (
           <>
             6rem
-            <span className="ml-5 text-primary">
-              {`// 96px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 96px`}</span>
           </>
         ),
       },
@@ -159,9 +135,7 @@ const FontSize = () => {
         data: (
           <>
             7rem
-            <span className="ml-5 text-primary">
-              {`// 112px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 112px`}</span>
           </>
         ),
       },
@@ -170,9 +144,7 @@ const FontSize = () => {
         data: (
           <>
             2rem
-            <span className="ml-5 text-primary">
-              {`// 32px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 32px`}</span>
           </>
         ),
       },
@@ -181,9 +153,7 @@ const FontSize = () => {
         data: (
           <>
             1.5rem
-            <span className="ml-5 text-primary">
-              {`// 24px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 24px`}</span>
           </>
         ),
       },
@@ -192,9 +162,7 @@ const FontSize = () => {
         data: (
           <>
             1.3rem
-            <span className="ml-5 text-primary">
-              {`// 20.8px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 20.8px`}</span>
           </>
         ),
       },
@@ -203,9 +171,7 @@ const FontSize = () => {
         data: (
           <>
             1rem
-            <span className="ml-5 text-primary">
-              {`// 16px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 16px`}</span>
           </>
         ),
       },
@@ -214,9 +180,7 @@ const FontSize = () => {
         data: (
           <>
             0.8rem
-            <span className="ml-5 text-primary">
-              {`// 12.8px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 12.8px`}</span>
           </>
         ),
       },
@@ -225,9 +189,7 @@ const FontSize = () => {
         data: (
           <>
             0.7rem
-            <span className="ml-5 text-primary">
-              {`// 11.2px`}
-            </span>
+            <span className="ml-5 text-primary">{`// 11.2px`}</span>
           </>
         ),
       },
@@ -248,7 +210,7 @@ const FontSize = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -327,7 +289,7 @@ $font-size-map: (
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $font-size-map: map.set($font-size-map, yourCustomUtility, itsValue);
 
@@ -343,7 +305,7 @@ $font-size-map: map.set($font-size-map, yourCustomUtility, itsValue);
 
 // If you want to add and change utilities:
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $font-size-map: map.set($font-size-map, 3xl, itsValue);
 
@@ -358,11 +320,15 @@ $font-size-map: map.set($font-size-map, 3xl, itsValue);
           pageTitle="font size"
           pageDesc="Pre-built CSS classes for managing element font size."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

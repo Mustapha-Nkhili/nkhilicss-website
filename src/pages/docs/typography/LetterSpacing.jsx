@@ -105,7 +105,7 @@ const LetterSpacing = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -158,7 +158,7 @@ $letter-spacing-map: (
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $letter-spacing-map: map.set($letter-spacing-map, yourCustomUtility, itsValue);
 
@@ -174,7 +174,7 @@ $letter-spacing-map: map.set($letter-spacing-map, yourCustomUtility, itsValue);
 
 // If you want to add and change utilities:
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $letter-spacing-map: map.set($letter-spacing-map, tight, itsValue);
 
@@ -189,11 +189,11 @@ $letter-spacing-map: map.set($letter-spacing-map, tight, itsValue);
           pageTitle="letter spacing"
           pageDesc="Pre-built CSS classes for managing element letter spacing."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section className="docs-section" id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={
