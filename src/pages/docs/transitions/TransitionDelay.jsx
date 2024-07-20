@@ -75,7 +75,7 @@ const TransitionDelay = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -123,7 +123,7 @@ $transition-delay-map: (
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $transition-delay-map: map.set($transition-delay-map, yourCustomUtility, itsValue);
 
@@ -132,7 +132,7 @@ $transition-delay-map: map.set($transition-delay-map, yourCustomUtility, itsValu
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $transition-delay-map: map.set($transition-delay-map, 500, itsValue);
 
@@ -147,11 +147,15 @@ $transition-delay-map: map.set($transition-delay-map, 500, itsValue);
           pageTitle="transition delay"
           pageDesc="Pre-built CSS classes to control an element’s transition-delay."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={

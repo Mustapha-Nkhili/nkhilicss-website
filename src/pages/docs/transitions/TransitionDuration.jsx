@@ -75,7 +75,7 @@ const TransitionDuration = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -123,7 +123,7 @@ $transition-duration-map: (
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $transition-duration-map: map.set($transition-duration-map, yourCustomUtility, itsValue);
 
@@ -132,7 +132,7 @@ $transition-duration-map: map.set($transition-duration-map, yourCustomUtility, i
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $transition-duration-map: map.set($transition-duration-map, 500, itsValue);
 
@@ -147,11 +147,15 @@ $transition-duration-map: map.set($transition-duration-map, 500, itsValue);
           pageTitle="transition duration"
           pageDesc="Pre-built CSS classes to control an element’s transition-duration."
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section
+          className="docs-section"
+          id="quick-reference"
+          ref={quickReferenceRef}
+        >
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={
@@ -181,7 +185,10 @@ $transition-duration-map: map.set($transition-duration-map, 500, itsValue);
           changeUtilityValueCode={changeUtilityValueCode}
           utility={"transition duration"}
         />
-        <Footer prevPage={"transition property"} nextPage={"transition timing function"} />
+        <Footer
+          prevPage={"transition property"}
+          nextPage={"transition timing function"}
+        />
       </div>
       <OnThisPage onThisPage={onThisPage} />
     </>

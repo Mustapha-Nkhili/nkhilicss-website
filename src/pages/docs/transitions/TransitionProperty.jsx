@@ -201,7 +201,7 @@ const TransitionProperty = () => {
       ref: executingUnderCertainConditionsRef,
       subLabels: [
         { ref: stateRef, label: "Hover, focus, and other states" },
-        { ref: breakpointsRef, label: "Breakpoints & Media queries" },
+        { ref: breakpointsRef, label: "Breakpoints and Media queries" },
       ],
     },
     {
@@ -292,7 +292,7 @@ $transition-property-map: (
 
   const addUtilityCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $transition-property-map: map.set($transition-property-map, yourCustomUtility, itsValue);
 
@@ -301,7 +301,7 @@ $transition-property-map: map.set($transition-property-map, yourCustomUtility, i
 
   const changeUtilityValueCode = `
 @use "sass:map";
-@use "../node_modules/nkhilicss/sass/partials/utilities-maps" as *;
+@use "../node_modules/nkhilicss/sass/utils/utilities-maps" as *;
 
 $transition-property-map: map.set($transition-property-map, default, itsValue);
 
@@ -316,11 +316,11 @@ $transition-property-map: map.set($transition-property-map, default, itsValue);
           pageTitle="transition property"
           pageDesc="Pre-built CSS classes to specify which properties should transition when they change"
         />
-        <section id="quick-reference" ref={quickReferenceRef}>
+        <section className="docs-section" id="quick-reference" ref={quickReferenceRef}>
           <SectionHeader title="Quick reference" />
           <CssClassesReferenceTable cssClassesReference={cssClassesReference} />
         </section>
-        <section id="usage" ref={usageRef}>
+        <section className="docs-section" id="usage" ref={usageRef}>
           <SectionHeader
             title="Usage"
             description={
