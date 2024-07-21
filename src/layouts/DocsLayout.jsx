@@ -181,8 +181,6 @@ const DocsLayout = () => {
 
   const docsSections = document.getElementsByClassName("docs-section");
   
-  console.log(docsSections);
-
   useEffect(() => {
     const handleScroll = () => {
       [...docsSections].forEach((section) => {
