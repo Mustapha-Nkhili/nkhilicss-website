@@ -211,7 +211,7 @@ const DocsLayout = () => {
 
   useEffect(() => {
     if (location.pathname == "/docs" || location.pathname == "/docs/") {
-      navigate("docs/introduction");
+      navigate("/docs/introduction");
     }
   }, [location.pathname, navigate]);
 
