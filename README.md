@@ -1,1 +1,76 @@
-The Nkhili CSS documentation website
+# nkhlilicsss - A Sass-based CSS Framework
+
+nkhlilicsss is a modern CSS framework built with Sass, designed to help you create responsive, clean, and easily customizable user interfaces quickly.
+
+## Features
+
+- **Lightweight**: Minimalistic and lightweight CSS framework to keep your projects fast and efficient.
+- **Customizable**: Easily customize the framework to fit your project's design needs using Sass variables and mixins.
+- **Responsive**: Built with responsiveness in mind, ensuring your designs look great on all devices.
+- **Modular**: Modular architecture allows you to include only the components you need, reducing bloat.
+- **Easy to Use**: Simple and intuitive classes make it easy to style your HTML elements.
+
+## Installation
+
+You can install NkhiliCSS via npm or by downloading the compiled CSS files directly from the GitHub repository.
+
+### Via npm
+
+```bash
+npm install nkhilicss
+```
+
+### Via CDN
+
+You can include NkhiliCSS via CDN by adding the following link to your HTML file:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/nkhilicss@2.1.0/dist/css/nkhilicss.min.css"
+/>
+```
+
+## Usage
+
+Simply include the NkhiliCSS file in your HTML file and start using its classes to style your elements.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/nkhilicss@2.1.0/dist/css/nkhilicss.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-blue">Welcome to NkhiliCSS</h1>
+      <p class="text-center md-text-left">
+        A lightweight CSS framework built with Sass.
+      </p>
+      <button class="btn-primary">Get Started</button>
+    </div>
+  </body>
+</html>
+```
+
+## Documentation
+
+For complete and detailed documentation, please visit [nkhilicss.web.app](https://nkhilicss.web.app/).
+
+## Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request
+
+## License
+
+NkhiliCSS is open-source software licensed under the MIT License. See the [LICENSE](https://github.com/Mustapha-Nkhili/nkhilicss/blob/main/LICENSE) file for more information.
