@@ -76,13 +76,21 @@ const Introduction = () => {
         >
           <ul className="flex items-center gap-5 mt-10">
             <li
-              className="pb-1 border-b-2 border-b-primary border-b-solid cursor-pointer"
+              className={`"pb-1 border-b-2 ${
+                packageManagerCode.includes("npm")
+                  ? "border-b-primary"
+                  : "border-b-none"
+              } border-b-solid cursor-pointer`}
               onClick={() => setPackageManagerCode("npm i nkhilicss")}
             >
               npm
             </li>
             <li
-              className="pb-1 border-b-2 border-b-primary border-b-solid cursor-pointer"
+              className={`"pb-1 border-b-2 ${
+                packageManagerCode.includes("yarn")
+                  ? "border-b-primary"
+                  : "border-b-none"
+              } border-b-solid cursor-pointer`}
               onClick={() => setPackageManagerCode("yarn add nkhilicss")}
             >
               yarn
