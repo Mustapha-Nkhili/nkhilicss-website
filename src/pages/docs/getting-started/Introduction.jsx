@@ -28,7 +28,7 @@ const Introduction = () => {
       <!-- Include Nkhili's CSS via CDN -->
       <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/nkhilicss@2.0.0/dist/css/nkhilicss.min.css"
+      href="https://cdn.jsdelivr.net/npm/nkhilicss@2.1.1/dist/css/nkhilicss.min.css"
       />
   </head>
   <body>
@@ -70,7 +70,8 @@ const Introduction = () => {
           <Code code={htmlCode} language="html" />
         </section>
         <section
-          className="docs-section" id="instalation-via-package-managers"
+          className="docs-section"
+          id="instalation-via-package-managers"
           ref={instViaPackagemanRef}
         >
           <ul className="flex items-center gap-5 mt-10">
@@ -96,7 +97,11 @@ const Introduction = () => {
             official compiled versions.
           </p>
         </section>
-        <section className="docs-section mb-32" id="viewport-meta" ref={viewportMeta}>
+        <section
+          className="docs-section mb-32"
+          id="viewport-meta"
+          ref={viewportMeta}
+        >
           <SectionHeader
             title="Viewport meta"
             description="  nkhilicss employs a mobile-first approach, prioritizing code
