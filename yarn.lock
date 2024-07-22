@@ -3627,10 +3627,10 @@ next-tick@^1.1.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.1.0.tgz#1836ee30ad56d67ef281b22bd199f709449b35eb"
   integrity sha512-CXdUiJembsNjuToQvxayPZF9Vqht7hewsvy2sOWafLvi2awflj9mOC6bHIg50orX8IJvWKY9wYQ/zB2kogPslQ==
 
-nkhilicss@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/nkhilicss/-/nkhilicss-2.1.0.tgz#361e740f59f99c49e3531db87d3aae768289ae40"
-  integrity sha512-E+LDx1bXVFiOiK6N/ZxxtDiMV+tyyKCFU3CsFg02+vx2oBVd4iv0+Ky9YXFx14GxiaCxHZgW8+l1pX0sVRfAnQ==
+nkhilicss@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/nkhilicss/-/nkhilicss-2.1.1.tgz#cace1063c2bc5c12104405625dfef79588ecbd0e"
+  integrity sha512-kAgrVkccJWET19gQiNs3fZAZljAW8nJ/cwu69UbWBd5KoD1csVnMIykAJ6x+U/bUoIhFDFEFefllsh2YLR5m5Q==
   dependencies:
     gulp "^4.0.2"
     gulp-clean-css "^4.3.0"
