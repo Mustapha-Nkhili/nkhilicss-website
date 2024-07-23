@@ -1,4 +1,4 @@
-# nkhlilicsss - A Modern CSS Framework
+# NkhiliCSS - A Modern CSS Framework
 
 nkhlilicsss is a modern CSS framework built with Sass, designed to help you create responsive, clean, and easily customizable user interfaces quickly.
 
