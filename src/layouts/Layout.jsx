@@ -11,13 +11,13 @@ function Layout() {
 
       if (title) {
         const formattedTitle = title.split("-").join(" ");
-        
+
         return `${
           formattedTitle.charAt(0).toUpperCase() + formattedTitle.slice(1)
         } - Nkhili CSS`;
       }
 
-      return `Nkhili CSS - Build fast and responsive sites`;
+      return `Nkhili CSS - A Modern CSS Framework`;
     };
 
     const titleElement = document.getElementsByTagName("title")[0];
