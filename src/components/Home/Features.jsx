@@ -47,7 +47,7 @@ const Features = () => {
       </h2>
       <div className="features grid text-white gap-7 mt-10 mb-10">
         {features.map((feature, index) => (
-          <div className="feature p-5 rounded-2" key={feature + index}>
+          <div className="feature p-5 rounded" key={feature + index}>
             <div className="flex justify-center items-center rounded mb-5 w-10 aspect-square text-light-periwinkle bg-primary">
               <FontAwesomeIcon icon={feature.icon} />
             </div>
