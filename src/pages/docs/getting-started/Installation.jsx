@@ -81,7 +81,7 @@ const Installation = () => {
               </Link>{" "}
               :
             </p>
-            <Code code={`npm install nkhilicss`} language={"bash"} />
+            <Code code={`yarn add nkhilicss`} language={"bash"} />
           </div>
         </section>
         <section
