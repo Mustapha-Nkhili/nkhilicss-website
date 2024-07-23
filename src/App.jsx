@@ -118,6 +118,7 @@ import Resize from "./pages/docs/Interactivity/Resize";
 import ScrollBehavior from "./pages/docs/Interactivity/ScrollBehavior";
 import UserSelect from "./pages/docs/Interactivity/UserSelect";
 import WillChange from "./pages/docs/Interactivity/WillChange";
+import NotFound from "./pages/NotFound";
 
 import "./app.css";
 
@@ -602,6 +603,10 @@ function App() {
           ],
         },
       ],
+    },
+    {
+      path: "*",
+      element: <NotFound />,
     },
   ]);
   return <RouterProvider router={router} />;
