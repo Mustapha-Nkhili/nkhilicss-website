@@ -9,7 +9,7 @@ const Hero = () => {
         <h1 className="text-4xl sm-text-5xl lg-text-6xl">
           Explore Endless Design Possibilities with{" "}
           <span className="relative">
-            nkhilicss{" "}
+            NkhiliCSS{" "}
             <img
               src={curveImg}
               className="absolute left-0 w-full"
