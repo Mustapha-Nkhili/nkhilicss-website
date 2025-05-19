@@ -180,7 +180,7 @@ const DocsLayout = () => {
   ];
 
   const docsSections = document.getElementsByClassName("docs-section");
-  
+
   useEffect(() => {
     const handleScroll = () => {
       [...docsSections].forEach((section) => {
@@ -286,7 +286,7 @@ const DocsLayout = () => {
           ))}
         </div>
       </nav>
-      <main className="text-white relative mt-32 lg-mt-0 mr-0 xl-mr-72 ml-0 lg-ml-68">
+      <main className="text-white relative mt-32 lg-mt-0 mr-0 xl-mr-72 xxl-mr-auto ml-0 lg-ml-68 xxl-ml-auto max-w-md">
         <Outlet />
       </main>
     </div>
